@@ -471,10 +471,8 @@ html, body {
       height: 500px;
       background-color: #dedede;
       width: 100%;
-      background-size: cover;
-      -webkit-filter: blur(2px);
-      filter: blur(2px); }
-      .projects .projects-carousel .slide:hover, .projects .projects-carousel .slide:focus {
+      background-size: cover; }
+      .projects .projects-carousel .slide:hover {
         transition: filter 0.75s ease-in-out;
         -webkit-filter: blur(0px);
         filter: blur(0px); }
