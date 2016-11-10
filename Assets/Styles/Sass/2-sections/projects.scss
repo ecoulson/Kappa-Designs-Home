@@ -41,8 +41,8 @@
 			width:100%;
 			background-size: cover;
 			@media all and (min-width: 720px) {
-				-webkit-filter: blur(2px);
-				filter: blur(2px);
+				// -webkit-filter: blur(2px);
+				// filter: blur(2px);
 			}
 			&:hover {
 				transition: filter 0.75s ease-in-out;
