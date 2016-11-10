@@ -472,6 +472,10 @@ html, body {
       background-color: #dedede;
       width: 100%;
       background-size: cover; }
+      @media screen and (min-width: 720px) {
+        .projects .projects-carousel .slide {
+          -webkit-filter: blur(2px);
+          filter: blur(2px); } }
       .projects .projects-carousel .slide:hover {
         transition: filter 0.75s ease-in-out;
         -webkit-filter: blur(0px);
