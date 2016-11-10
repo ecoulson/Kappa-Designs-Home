@@ -40,9 +40,11 @@
 			background-color: rgb(222, 222, 222);
 			width:100%;
 			background-size: cover;
-			-webkit-filter: blur(2px);
-			filter: blur(2px);
-			&:hover, &:focus {
+			@media all and (min-width: 720px) {
+				-webkit-filter: blur(2px);
+				filter: blur(2px);
+			}
+			&:hover {
 				transition: filter 0.75s ease-in-out;
 				-webkit-filter: blur(0px);
 				filter: blur(0px);
