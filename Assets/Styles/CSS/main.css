@@ -6,4 +6,207 @@ html, body {
   font-family: 'PT Sans', sans-serif;
   background-color: #494949; }
 
+.contact {
+  padding: 20px 0; }
+  .contact .grid-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; }
+    .contact .grid-container .row:before, .contact .grid-container .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .contact .grid-container .row [class*='col-'] {
+      float: left;
+      min-height: 1px;
+      width: 16.66%; }
+      .contact .grid-container .row [class*='col-'] p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: white; }
+    .contact .grid-container .row .col-1 {
+      width: 16.66%; }
+    .contact .grid-container .row .col-2 {
+      width: 33.33%; }
+    .contact .grid-container .row .col-3 {
+      width: 50%; }
+    .contact .grid-container .row .col-4 {
+      width: 66.664%; }
+    .contact .grid-container .row .col-5 {
+      width: 83.33%; }
+    .contact .grid-container .row .col-6 {
+      width: 100%; }
+    @media all and (max-width: 945px) {
+      .contact .grid-container .row .col-1 {
+        width: 33.33%; }
+      .contact .grid-container .row .col-2 {
+        width: 96%; }
+      .contact .grid-container .row .col-3 {
+        width: 83.33%; }
+      .contact .grid-container .row .col-4 {
+        width: 100%; }
+      .contact .grid-container .row .col-5 {
+        width: 100%; }
+      .contact .grid-container .row .col-6 {
+        width: 100%; }
+      .contact .grid-container .row .row .col-2:last-of-type {
+        width: 100%; }
+      .contact .grid-container .row .row .col-5 ~ .col-1 {
+        width: 100%; } }
+    @media all and (max-width: 650px) {
+      .contact .grid-container .row .col-1 {
+        width: 50%; }
+      .contact .grid-container .row .col-2 {
+        width: 100%; }
+      .contact .grid-container .row .col-3 {
+        width: 100%; }
+      .contact .grid-container .row .col-4 {
+        width: 100%; }
+      .contact .grid-container .row .col-5 {
+        width: 100%; }
+      .contact .grid-container .row .col-6 {
+        width: 100%; } }
+  @media all and (min-width: 946px) {
+    .contact .contact-info {
+      border-right: 5px solid black; }
+    .contact .media-container .media-fluid {
+      width: auto;
+      margin: 0 25px; } }
+  @media all and (max-width: 945px) {
+    .contact .email {
+      display: none; }
+    .contact .contact-info {
+      margin-left: 2%;
+      padding: 0 2%;
+      border-bottom: 5px solid black; }
+    .contact .media-container .media-fluid {
+      width: auto;
+      display: block;
+      margin: 0 auto; }
+      .contact .media-container .media-fluid .media-list {
+        display: flex; }
+        .contact .media-container .media-fluid .media-list .media {
+          margin-left: 25px; } }
+  .contact .contact-info .contact-title {
+    margin-left: 50px;
+    margin-right: 150px;
+    border-bottom: 5px solid black; }
+  .contact .contact-info .copyright {
+    padding-top: 25px;
+    display: block;
+    padding-left: 60px;
+    color: white; }
+  .contact .contact-info .legal {
+    display: block;
+    padding-left: 60px;
+    color: white; }
+  .contact .contact-info .nav-title {
+    margin-left: 50px;
+    margin-right: 150px;
+    border-bottom: 5px solid black; }
+  .contact .contact-info .nav {
+    list-style: none;
+    padding-left: 60px; }
+    .contact .contact-info .nav .option {
+      margin-bottom: 15px; }
+      .contact .contact-info .nav .option a {
+        color: rgba(143, 141, 141, 0.75);
+        text-decoration: none; }
+        .contact .contact-info .nav .option a:hover {
+          transition: 0.25s color ease-in-out;
+          color: white;
+          cursor: pointer; }
+  .contact .media-container {
+    display: flex; }
+    @media all and (min-width: 820px) {
+      .contact .media-container .media-fluid {
+        padding-right: 25px; } }
+    @media all and (max-width: 819px) {
+      .contact .media-container .media-fluid {
+        margin-left: 30%; } }
+    @media all and (max-width: 760px) {
+      .contact .media-container .media-fluid {
+        margin-left: 20%; } }
+    @media all and (max-width: 480px) {
+      .contact .media-container .media-fluid {
+        margin-left: 5%; } }
+    @media all and (max-width: 260px) {
+      .contact .media-container .media-fluid {
+        margin-left: 25px; } }
+    .contact .media-container .media-fluid .media-list {
+      width: 0;
+      list-style: none;
+      padding: 0;
+      margin-top: 65px; }
+      .contact .media-container .media-fluid .media-list .media {
+        margin-bottom: 25px; }
+        @media all and (max-width: 260px) {
+          .contact .media-container .media-fluid .media-list .media {
+            margin-left: 15px; } }
+        .contact .media-container .media-fluid .media-list .media img {
+          width: 35px;
+          height: 35px;
+          cursor: pointer; }
+          .contact .media-container .media-fluid .media-list .media img:hover {
+            border: 2px solid #19CF86; }
+          @media all and (max-width: 260px) {
+            .contact .media-container .media-fluid .media-list .media img {
+              width: 25px;
+              height: 25px; } }
+    .contact .media-container .email .email-container {
+      display: flex; }
+      .contact .media-container .email .email-container .email-header {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px; }
+        .contact .media-container .email .email-container .email-header h3 {
+          border-bottom: 5px solid black; }
+        .contact .media-container .email .email-container .email-header input {
+          border-radius: 1px;
+          margin-bottom: 50px;
+          border: none;
+          padding: 10px 7px;
+          background-color: #5e5d5d;
+          color: white; }
+          .contact .media-container .email .email-container .email-header input:hover {
+            border-bottom: 1px solid black; }
+          .contact .media-container .email .email-container .email-header input:focus {
+            transition: 0.15s border ease-in-out;
+            border-bottom: 5px solid #19CF86;
+            outline: none; }
+      .contact .media-container .email .email-container .email-body textarea {
+        border-radius: 2px;
+        resize: none;
+        padding: 10px 7px;
+        line-height: 1.5;
+        color: white;
+        background-color: #5e5d5d;
+        margin-top: 75px;
+        margin-left: 100px;
+        width: 100%;
+        height: 65%;
+        border: 1px solid white; }
+        .contact .media-container .email .email-container .email-body textarea:hover {
+          border: 1px solid #19CF86; }
+        .contact .media-container .email .email-container .email-body textarea:focus {
+          transition: 0.15s border ease-in-out;
+          border: 5px solid #19CF86;
+          outline: none; }
+    .contact .media-container .email button {
+      border: 1px solid #19CF68;
+      color: #19CF86;
+      background-color: #494949;
+      padding: 7px 25px;
+      border-radius: 50px;
+      outline: none;
+      font-size: 20px;
+      letter-spacing: 2px; }
+      .contact .media-container .email button:hover {
+        transition: 0.25s background-color ease-in-out, 0.25s color ease-in-out;
+        background-color: #19CF86;
+        color: white;
+        cursor: pointer; }
+
 /*# sourceMappingURL=main.css.map */
