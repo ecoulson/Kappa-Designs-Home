@@ -5813,6 +5813,86 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@-webkit-keyframes title-animate-up {
+  0% {
+    transform: translateY(90px);
+    border: 1px solid black; }
+  100% {
+    transform: translateY(0px);
+    border: 1px solid transparent; } }
+@-moz-keyframes title-animate-up {
+  0% {
+    transform: translateY(90px);
+    border: 1px solid black; }
+  100% {
+    transform: translateY(0px);
+    border: 1px solid transparent; } }
+@-o-keyframes title-animate-up {
+  0% {
+    transform: translateY(90px);
+    border: 1px solid black; }
+  100% {
+    transform: translateY(0px);
+    border: 1px solid transparent; } }
+@keyframes title-animate-up {
+  0% {
+    transform: translateY(90px);
+    border: 1px solid black; }
+  100% {
+    transform: translateY(0px);
+    border: 1px solid transparent; } }
+@-webkit-keyframes title-animate-down {
+  0% {
+    transform: translateY(-90px);
+    border: 1px solid black; }
+  100% {
+    transform: translateY(0px);
+    border: 1px solid transparent; } }
+@-moz-keyframes title-animate-down {
+  0% {
+    transform: translateY(-90px);
+    border: 1px solid black; }
+  100% {
+    transform: translateY(0px);
+    border: 1px solid transparent; } }
+@-o-keyframes title-animate-down {
+  0% {
+    transform: translateY(-90px);
+    border: 1px solid black; }
+  100% {
+    transform: translateY(0px);
+    border: 1px solid transparent; } }
+@keyframes title-animate-down {
+  0% {
+    transform: translateY(-90px);
+    border: 1px solid black; }
+  100% {
+    transform: translateY(0px);
+    border: 1px solid transparent; } }
+@-webkit-keyframes title-animate-border {
+  0% {
+    border: none; }
+  100% {
+    border: 1px solid black;
+    padding: 0; } }
+@-moz-keyframes title-animate-border {
+  0% {
+    border: none; }
+  100% {
+    border: 1px solid black;
+    padding: 0; } }
+@-o-keyframes title-animate-border {
+  0% {
+    border: none; }
+  100% {
+    border: 1px solid black;
+    padding: 0; } }
+@keyframes title-animate-border {
+  0% {
+    border: none; }
+  100% {
+    border: 1px solid black;
+    padding: 0; } }
 .contact {
   padding: 20px 0; }
   .contact .grid-container {
@@ -6019,16 +6099,16 @@ button.close {
 .header {
   text-align: center; }
   .header .jumbotron .kappa-title {
+    padding: 1px;
+    margin: 0 auto;
+    width: 150px;
+    margin-top: 50px;
     letter-spacing: -7px;
-    margin-bottom: 200px; }
+    margin-bottom: 200px;
+    border: 1px solid black; }
     .header .jumbotron .kappa-title .kappa {
       display: inline-block;
-      padding: 1px 10px 1px 2px;
-      border: 1px solid black; }
-    .header .jumbotron .kappa-title #letter-k, .header .jumbotron .kappa-title #letter-p-1, .header .jumbotron .kappa-title #letter-a-2 {
-      transform: translateY(-30px); }
-    .header .jumbotron .kappa-title #letter-a-1, .header .jumbotron .kappa-title #letter-p-2 {
-      transform: translateY(30px); }
+      padding: 15px 10px 15px 2px; }
   .header .jumbotron .desc-title .desc-animated {
     padding: 0px 5px;
     border: 2px #7883ff solid; }
@@ -6105,6 +6185,24 @@ button.close {
         text-align: center; }
       .project #row-2 .project-container .hidden-hover .project-info {
         margin-top: 50px; }
+
+.header .jumbotron .kappa-title {
+  -webkit-animation: title-animate-border 1.5s;
+  -moz-animation: title-animate-border 1.5s;
+  -o-animation: title-animate-border 1.5s;
+  animation: title-animate-border 1.5s; }
+
+#letter-k, #letter-p-1, #letter-a-2 {
+  -webkit-animation: title-animate-down 1s;
+  -moz-animation: title-animate-down 1s;
+  -o-animation: title-animate-down 1s;
+  animation: title-animate-down 1s; }
+
+#letter-a-1, #letter-p-2 {
+  -webkit-animation: title-animate-up 1s;
+  -moz-animation: title-animate-up 1s;
+  -o-animation: title-animate-up 1s;
+  animation: title-animate-up 1s; }
 
 .menu-container {
   z-index: 100;
