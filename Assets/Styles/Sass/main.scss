@@ -4,7 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
-  background-color: rgb(73, 73, 73);
 }
-
+@import "1-tools/bootstrap/_bootstrap";
+@import "1-tools/variables";
 @import "2-sections/contact";
