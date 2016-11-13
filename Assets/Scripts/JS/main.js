@@ -1,6 +1,46 @@
+var app = function () {
+  var $menuClose = $('.menu-close');
+  var $menuOpen = $('.menu-container');
+  var $menuPlate = $('.menu-plate');
+  var $menuContainer = $('.menu-main-container');
+
+  var menuWidth = 300;
+
+  //events
+
+  $menuOpen.click(function () {
+    $menuPlate.css({
+      'transition':'1s width ease-in-out',
+      'width':menuWidth
+    });
+  })
+
+  $menuClose.click(function () {
+    $menuPlate.css({
+      'transition':'1s width ease-in-out',
+      'width':'0'
+    })
+  })
+
+  //functions
+
+  var init = function () {
+    var innerWidth = menuWidth - 15;
+    $menuContainer.css({
+      'width': innerWidth
+    })
+  }
+
+  return {
+    init: init
+  }
+}
+
 $(document).ready(function () {
-  smoothScool(1000);
+  kappa = new app();
+  kappa.init();
   $('.jumbotron').height($(window).height());
+  smoothScool(1000);
 })
 
 function smoothScool (duration) {
