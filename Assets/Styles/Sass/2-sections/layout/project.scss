@@ -1,0 +1,43 @@
+.project {
+  border-bottom: 3px solid black;
+  #row-1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  #row-2 {
+    margin-bottom: 100px;
+    .project-container {
+      border: 1px solid black;
+      height: 350px;
+      &:hover {
+        // IDEA:
+        // transform: scale(1.05);
+      }
+      .visible {
+        .overlay {
+          margin: 0px -15px;
+          background-color: rgba(0, 0, 0, 0.75);
+          width: 100%;
+          position: absolute;
+          .logo {
+            display: block;
+            margin: 125px auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+          }
+        }
+      }
+      .hidden-hover {
+        .project-title {
+          margin-top: 5px;
+          text-align: center;
+        }
+        .project-info {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}

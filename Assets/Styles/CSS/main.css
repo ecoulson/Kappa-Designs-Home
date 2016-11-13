@@ -6016,4 +6016,119 @@ button.close {
         color: white;
         cursor: pointer; }
 
+.header {
+  text-align: center; }
+  .header .jumbotron .kappa-title {
+    letter-spacing: -7px;
+    margin-bottom: 200px; }
+    .header .jumbotron .kappa-title .kappa {
+      display: inline-block;
+      padding: 1px 10px 1px 2px;
+      border: 1px solid black; }
+    .header .jumbotron .kappa-title #letter-k, .header .jumbotron .kappa-title #letter-p-1, .header .jumbotron .kappa-title #letter-a-2 {
+      transform: translateY(-30px); }
+    .header .jumbotron .kappa-title #letter-a-1, .header .jumbotron .kappa-title #letter-p-2 {
+      transform: translateY(30px); }
+  .header .jumbotron .desc-title .desc-animated {
+    padding: 0px 5px;
+    border: 2px #7883ff solid; }
+
+.about .row {
+  border: 1px solid black; }
+  .about .row .about-us {
+    border-right: 1px solid black;
+    height: 400px; }
+    .about .row .about-us .visible .about-title {
+      font-size: 48px;
+      margin-top: 50px;
+      margin-left: 50px; }
+    .about .row .about-us .hidden-hover {
+      width: 100%; }
+      .about .row .about-us .hidden-hover .about-desc {
+        font-size: 28px;
+        margin-top: 75px;
+        margin-left: 100px; }
+      .about .row .about-us .hidden-hover .learn-more {
+        font-size: 18px;
+        font-weight: 800;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        color: black; }
+        .about .row .about-us .hidden-hover .learn-more:hover {
+          transition: color 0.25s ease-in-out;
+          color: #ffe13a; }
+  .about .row .donations {
+    height: 400px; }
+    .about .row .donations .visible .total-donated {
+      font-size: 48px;
+      margin-top: 200px;
+      margin-left: 100px; }
+    .about .row .donations .hidden-hover .donation-desc {
+      margin-left: 100px;
+      font-size: 28px; }
+    .about .row .donations .hidden-hover .donate-here {
+      font-size: 18px;
+      font-weight: 800;
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      color: black; }
+      .about .row .donations .hidden-hover .donate-here:hover {
+        transition: color 0.25s ease-in-out;
+        color: #ffe13a; }
+
+.project {
+  border-bottom: 3px solid black; }
+  .project #row-1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center; }
+  .project #row-2 {
+    margin-bottom: 100px; }
+    .project #row-2 .project-container {
+      border: 1px solid black;
+      height: 350px; }
+      .project #row-2 .project-container .visible .overlay {
+        margin: 0px -15px;
+        background-color: rgba(0, 0, 0, 0.75);
+        width: 100%;
+        position: absolute; }
+        .project #row-2 .project-container .visible .overlay .logo {
+          display: block;
+          margin: 125px auto;
+          width: 100px;
+          height: 100px;
+          border-radius: 100%; }
+      .project #row-2 .project-container .hidden-hover .project-title {
+        margin-top: 5px;
+        text-align: center; }
+      .project #row-2 .project-container .hidden-hover .project-info {
+        margin-top: 50px; }
+
+.menu-container {
+  z-index: 100;
+  position: fixed;
+  left: 80vw;
+  top: 25px;
+  width: 66px;
+  height: 60px; }
+  .menu-container:hover {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    background-color: #7883ff;
+    cursor: pointer;
+    transform: scale(1.05);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.75); }
+  .menu-container:before {
+    content: "";
+    position: absolute;
+    left: 0.35em;
+    top: 0.75em;
+    width: 4em;
+    height: 0.60em;
+    background: black;
+    box-shadow: 0 1em 0 0 black, 0 2em 0 0 black; }
+
 /*# sourceMappingURL=main.css.map */
