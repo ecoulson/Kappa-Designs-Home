@@ -1,0 +1,23 @@
+.header {
+  .jumbotron {
+    .kappa-title {
+      -webkit-animation: title-animate-border 1.5s;
+      -moz-animation:    title-animate-border 1.5s;
+      -o-animation:      title-animate-border 1.5s;
+      animation:         title-animate-border 1.5s;
+    }
+  }
+}
+
+#letter-k, #letter-p-1, #letter-a-2 {
+  -webkit-animation: title-animate-down 1s;
+  -moz-animation:    title-animate-down 1s;
+  -o-animation:      title-animate-down 1s;
+  animation:         title-animate-down 1s;
+}
+#letter-a-1, #letter-p-2 {
+  -webkit-animation: title-animate-up 1s;
+  -moz-animation:    title-animate-up 1s;
+  -o-animation:      title-animate-up 1s;
+  animation:         title-animate-up 1s;
+}
