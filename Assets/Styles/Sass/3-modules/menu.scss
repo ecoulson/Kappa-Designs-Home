@@ -27,3 +27,99 @@
       0 2em 0 0 black;
   }
 }
+
+.menu-plate {
+  height: 100%;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  background-color: $kappa-blue;
+  width: 0px;
+  .menu-main-container {
+    -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.75);
+    height: 100%;
+    margin-left: 15px;
+    background-color: white;
+    .menu-title {
+      color:black;
+      margin: 15px 0;
+      padding: 15px 0;
+      text-align: center;
+      .menu-close {
+        font-size: 24px;
+        color:rgb(138, 36, 36);
+        position: absolute;
+        margin: 7px 15px 0 15px;
+        &:hover {
+          transition: 0.5s color ease-in-out, 0.5s text-decoration ease-in-out;
+          cursor: pointer;
+          color:$kappa-pink;
+          text-decoration: underline;
+        }
+      }
+    }
+    .internal {
+      margin-left: 5px;
+      text-decoration: underline;
+    }
+    .external {
+      margin-left: 5px;
+      text-decoration: underline;
+    }
+    .menu-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      .menu-item {
+        margin: 10px 0;
+        padding: 5px 0;
+        width: 300px;
+        font-size: 18px;
+        color:black;
+        &:hover {
+          background-color:rgb(177, 177, 177);
+          cursor: pointer;
+        }
+        a {
+          margin-left: 30px;
+          color:black;
+          text-decoration: none;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      #item-1 {
+        &:hover {
+          a {
+            color: $kappa-blue;
+          }
+        }
+      }
+      #item-2 {
+        &:hover {
+          a {
+            color: $kappa-pink;
+          }
+        }
+      }
+      #item-3 {
+        &:hover {
+          a {
+            color: $kappa-green;
+          }
+        }
+      }
+      #item-4 {
+        &:hover {
+          a {
+            color: $kappa-yellow;
+          }
+        }
+      }
+    }
+  }
+}

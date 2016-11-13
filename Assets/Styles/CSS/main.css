@@ -5871,28 +5871,16 @@ button.close {
     border: 1px solid transparent; } }
 @-webkit-keyframes title-animate-border {
   0% {
-    border: none; }
-  100% {
-    border: 1px solid black;
-    padding: 0; } }
+    border: none; } }
 @-moz-keyframes title-animate-border {
   0% {
-    border: none; }
-  100% {
-    border: 1px solid black;
-    padding: 0; } }
+    border: none; } }
 @-o-keyframes title-animate-border {
   0% {
-    border: none; }
-  100% {
-    border: 1px solid black;
-    padding: 0; } }
+    border: none; } }
 @keyframes title-animate-border {
   0% {
-    border: none; }
-  100% {
-    border: 1px solid black;
-    padding: 0; } }
+    border: none; } }
 .contact {
   padding: 20px 0; }
   .contact .grid-container {
@@ -6105,7 +6093,7 @@ button.close {
     margin-top: 50px;
     letter-spacing: -7px;
     margin-bottom: 200px;
-    border: 1px solid black; }
+    border: 1px solid #35f41b; }
     .header .jumbotron .kappa-title .kappa {
       display: inline-block;
       padding: 15px 10px 15px 2px; }
@@ -6186,11 +6174,19 @@ button.close {
       .project #row-2 .project-container .hidden-hover .project-info {
         margin-top: 50px; }
 
-.header .jumbotron .kappa-title {
-  -webkit-animation: title-animate-border 1.5s;
-  -moz-animation: title-animate-border 1.5s;
-  -o-animation: title-animate-border 1.5s;
-  animation: title-animate-border 1.5s; }
+.header .jumbotron {
+  border-radius: none;
+  background-image: url("http://eskipaper.com/images/scenic-wallpaper-15.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .header .jumbotron .kappa-title {
+    -webkit-animation: title-animate-border 1.5s;
+    -moz-animation: title-animate-border 1.5s;
+    -o-animation: title-animate-border 1.5s;
+    animation: title-animate-border 1.5s; }
+  .header .jumbotron .desc-title {
+    color: white; }
 
 #letter-k, #letter-p-1, #letter-a-2 {
   -webkit-animation: title-animate-down 1s;
@@ -6228,5 +6224,69 @@ button.close {
     height: 0.60em;
     background: black;
     box-shadow: 0 1em 0 0 black, 0 2em 0 0 black; }
+
+.menu-plate {
+  height: 100%;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  background-color: #7883ff;
+  width: 0px; }
+  .menu-plate .menu-main-container {
+    -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    height: 100%;
+    margin-left: 15px;
+    background-color: white; }
+    .menu-plate .menu-main-container .menu-title {
+      color: black;
+      margin: 15px 0;
+      padding: 15px 0;
+      text-align: center; }
+      .menu-plate .menu-main-container .menu-title .menu-close {
+        font-size: 24px;
+        color: #8a2424;
+        position: absolute;
+        margin: 7px 15px 0 15px; }
+        .menu-plate .menu-main-container .menu-title .menu-close:hover {
+          transition: 0.5s color ease-in-out, 0.5s text-decoration ease-in-out;
+          cursor: pointer;
+          color: #ff78ed;
+          text-decoration: underline; }
+    .menu-plate .menu-main-container .internal {
+      margin-left: 5px;
+      text-decoration: underline; }
+    .menu-plate .menu-main-container .external {
+      margin-left: 5px;
+      text-decoration: underline; }
+    .menu-plate .menu-main-container .menu-list {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      .menu-plate .menu-main-container .menu-list .menu-item {
+        margin: 10px 0;
+        padding: 5px 0;
+        width: 300px;
+        font-size: 18px;
+        color: black; }
+        .menu-plate .menu-main-container .menu-list .menu-item:hover {
+          background-color: #b1b1b1;
+          cursor: pointer; }
+        .menu-plate .menu-main-container .menu-list .menu-item a {
+          margin-left: 30px;
+          color: black;
+          text-decoration: none; }
+          .menu-plate .menu-main-container .menu-list .menu-item a:hover {
+            cursor: pointer; }
+      .menu-plate .menu-main-container .menu-list #item-1:hover a {
+        color: #7883ff; }
+      .menu-plate .menu-main-container .menu-list #item-2:hover a {
+        color: #ff78ed; }
+      .menu-plate .menu-main-container .menu-list #item-3:hover a {
+        color: #35f41b; }
+      .menu-plate .menu-main-container .menu-list #item-4:hover a {
+        color: #ffe13a; }
 
 /*# sourceMappingURL=main.css.map */
