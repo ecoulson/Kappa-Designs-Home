@@ -5971,11 +5971,12 @@ button.close {
     padding-top: 25px;
     display: block;
     padding-left: 60px;
-    color: white; }
+    color: black; }
   .contact .contact-info .legal {
     display: block;
     padding-left: 60px;
-    color: white; }
+    color: white;
+    color: black; }
   .contact .contact-info .nav-title {
     margin-left: 50px;
     margin-right: 150px;
@@ -6098,7 +6099,9 @@ button.close {
       display: inline-block;
       padding: 15px 10px 15px 2px; }
   .header .jumbotron .desc-title .desc-animated {
-    padding: 0px 5px;
+    min-height: inherit;
+    display: inline-block;
+    padding: 3px 8px;
     border: 2px #7883ff solid; }
 
 .about .row {
@@ -6157,12 +6160,12 @@ button.close {
     .project #row-2 .project-container {
       border: 1px solid black;
       height: 350px; }
-      .project #row-2 .project-container .visible .overlay {
+      .project #row-2 .project-container .project-visible .overlay {
         margin: 0px -15px;
         background-color: rgba(0, 0, 0, 0.75);
         width: 100%;
         position: absolute; }
-        .project #row-2 .project-container .visible .overlay .logo {
+        .project #row-2 .project-container .project-visible .overlay .logo {
           display: block;
           margin: 125px auto;
           width: 100px;

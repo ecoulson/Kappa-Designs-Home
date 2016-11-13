@@ -3,11 +3,14 @@ var app = function () {
   var $menuOpen = $('.menu-container');
   var $menuPlate = $('.menu-plate');
   var $menuContainer = $('.menu-main-container');
+  var $slidingTitle = $('.desc-animated');
+  var $projectContainer = $('.project-container');
 
   var menuWidth = 300;
+  var animateIndex = -1;
+  var animateText = ['Create','Design','Inspire','Love'];
 
   //events
-
   $menuOpen.click(function () {
     $menuPlate.css({
       'transition':'1s width ease-in-out',
@@ -22,13 +25,88 @@ var app = function () {
     })
   })
 
+  $projectContainer.mouseenter(function () {
+    var $projectId = $("#" + $(this).prop('id'));
+    var $hiddenEle = $projectId.find('.hidden').fadeIn(500);
+    var $visibleEle = $projectId.find('.project-visible').fadeOut(1000);
+
+    $hiddenEle.addClass('hidden-hover');
+    $visibleEle.addClass('hidden');
+
+    $hiddenEle.removeClass('hidden');
+    $visibleEle.removeClass('project-visible');
+  })
+
+  $projectContainer.mouseleave(function () {
+    var $projectId = $("#" + $(this).prop('id'));
+    var $hiddenEle = $projectId.find('.hidden-hover').fadeOut(1000);
+    var $visibleEle = $projectId.find('.hidden').fadeIn(500);
+
+    $hiddenEle.addClass('hidden');
+    $visibleEle.addClass('project-visible');
+
+    $hiddenEle.removeClass('hidden-hover');
+    $visibleEle.removeClass('hidden');
+  })
+
   //functions
+  var startAnimationTitle = function() {
+    updateIndex();
+    $slidingTitle.text(animateText[animateIndex]);
+
+    $slidingTitle.css({
+      'transition':'1s width ease-in-out',
+      'width':menuWidth
+    })
+  }
+
+  var animateTitle = function () {
+    setInterval(function () {
+      $slidingTitle.css({
+        'transition':'0.5s width ease-in-out',
+        'width':'0'
+      })
+
+      setTimeout(function () {
+        $slidingTitle.css({
+          'color':'rgba(0, 0, 0, 0)'
+        })
+      }, 200);
+
+      setTimeout(function () {
+        updateIndex();
+        $slidingTitle.text(animateText[animateIndex]);
+      }, 500);
+
+      setTimeout(function () {
+        $slidingTitle.css({
+          'transition':'0.5s width ease-in-out',
+          'width':menuWidth,
+        })
+      }, 500);
+
+      setTimeout(function () {
+        $slidingTitle.css({
+          'color':'White'
+        })
+      }, 800);
+    }, 5000);
+  }
+
+  var updateIndex = function () {
+    animateIndex++;
+    if (animateIndex == animateText.length) {
+      animateIndex = 0;
+    }
+  }
 
   var init = function () {
     var innerWidth = menuWidth - 15;
     $menuContainer.css({
       'width': innerWidth
     })
+    startAnimationTitle();
+    animateTitle();
   }
 
   return {
