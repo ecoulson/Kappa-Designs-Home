@@ -25,28 +25,47 @@ var app = function () {
     })
   })
 
+  $projectContainer.click(function () {
+    var $projectId = $("#" + $(this).prop('id'));
+    var $hiddenEle = $projectId.find('.hidden');
+    var $visibleEle = $projectId.find('.project-visible');
+
+    $projectContainer.find('.visible').removeClass('hidden').addClass('project-visible');
+    $projectContainer.find('.hidden-hover').removeClass('hidden-hover').addClass('hidden');
+
+    $visibleEle.find('.logo').css({
+      '-webkit-animation': 'none',
+      '-moz-animation':'none',
+      '-o-animation':'none',
+      'animation':'none'
+    })
+
+    $hiddenEle.addClass('hidden-hover').removeClass('hidden');
+    $visibleEle.addClass('hidden').removeClass('project-visible');
+  })
+
   $projectContainer.mouseenter(function () {
     var $projectId = $("#" + $(this).prop('id'));
-    var $hiddenEle = $projectId.find('.hidden').fadeIn(500);
-    var $visibleEle = $projectId.find('.project-visible').fadeOut(1000);
+    var $visibleEle = $projectId.find('.project-visible');
 
-    $hiddenEle.addClass('hidden-hover');
-    $visibleEle.addClass('hidden');
-
-    $hiddenEle.removeClass('hidden');
-    $visibleEle.removeClass('project-visible');
+    $visibleEle.find('.logo').css({
+      '-webkit-animation': 'logo-animate 3s infinite',
+      '-moz-animation':'logo-animate 3s infinite',
+      '-o-animation':'logo-animate 3s infinte',
+      'animation':'logo-animate 3s infinite'
+    })
   })
 
   $projectContainer.mouseleave(function () {
     var $projectId = $("#" + $(this).prop('id'));
-    var $hiddenEle = $projectId.find('.hidden-hover').fadeOut(1000);
-    var $visibleEle = $projectId.find('.hidden').fadeIn(500);
+    var $visibleEle = $projectId.find('.project-visible');
 
-    $hiddenEle.addClass('hidden');
-    $visibleEle.addClass('project-visible');
-
-    $hiddenEle.removeClass('hidden-hover');
-    $visibleEle.removeClass('hidden');
+    $visibleEle.find('.logo').css({
+      '-webkit-animation': 'none',
+      '-moz-animation':'none',
+      '-o-animation':'none',
+      'animation':'none'
+    })
   })
 
   //functions
