@@ -16,7 +16,9 @@
     }
     .desc-title {
       .desc-animated {
-        padding: 0px 5px;
+        min-height: inherit;
+        display: inline-block;
+        padding: 3px 8px;
         border: 2px $kappa-blue solid;
       }
     }
