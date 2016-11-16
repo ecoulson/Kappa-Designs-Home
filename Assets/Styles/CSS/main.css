@@ -5815,72 +5815,68 @@ button.close {
     display: none !important; } }
 @-webkit-keyframes title-animate-up {
   0% {
-    transform: translateY(90px);
-    border: 1px solid black; }
+    transform: translateY(90px); }
   100% {
-    transform: translateY(0px);
-    border: 1px solid transparent; } }
+    transform: translateY(0px); } }
 @-moz-keyframes title-animate-up {
   0% {
-    transform: translateY(90px);
-    border: 1px solid black; }
+    transform: translateY(90px); }
   100% {
-    transform: translateY(0px);
-    border: 1px solid transparent; } }
+    transform: translateY(0px); } }
 @-o-keyframes title-animate-up {
   0% {
-    transform: translateY(90px);
-    border: 1px solid black; }
+    transform: translateY(90px); }
   100% {
-    transform: translateY(0px);
-    border: 1px solid transparent; } }
+    transform: translateY(0px); } }
 @keyframes title-animate-up {
   0% {
-    transform: translateY(90px);
-    border: 1px solid black; }
+    transform: translateY(90px); }
   100% {
-    transform: translateY(0px);
-    border: 1px solid transparent; } }
+    transform: translateY(0px); } }
 @-webkit-keyframes title-animate-down {
   0% {
-    transform: translateY(-90px);
-    border: 1px solid black; }
+    transform: translateY(-90px); }
   100% {
-    transform: translateY(0px);
-    border: 1px solid transparent; } }
+    transform: translateY(0px); } }
 @-moz-keyframes title-animate-down {
   0% {
-    transform: translateY(-90px);
-    border: 1px solid black; }
+    transform: translateY(-90px); }
   100% {
-    transform: translateY(0px);
-    border: 1px solid transparent; } }
+    transform: translateY(0px); } }
 @-o-keyframes title-animate-down {
   0% {
-    transform: translateY(-90px);
-    border: 1px solid black; }
+    transform: translateY(-90px); }
   100% {
-    transform: translateY(0px);
-    border: 1px solid transparent; } }
+    transform: translateY(0px); } }
 @keyframes title-animate-down {
   0% {
-    transform: translateY(-90px);
-    border: 1px solid black; }
+    transform: translateY(-90px); }
   100% {
-    transform: translateY(0px);
-    border: 1px solid transparent; } }
+    transform: translateY(0px); } }
 @-webkit-keyframes title-animate-border {
   0% {
-    border: none; } }
+    border: none; }
+  100% {
+    border: 1px solid #35f41b;
+    padding: 0; } }
 @-moz-keyframes title-animate-border {
   0% {
-    border: none; } }
+    border: none; }
+  100% {
+    border: 1px solid #35f41b;
+    padding: 0; } }
 @-o-keyframes title-animate-border {
   0% {
-    border: none; } }
+    border: none; }
+  100% {
+    border: 1px solid #35f41b;
+    padding: 0; } }
 @keyframes title-animate-border {
   0% {
-    border: none; } }
+    border: none; }
+  100% {
+    border: 1px solid #35f41b;
+    padding: 0; } }
 @-webkit-keyframes logo-animate {
   0% {
     transform: scale(1) rotate(0deg); }
@@ -6121,11 +6117,11 @@ button.close {
     width: 150px;
     margin-top: 50px;
     letter-spacing: -7px;
-    margin-bottom: 200px;
-    border: 1px solid #35f41b; }
+    margin-bottom: 200px; }
     .header .jumbotron .kappa-title .kappa {
       display: inline-block;
-      padding: 15px 10px 15px 2px; }
+      padding: 15px 10px 15px 2px;
+      color: white; }
   .header .jumbotron .desc-title .desc-animated {
     min-height: inherit;
     display: inline-block;
@@ -6211,30 +6207,46 @@ button.close {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  .header .jumbotron .kappa-title {
-    -webkit-animation: title-animate-border 1.5s;
-    -moz-animation: title-animate-border 1.5s;
-    -o-animation: title-animate-border 1.5s;
-    animation: title-animate-border 1.5s; }
+  .header .jumbotron .kappa-title .letter-up {
+    transform: translateY(-60px); }
+  .header .jumbotron .kappa-title .letter-down {
+    transform: translateY(60px); }
+  .header .jumbotron .kappa-title #letter-k {
+    background-color: #ff78ed; }
+  .header .jumbotron .kappa-title #letter-a-1 {
+    background-color: #35f41b; }
+  .header .jumbotron .kappa-title #letter-p-1 {
+    background-color: #7883ff; }
+  .header .jumbotron .kappa-title #letter-p-2 {
+    background-color: #ffe13a; }
+  .header .jumbotron .kappa-title #letter-a-2 {
+    background-color: #35f41b; }
   .header .jumbotron .desc-title {
     color: white; }
 
-#letter-k, #letter-p-1, #letter-a-2 {
-  -webkit-animation: title-animate-down 1s;
-  -moz-animation: title-animate-down 1s;
-  -o-animation: title-animate-down 1s;
-  animation: title-animate-down 1s; }
-
-#letter-a-1, #letter-p-2 {
-  -webkit-animation: title-animate-up 1s;
-  -moz-animation: title-animate-up 1s;
-  -o-animation: title-animate-up 1s;
-  animation: title-animate-up 1s; }
+.kappa-title:hover {
+  -webkit-animation: title-animate-border 1.5s;
+  -moz-animation: title-animate-border 1.5s;
+  -o-animation: title-animate-border 1.5s;
+  animation: title-animate-border 1.5s;
+  animation-fill-mode: forwards; }
+  .kappa-title:hover .letter-up {
+    -webkit-animation: title-animate-down 1s;
+    -moz-animation: title-animate-down 1s;
+    -o-animation: title-animate-down 1s;
+    animation: title-animate-down 1s;
+    animation-fill-mode: forwards; }
+  .kappa-title:hover .letter-down {
+    -webkit-animation: title-animate-up 1s;
+    -moz-animation: title-animate-up 1s;
+    -o-animation: title-animate-up 1s;
+    animation: title-animate-up 1s;
+    animation-fill-mode: forwards; }
 
 .menu-container {
   z-index: 100;
   position: fixed;
-  left: 80vw;
+  left: 90vw;
   top: 25px;
   width: 66px;
   height: 60px; }

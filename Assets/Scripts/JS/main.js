@@ -5,6 +5,7 @@ var app = function () {
   var $menuContainer = $('.menu-main-container');
   var $slidingTitle = $('.desc-animated');
   var $projectContainer = $('.project-container');
+  var $kappa = $('.kappa-title');
 
   var menuWidth = 300;
   var animateIndex = -1;
@@ -67,6 +68,8 @@ var app = function () {
       'animation':'none'
     })
   })
+
+
 
   //functions
   var startAnimationTitle = function() {
