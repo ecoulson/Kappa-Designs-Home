@@ -69,6 +69,27 @@ var app = function () {
     })
   })
 
+  $kappa.mouseenter(function () {
+    $kappa.find('.letter-up').css({
+      '-webkit-animation': 'title-animate-down 1s',
+      '-moz-animation':    'title-animate-down 1s',
+      '-o-animation':      'title-animate-down 1s',
+      'animation':         'title-animate-down 1s',
+      'animation-fill-mode': 'forwards'
+    })
+
+    $kappa.find('.letter-down').css({
+      '-webkit-animation': 'title-animate-up 1s',
+      '-moz-animation':    'title-animate-up 1s',
+      '-o-animation':      'title-animate-up 1s',
+      'animation':         'title-animate-up 1s',
+      'animation-fill-mode': 'forwards'
+    })
+  })
+
+  $kappa.mouseleave(function () {
+  })
+
 
 
   //functions
