@@ -6126,52 +6126,55 @@ button.close {
     min-height: inherit;
     display: inline-block;
     padding: 3px 8px;
-    border: 2px #7883ff solid; }
+    border: 2px #0B99BC solid; }
 
-.about .row {
-  border: 1px solid black; }
-  .about .row .about-us {
-    border-right: 1px solid black;
-    height: 400px; }
-    .about .row .about-us .visible .about-title {
-      font-size: 48px;
-      margin-top: 50px;
-      margin-left: 50px; }
-    .about .row .about-us .hidden-hover {
-      width: 100%; }
-      .about .row .about-us .hidden-hover .about-desc {
-        font-size: 28px;
-        margin-top: 75px;
+.about {
+  margin: 0px;
+  padding: 0px; }
+  .about .row {
+    border: 1px solid black; }
+    .about .row .about-us {
+      border-right: 1px solid black;
+      height: 400px; }
+      .about .row .about-us .visible .about-title {
+        font-size: 48px;
+        margin-top: 50px;
+        margin-left: 50px; }
+      .about .row .about-us .hidden-hover {
+        width: 100%; }
+        .about .row .about-us .hidden-hover .about-desc {
+          font-size: 28px;
+          margin-top: 75px;
+          margin-left: 100px; }
+        .about .row .about-us .hidden-hover .learn-more {
+          font-size: 18px;
+          font-weight: 800;
+          position: absolute;
+          bottom: 15px;
+          left: 50%;
+          color: black; }
+          .about .row .about-us .hidden-hover .learn-more:hover {
+            transition: color 0.25s ease-in-out;
+            color: #ffe13a; }
+    .about .row .donations {
+      height: 400px; }
+      .about .row .donations .visible .total-donated {
+        font-size: 48px;
+        margin-top: 200px;
         margin-left: 100px; }
-      .about .row .about-us .hidden-hover .learn-more {
+      .about .row .donations .hidden-hover .donation-desc {
+        margin-left: 100px;
+        font-size: 28px; }
+      .about .row .donations .hidden-hover .donate-here {
         font-size: 18px;
         font-weight: 800;
         position: absolute;
         bottom: 15px;
         left: 50%;
         color: black; }
-        .about .row .about-us .hidden-hover .learn-more:hover {
+        .about .row .donations .hidden-hover .donate-here:hover {
           transition: color 0.25s ease-in-out;
           color: #ffe13a; }
-  .about .row .donations {
-    height: 400px; }
-    .about .row .donations .visible .total-donated {
-      font-size: 48px;
-      margin-top: 200px;
-      margin-left: 100px; }
-    .about .row .donations .hidden-hover .donation-desc {
-      margin-left: 100px;
-      font-size: 28px; }
-    .about .row .donations .hidden-hover .donate-here {
-      font-size: 18px;
-      font-weight: 800;
-      position: absolute;
-      bottom: 15px;
-      left: 50%;
-      color: black; }
-      .about .row .donations .hidden-hover .donate-here:hover {
-        transition: color 0.25s ease-in-out;
-        color: #ffe13a; }
 
 .project {
   border-bottom: 3px solid black; }
@@ -6212,11 +6215,11 @@ button.close {
   .header .jumbotron .kappa-title .letter-down {
     transform: translateY(60px); }
   .header .jumbotron .kappa-title #letter-k {
-    background-color: #ff78ed; }
+    background-color: #D40E52; }
   .header .jumbotron .kappa-title #letter-a-1 {
     background-color: #35f41b; }
   .header .jumbotron .kappa-title #letter-p-1 {
-    background-color: #7883ff; }
+    background-color: #0B99BC; }
   .header .jumbotron .kappa-title #letter-p-2 {
     background-color: #ffe13a; }
   .header .jumbotron .kappa-title #letter-a-2 {
@@ -6246,7 +6249,7 @@ button.close {
   height: 60px; }
   .menu-container:hover {
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
-    background-color: #7883ff;
+    background-color: #0B99BC;
     cursor: pointer;
     transform: scale(1.05);
     -webkit-box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.75);
@@ -6268,7 +6271,7 @@ button.close {
   z-index: 200;
   top: 0;
   right: 0;
-  background-color: #7883ff;
+  background-color: #0B99BC;
   width: 0px; }
   .menu-plate .menu-main-container {
     -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -6290,7 +6293,7 @@ button.close {
         .menu-plate .menu-main-container .menu-title .menu-close:hover {
           transition: 0.5s color ease-in-out, 0.5s text-decoration ease-in-out;
           cursor: pointer;
-          color: #ff78ed;
+          color: #D40E52;
           text-decoration: underline; }
     .menu-plate .menu-main-container .internal {
       margin-left: 5px;
@@ -6318,9 +6321,9 @@ button.close {
           .menu-plate .menu-main-container .menu-list .menu-item a:hover {
             cursor: pointer; }
       .menu-plate .menu-main-container .menu-list #item-1:hover a {
-        color: #7883ff; }
+        color: #0B99BC; }
       .menu-plate .menu-main-container .menu-list #item-2:hover a {
-        color: #ff78ed; }
+        color: #D40E52; }
       .menu-plate .menu-main-container .menu-list #item-3:hover a {
         color: #35f41b; }
       .menu-plate .menu-main-container .menu-list #item-4:hover a {
