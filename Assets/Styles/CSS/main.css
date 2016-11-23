@@ -5879,32 +5879,40 @@ button.close {
     padding: 0; } }
 @-webkit-keyframes logo-animate {
   0% {
-    transform: scale(1) rotate(0deg); }
-  50% {
-    transform: scale(1.5) rotate(360deg); }
+    transform: scale(1);
+    border-radius: 100%;
+    opacity: 1; }
   100% {
-    transform: scale(1) rotate(0deg); } }
+    transform: scale(3);
+    border-radius: 0%;
+    opacity: 0; } }
 @-moz-keyframes logo-animate {
   0% {
-    transform: scale(1) rotate(0deg); }
-  50% {
-    transform: scale(1.5) rotate(360deg); }
+    transform: scale(1);
+    border-radius: 100%;
+    opacity: 1; }
   100% {
-    transform: scale(1) rotate(0deg); } }
+    transform: scale(3);
+    border-radius: 0%;
+    opacity: 0; } }
 @-o-keyframes logo-animate {
   0% {
-    transform: scale(1) rotate(0deg); }
-  50% {
-    transform: scale(1.5) rotate(360deg); }
+    transform: scale(1);
+    border-radius: 100%;
+    opacity: 1; }
   100% {
-    transform: scale(1) rotate(0deg); } }
+    transform: scale(3);
+    border-radius: 0%;
+    opacity: 0; } }
 @keyframes logo-animate {
   0% {
-    transform: scale(1) rotate(0deg); }
-  50% {
-    transform: scale(1.5) rotate(360deg); }
+    transform: scale(1);
+    border-radius: 100%;
+    opacity: 1; }
   100% {
-    transform: scale(1) rotate(0deg); } }
+    transform: scale(3);
+    border-radius: 0%;
+    opacity: 0; } }
 .contact {
   padding: 20px 0; }
   .contact .grid-container {
@@ -6182,24 +6190,26 @@ button.close {
   .project #row-2 {
     margin-bottom: 100px; }
     .project #row-2 .project-container {
-      border: 1px solid black;
       height: 350px; }
       .project #row-2 .project-container .project-visible .overlay {
-        margin: 0px -15px;
-        background-color: rgba(0, 0, 0, 0.75);
+        margin: -1px -15px;
+        background-color: white;
         width: 100%;
         position: absolute; }
         .project #row-2 .project-container .project-visible .overlay .logo {
+          background-color: black;
           display: block;
           margin: 125px auto;
           width: 100px;
           height: 100px;
           border-radius: 100%; }
-      .project #row-2 .project-container .hidden-hover .project-title {
-        margin-top: 5px;
-        text-align: center; }
-      .project #row-2 .project-container .hidden-hover .project-info {
-        margin-top: 50px; }
+      .project #row-2 .project-container .hidden-hover {
+        display: none; }
+        .project #row-2 .project-container .hidden-hover .project-title {
+          margin-top: 5px;
+          text-align: center; }
+        .project #row-2 .project-container .hidden-hover .project-info {
+          margin-top: 50px; }
 
 .header .jumbotron {
   border-radius: none;

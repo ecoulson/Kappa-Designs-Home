@@ -26,41 +26,29 @@ var app = function () {
     })
   })
 
-  $projectContainer.click(function () {
-    var $projectId = $("#" + $(this).prop('id'));
-    var $hiddenEle = $projectId.find('.hidden');
-    var $visibleEle = $projectId.find('.project-visible');
-
-    $projectContainer.find('.visible').removeClass('hidden').addClass('project-visible');
-    $projectContainer.find('.hidden-hover').removeClass('hidden-hover').addClass('hidden');
-
-    $visibleEle.find('.logo').css({
-      '-webkit-animation': 'none',
-      '-moz-animation':'none',
-      '-o-animation':'none',
-      'animation':'none'
-    })
-
-    $hiddenEle.addClass('hidden-hover').removeClass('hidden');
-    $visibleEle.addClass('hidden').removeClass('project-visible');
-  })
-
   $projectContainer.mouseenter(function () {
-    var $projectId = $("#" + $(this).prop('id'));
-    var $visibleEle = $projectId.find('.project-visible');
-
+    var $project = $("#" + $(this).prop('id'));
+    var $visibleEle = $project.find('.project-visible');
+    $project.find('.hidden-hover').fadeIn(500);
+    $visibleEle.find('.overlay').css({
+      'background-color':'rgba(255, 255, 255, 0)'
+    });
     $visibleEle.find('.logo').css({
-      '-webkit-animation': 'logo-animate 3s infinite',
-      '-moz-animation':'logo-animate 3s infinite',
-      '-o-animation':'logo-animate 3s infinte',
-      'animation':'logo-animate 3s infinite'
+      '-webkit-animation': 'logo-animate 0.5s',
+      '-moz-animation':'logo-animate 0.5s',
+      '-o-animation':'logo-animate 0.5s',
+      'animation':'logo-animate 0.5s',
+      'animation-fill-mode': 'forwards'
     })
   })
 
   $projectContainer.mouseleave(function () {
-    var $projectId = $("#" + $(this).prop('id'));
-    var $visibleEle = $projectId.find('.project-visible');
-
+    var $project = $("#" + $(this).prop('id'));
+    var $visibleEle = $project.find('.project-visible');
+    $project.find('.hidden-hover').fadeOut(500);
+    $visibleEle.find('.overlay').css({
+      'background-color':'white'
+    });
     $visibleEle.find('.logo').css({
       '-webkit-animation': 'none',
       '-moz-animation':'none',
@@ -68,8 +56,6 @@ var app = function () {
       'animation':'none'
     })
   })
-
-
 
   //functions
   var startAnimationTitle = function() {

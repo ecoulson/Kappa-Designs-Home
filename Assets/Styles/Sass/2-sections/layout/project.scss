@@ -8,7 +8,7 @@
   #row-2 {
     margin-bottom: 100px;
     .project-container {
-      border: 1px solid black;
+      // border: 1px solid black;
       height: 350px;
       &:hover {
         // IDEA:
@@ -16,11 +16,12 @@
       }
       .project-visible {
         .overlay {
-          margin: 0px -15px;
-          background-color: rgba(0, 0, 0, 0.75);
+          margin: -1px -15px;
+          background-color: white;
           width: 100%;
           position: absolute;
           .logo {
+            background-color: black;
             display: block;
             margin: 125px auto;
             width: 100px;
@@ -30,6 +31,7 @@
         }
       }
       .hidden-hover {
+        display: none;
         .project-title {
           margin-top: 5px;
           text-align: center;
