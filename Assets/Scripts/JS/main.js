@@ -6,6 +6,12 @@ var app = function () {
   var $slidingTitle = $('.desc-animated');
   var $projectContainer = $('.project-container');
   var $kappa = $('.kappa-title');
+  var $back = $('.back-link');
+  var $projectSlide = $('.project-slide');
+
+  var $projectSlide1 = $('#project-slide-1');
+  var $projectSlide2 = $('#project-slide-2');
+  var $projectSlide3 = $('#project-slide-3');
 
   var menuWidth = 300;
   var animateIndex = -1;
@@ -57,7 +63,57 @@ var app = function () {
     })
   })
 
+  $projectContainer.click(function () {
+    var $project = $("#" + $(this).prop('id'));
+    var $clickedSlide = getSlide($project);
+
+    $projectContainer.css({
+      'transition':'left 0.75s ease-in-out',
+      'left':'-200%'
+    })
+
+    $clickedSlide.css({
+      'transition':'left 0.75s ease-in-out',
+      'left':'0',
+      'display':'block'
+    })
+    setTimeout(function () {
+      $clickedSlide.css({
+        'position':'static'
+      })
+    }, 600);
+  })
+
+  $back.click(function () {
+    $projectContainer.css({
+      'transition':'left 0.75s ease-in-out',
+      'left':'0%'
+    })
+
+    $projectSlide.css({
+      'transition':'left 0.75s ease-in-out',
+      'left':'100%',
+      'position':'absolute'
+    })
+    setTimeout(function () {
+      $projectSlide.css({
+        'display':'none'
+      })
+    }, 750)
+  })
+
   //functions
+  var getSlide = function ($elem) {
+    var id = $elem.prop('id');
+    if (id.includes('1')) {
+      return $projectSlide1;
+    } else if (id.includes('2')) {
+      return $projectSlide2;
+    } else {
+      return $projectSlide3;
+    }
+  }
+
   var startAnimationTitle = function() {
     updateIndex();
     $slidingTitle.text(animateText[animateIndex]);
