@@ -6119,22 +6119,24 @@ button.close {
 
 .header {
   text-align: center; }
-  .header .jumbotron .kappa-title {
-    padding: 1px;
-    margin: 0 auto;
-    width: 150px;
-    margin-top: 50px;
-    letter-spacing: -7px;
-    margin-bottom: 200px; }
-    .header .jumbotron .kappa-title .kappa {
+  .header .jumbotron {
+    height: 100vh; }
+    .header .jumbotron .kappa-title {
+      padding: 1px;
+      margin: 0 auto;
+      width: 150px;
+      margin-top: 50px;
+      letter-spacing: -7px;
+      margin-bottom: 200px; }
+      .header .jumbotron .kappa-title .kappa {
+        display: inline-block;
+        padding: 15px 10px 15px 2px;
+        color: white; }
+    .header .jumbotron .desc-title .desc-animated {
+      min-height: inherit;
       display: inline-block;
-      padding: 15px 10px 15px 2px;
-      color: white; }
-  .header .jumbotron .desc-title .desc-animated {
-    min-height: inherit;
-    display: inline-block;
-    padding: 3px 8px;
-    border: 2px #7883ff solid; }
+      padding: 3px 8px;
+      border: 2px #7883ff solid; }
 
 .about .row {
   border: 1px solid black; }
@@ -6197,7 +6199,6 @@ button.close {
         width: 100%;
         position: absolute; }
         .project #row-2 .project-container .project-visible .overlay .logo {
-          background-color: black;
           display: block;
           margin: 125px auto;
           width: 100px;

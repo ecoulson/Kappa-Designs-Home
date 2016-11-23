@@ -125,7 +125,6 @@ var app = function () {
 $(document).ready(function () {
   kappa = new app();
   kappa.init();
-  $('.jumbotron').height($(window).height());
   smoothScool(1000);
 })
 
