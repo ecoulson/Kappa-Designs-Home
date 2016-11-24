@@ -1,0 +1,27 @@
+.header {
+  text-align: center;
+  .jumbotron {
+    height: 100vh;
+    .kappa-title {
+      padding: 1px;
+      margin: 0 auto;
+      width:150px;
+      margin-top: 50px;
+      letter-spacing: -7px;
+      margin-bottom: 200px;
+      .kappa {
+        display: inline-block;
+        padding: 15px 10px 15px 2px;
+        color: white;
+      }
+    }
+    .desc-title {
+      .desc-animated {
+        min-height: inherit;
+        display: inline-block;
+        padding: 3px 8px;
+        border: 2px $kappa-blue solid;
+      }
+    }
+  }
+}
