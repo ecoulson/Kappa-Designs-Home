@@ -6183,7 +6183,7 @@ button.close {
         color: #ffe13a; }
 
 .project {
-  border-bottom: 3px solid black; }
+  border-bottom: 1px solid black; }
   .project #row-1 {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -6194,18 +6194,18 @@ button.close {
       height: 350px; }
       .project #row-2 .project-container .project-visible .overlay {
         margin: -1px -15px;
-        background-color: white;
         width: 100%;
         position: absolute; }
         .project #row-2 .project-container .project-visible .overlay .logo {
           display: block;
           margin: 125px auto;
-          width: 100px;
-          height: 100px;
+          width: 135px;
+          height: 135px;
           border-radius: 100%; }
       .project #row-2 .project-container .hidden-hover {
         display: none; }
         .project #row-2 .project-container .hidden-hover .project-title {
+          color: #7883ff;
           margin-top: 5px;
           text-align: center; }
         .project #row-2 .project-container .hidden-hover .project-info {
@@ -6253,11 +6253,46 @@ button.close {
     animation: title-animate-up 1s;
     animation-fill-mode: forwards; }
 
-.project .project-slide {
-  width: 100%;
-  position: absolute;
-  left: 100%;
-  display: none; }
+.project {
+  position: relative;
+  overflow: hidden;
+  background-image: url("../../Images/shards_pattern.jpg"); }
+  .project .project-slide {
+    width: 100%;
+    position: absolute;
+    left: 100%; }
+    .project .project-slide .back-link {
+      text-decoration: none;
+      color: black; }
+      .project .project-slide .back-link .back {
+        color: black; }
+      .project .project-slide .back-link .back-arrow {
+        width: 35px;
+        height: 35px; }
+      .project .project-slide .back-link:hover {
+        color: #bf8519; }
+        .project .project-slide .back-link:hover .back {
+          color: #bf8519; }
+    .project .project-slide p {
+      margin: 15px 0;
+      line-height: 2;
+      font-size: 18px; }
+    .project .project-slide img {
+      margin: 10px 15px; }
+    .project .project-slide h1 {
+      text-align: center; }
+    .project .project-slide .green {
+      color: #35f41b; }
+    .project .project-slide .red {
+      color: #ff78ed; }
+    .project .project-slide .blue {
+      color: #7883ff; }
+    .project .project-slide .yellow {
+      color: #ffe13a; }
+    .project .project-slide .right {
+      float: right; }
+    .project .project-slide .left {
+      float: left; }
 
 .menu-container {
   z-index: 100;

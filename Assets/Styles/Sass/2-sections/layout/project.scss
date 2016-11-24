@@ -1,5 +1,5 @@
 .project {
-  border-bottom: 3px solid black;
+  border-bottom: 1px solid black;
   #row-1 {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -8,23 +8,17 @@
   #row-2 {
     margin-bottom: 100px;
     .project-container {
-      // border: 1px solid black;
       height: 350px;
-      &:hover {
-        // IDEA:
-        // transform: scale(1.05);
-      }
       .project-visible {
         .overlay {
           margin: -1px -15px;
-          background-color: white;
           width: 100%;
           position: absolute;
           .logo {
             display: block;
             margin: 125px auto;
-            width: 100px;
-            height: 100px;
+            width: 135px;
+            height: 135px;
             border-radius: 100%;
           }
         }
@@ -32,6 +26,7 @@
       .hidden-hover {
         display: none;
         .project-title {
+          color:$kappa-blue;
           margin-top: 5px;
           text-align: center;
         }

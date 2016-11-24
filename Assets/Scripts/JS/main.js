@@ -51,10 +51,7 @@ var app = function () {
   $projectContainer.mouseleave(function () {
     var $project = $("#" + $(this).prop('id'));
     var $visibleEle = $project.find('.project-visible');
-    $project.find('.hidden-hover').fadeOut(500);
-    $visibleEle.find('.overlay').css({
-      'background-color':'white'
-    });
+    $project.find('.hidden-hover').fadeOut(1);
     $visibleEle.find('.logo').css({
       '-webkit-animation': 'none',
       '-moz-animation':'none',
@@ -75,13 +72,23 @@ var app = function () {
     $clickedSlide.css({
       'transition':'left 0.75s ease-in-out',
       'left':'0',
-      'display':'block'
+      // 'display':'block'
     })
     setTimeout(function () {
       $clickedSlide.css({
         'position':'static'
       })
-    }, 600);
+    }, 400);
+  })
+
+  $back.mouseenter(function () {
+    $arrw = $(this).find('img');
+    $arrw.prop('src','Assets/Images/back-hover.svg');
+  })
+
+  $back.mouseleave(function () {
+    $arrw = $(this).find('img');
+    $arrw.prop('src','Assets/Images/back.svg');
   })
 
   $back.click(function () {
@@ -97,7 +104,7 @@ var app = function () {
     })
     setTimeout(function () {
       $projectSlide.css({
-        'display':'none'
+        // 'display':'none'
       })
     }, 750)
   })
