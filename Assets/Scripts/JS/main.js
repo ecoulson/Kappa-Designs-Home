@@ -96,7 +96,7 @@ var app = function () {
       $clickedSlide.css({
         'position':'static'
       })
-    }, 400);
+    }, 750);
   })
 
   $back.mouseenter(function () {
