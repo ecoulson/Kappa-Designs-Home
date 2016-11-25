@@ -6259,8 +6259,8 @@ button.close {
       width: 40vw; }
       @media all and (min-width: 1850px) {
         .project .project-slide img {
-          height: 400px;
-          width: 250px; } }
+          height: 250px;
+          width: 400px; } }
     .project .project-slide h1 {
       text-align: center; }
     .project .project-slide .green {
