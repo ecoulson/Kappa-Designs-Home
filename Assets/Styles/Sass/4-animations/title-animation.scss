@@ -31,20 +31,3 @@
   0%   { transform: translateY(-90px);}
   100% { transform: translateY(0px);}
 }
-
-@-webkit-keyframes title-animate-border {
-  0%   { border: none }
-  100% { border: 1px solid $kappa-green; padding: 0 }
-}
-@-moz-keyframes title-animate-border {
-  0%   { border: none; }
-  100% { border: 1px solid $kappa-green; padding: 0 }
-}
-@-o-keyframes title-animate-border {
-  0%   { border: none }
-  100% { border: 1px solid $kappa-green; padding: 0 }
-}
-@keyframes title-animate-border {
-  0%   { border: none }
-  100% { border: 1px solid $kappa-green; padding: 0 }
-}

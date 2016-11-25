@@ -13,7 +13,8 @@ var app = function () {
   var $projectSlide2 = $('#project-slide-2');
   var $projectSlide3 = $('#project-slide-3');
 
-  var menuWidth = 300;
+  var menuWidth = '100vw';
+  var titleWidth = 300;
   var animateIndex = -1;
   var animateText = ['Create','Design','Inspire','Love'];
 
@@ -127,7 +128,40 @@ var app = function () {
     }, 750)
   })
 
+  $(document).keydown(function (e) {
+    if (e.keyCode == 27) {
+      closeMenu();
+      slideBack();
+    }
+  })
+
   //functions
+
+  var closeMenu = function () {
+    $menuPlate.css({
+      'transition':'1s width ease-in-out',
+      'width':'0'
+    })
+  }
+
+  var slideBack = function () {
+    $projectContainer.css({
+      'transition':'left 0.75s ease-in-out',
+      'left':'0%'
+    })
+
+    $projectSlide.css({
+      'transition':'left 0.75s ease-in-out',
+      'left':'100%',
+      'position':'absolute'
+    })
+    setTimeout(function () {
+      $projectSlide.css({
+        // 'display':'none'
+      })
+    }, 750)
+  }
+
   var getSlide = function ($elem) {
     var id = $elem.prop('id');
     if (id.includes('1')) {
@@ -145,7 +179,7 @@ var app = function () {
 
     $slidingTitle.css({
       'transition':'1s width ease-in-out',
-      'width':menuWidth
+      'width':titleWidth
     })
   }
 
@@ -170,7 +204,7 @@ var app = function () {
       setTimeout(function () {
         $slidingTitle.css({
           'transition':'0.5s width ease-in-out',
-          'width':menuWidth,
+          'width':titleWidth,
         })
       }, 500);
 

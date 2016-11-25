@@ -37,11 +37,6 @@
 
 .kappa-title {
   &:hover {
-    -webkit-animation: title-animate-border 1.5s;
-    -moz-animation:    title-animate-border 1.5s;
-    -o-animation:      title-animate-border 1.5s;
-    animation:         title-animate-border 1.5s;
-    animation-fill-mode: forwards;
     .letter-up {
       -webkit-animation: title-animate-down 1s;
       -moz-animation:    title-animate-down 1s;
