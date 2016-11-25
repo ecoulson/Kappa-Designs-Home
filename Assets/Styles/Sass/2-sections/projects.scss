@@ -36,11 +36,9 @@
         }
       }
     }
-    // background-color: pink;
     width: 100%;
     position: absolute;
-    left:100%;
-    // display: none;
+    left:400%;
     p {
       margin: 15px 0;
       line-height: 2;
@@ -48,6 +46,8 @@
     }
     img {
       margin: 10px 15px;
+      height: 30vh;
+      width: 40vw;
     }
     h1 {
       text-align: center;

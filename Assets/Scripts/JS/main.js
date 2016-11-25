@@ -12,6 +12,7 @@ var app = function () {
   var $projectSlide1 = $('#project-slide-1');
   var $projectSlide2 = $('#project-slide-2');
   var $projectSlide3 = $('#project-slide-3');
+  var $rowToHide = $('.project-row-2');
 
   var menuWidth = '100vw';
   var titleWidth = 300;
@@ -85,18 +86,18 @@ var app = function () {
 
     $projectContainer.css({
       'transition':'left 0.75s ease-in-out',
-      'left':'-200%'
+      'left':'-400%'
     })
 
     $clickedSlide.css({
       'transition':'left 0.75s ease-in-out',
       'left':'0',
-      // 'display':'block'
     })
     setTimeout(function () {
       $clickedSlide.css({
         'position':'static'
       })
+      $rowToHide.hide();
     }, 750);
   })
 
@@ -115,17 +116,14 @@ var app = function () {
       'transition':'left 0.75s ease-in-out',
       'left':'0%'
     })
-
-    $projectSlide.css({
-      'transition':'left 0.75s ease-in-out',
-      'left':'100%',
-      'position':'absolute'
-    })
+    $rowToHide.show();
     setTimeout(function () {
       $projectSlide.css({
-        // 'display':'none'
+        'transition':'left 0.75s ease-in-out',
+        'left':'400%',
+        'position':'absolute'
       })
-    }, 750)
+    }, 100);
   })
 
   $(document).keydown(function (e) {
@@ -152,7 +150,7 @@ var app = function () {
 
     $projectSlide.css({
       'transition':'left 0.75s ease-in-out',
-      'left':'100%',
+      'left':'400%',
       'position':'absolute'
     })
     setTimeout(function () {
