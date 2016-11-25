@@ -6257,6 +6257,10 @@ button.close {
       margin: 10px 15px;
       height: 30vh;
       width: 40vw; }
+      @media all and (min-width: 1850px) {
+        .project .project-slide img {
+          height: 400px;
+          width: 250px; } }
     .project .project-slide h1 {
       text-align: center; }
     .project .project-slide .green {

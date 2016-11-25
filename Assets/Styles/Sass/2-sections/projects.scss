@@ -48,6 +48,10 @@
       margin: 10px 15px;
       height: 30vh;
       width: 40vw;
+      @media all and (min-width: 1850px) {
+        height: 400px;
+        width: 250px;
+      }
     }
     h1 {
       text-align: center;
