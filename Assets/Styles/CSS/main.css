@@ -5852,30 +5852,6 @@ button.close {
     transform: translateY(-90px); }
   100% {
     transform: translateY(0px); } }
-@-webkit-keyframes title-animate-border {
-  0% {
-    border: none; }
-  100% {
-    border: 1px solid #35f41b;
-    padding: 0; } }
-@-moz-keyframes title-animate-border {
-  0% {
-    border: none; }
-  100% {
-    border: 1px solid #35f41b;
-    padding: 0; } }
-@-o-keyframes title-animate-border {
-  0% {
-    border: none; }
-  100% {
-    border: 1px solid #35f41b;
-    padding: 0; } }
-@keyframes title-animate-border {
-  0% {
-    border: none; }
-  100% {
-    border: 1px solid #35f41b;
-    padding: 0; } }
 @-webkit-keyframes logo-animate {
   0% {
     transform: scale(1);
@@ -6234,29 +6210,25 @@ button.close {
   .header .jumbotron .desc-title {
     color: white; }
 
-.kappa-title:hover {
-  -webkit-animation: title-animate-border 1.5s;
-  -moz-animation: title-animate-border 1.5s;
-  -o-animation: title-animate-border 1.5s;
-  animation: title-animate-border 1.5s;
+.kappa-title:hover .letter-up {
+  -webkit-animation: title-animate-down 1s;
+  -moz-animation: title-animate-down 1s;
+  -o-animation: title-animate-down 1s;
+  animation: title-animate-down 1s;
   animation-fill-mode: forwards; }
-  .kappa-title:hover .letter-up {
-    -webkit-animation: title-animate-down 1s;
-    -moz-animation: title-animate-down 1s;
-    -o-animation: title-animate-down 1s;
-    animation: title-animate-down 1s;
-    animation-fill-mode: forwards; }
-  .kappa-title:hover .letter-down {
-    -webkit-animation: title-animate-up 1s;
-    -moz-animation: title-animate-up 1s;
-    -o-animation: title-animate-up 1s;
-    animation: title-animate-up 1s;
-    animation-fill-mode: forwards; }
+.kappa-title:hover .letter-down {
+  -webkit-animation: title-animate-up 1s;
+  -moz-animation: title-animate-up 1s;
+  -o-animation: title-animate-up 1s;
+  animation: title-animate-up 1s;
+  animation-fill-mode: forwards; }
 
 .project {
   position: relative;
   overflow: hidden;
   background-image: url("../../Images/shards_pattern.jpg"); }
+  .project #row-2 .project-container:hover {
+    cursor: pointer; }
   .project .project-slide {
     width: 100%;
     position: absolute;
@@ -6327,19 +6299,19 @@ button.close {
   z-index: 200;
   top: 0;
   right: 0;
-  background-color: #0B99BC;
-  width: 0px; }
+  width: 0px;
+  background-color: rgba(0, 0, 0, 0.73); }
   .menu-plate .menu-main-container {
+    text-align: center;
     -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.75);
     height: 100%;
-    margin-left: 15px;
-    background-color: white; }
+    margin-left: 15px; }
     .menu-plate .menu-main-container .menu-title {
-      color: black;
-      margin: 15px 0;
-      padding: 15px 0;
+      color: #ffe13a;
+      margin: 0;
+      padding: 30px 0;
       text-align: center; }
       .menu-plate .menu-main-container .menu-title .menu-close {
         font-size: 24px;
@@ -6352,27 +6324,31 @@ button.close {
           color: #D40E52;
           text-decoration: underline; }
     .menu-plate .menu-main-container .internal {
+      color: #afafaf;
       margin-left: 5px;
       text-decoration: underline; }
     .menu-plate .menu-main-container .external {
+      color: #afafaf;
       margin-left: 5px;
       text-decoration: underline; }
     .menu-plate .menu-main-container .menu-list {
+      text-align: center;
       padding: 0;
-      margin: 0;
+      margin: 0 auto;
       list-style: none; }
       .menu-plate .menu-main-container .menu-list .menu-item {
-        margin: 10px 0;
+        text-align: center;
         padding: 5px 0;
+        margin: 0 auto;
         width: 300px;
         font-size: 18px;
-        color: black; }
+        color: white; }
         .menu-plate .menu-main-container .menu-list .menu-item:hover {
           background-color: #b1b1b1;
           cursor: pointer; }
         .menu-plate .menu-main-container .menu-list .menu-item a {
-          margin-left: 30px;
-          color: black;
+          color: white;
+          text-align: center;
           text-decoration: none; }
           .menu-plate .menu-main-container .menu-list .menu-item a:hover {
             cursor: pointer; }
