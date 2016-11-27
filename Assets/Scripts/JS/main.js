@@ -286,7 +286,7 @@ var app = function () {
   }
 
   var init = function () {
-    var innerWidth = menuWidth - 15;
+    var innerWidth = menuWidth;
     $menuContainer.css({
       'width': innerWidth
     })
@@ -328,7 +328,7 @@ function smoothScool (duration) {
 }
 
 function sendMail() {
-  var emailString = 'mailto:kappdesignsco@gmail.com?subject='+$('.subject').val()+'&body='+$('#emailbod').val()+'&cc='+$('.cc').val()+'';
+  var emailString = 'mailto:kappadesignsco@gmail.com?subject='+$('.subject').val()+'&body='+$('#emailbod').val()+'&cc='+$('.cc').val()+'';
   email = window.open(emailString);
   setTimeout(function () {
     email.close();

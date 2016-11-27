@@ -35,15 +35,12 @@
   top: 0;
   right: 0;
   width: 0px;
-  background-color: rgba(0, 0, 0, 0.73);
+  background-color: none;
   .menu-main-container {
     text-align: center;
-    -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.75);
     height: 100%;
-    margin-left: 15px;
-    // background-color: rgba(0, 0, 0, 0.73);
+    // margin-left: 15px;
+    background-color: rgba(0, 0, 0, 0.73);
     .menu-title {
       color:$kappa-yellow;
       margin: 0;
