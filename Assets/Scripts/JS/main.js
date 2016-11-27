@@ -1,3 +1,66 @@
+var Carousel = function () {
+  var $container = $('.carousel-container');
+  var $slides = $('.slide');
+  var $next = $('.slide-next');
+  var $prev = $('.slide-prev');
+  var $dots = $('.slide-dots');
+
+  var currentSlide = 1;
+  var slideCount = 3;
+
+  var getSlide = function () {
+    return currentSlide;
+  }
+
+  var next = function () {
+    currentSlide++;
+    if (currentSlide > slideCount) {
+      currentSlide = 1;
+    }
+    $slide = $container.find('#slide-' + currentSlide);
+    $slides.fadeOut();
+    $slide.fadeIn();
+  }
+
+  var prev = function () {
+    if (currentSlide <= 1) {
+      currentSlide = slideCount;
+    }
+    $slide = $container.find('#slide-' + currentSlide);
+    $slides.fadeOut();
+    $slide.fadeIn();
+  }
+
+  $next.click(function () {
+    next();
+  })
+
+  $prev.click(function () {
+    prev();
+  })
+
+  $dots.click(function () {
+    $this = $(this);
+    var id = $this.prop('id').substring(4,5);
+    var $slide = $container.find('#slide-' + id);
+    $slides.fadeOut();
+    $slide.fadeIn();
+  })
+
+  var init = function () {
+    setInterval(function () {
+      next();
+    }, 5000);
+  }
+
+  return {
+    getSlide: getSlide,
+    next: next,
+    prev: prev,
+    init: init
+  }
+}
+
 var app = function () {
   var $menuClose = $('.menu-close');
   var $menuOpen = $('.menu-container');
@@ -18,6 +81,7 @@ var app = function () {
   var titleWidth = 300;
   var animateIndex = -1;
   var animateText = ['Create','Design','Inspire','Love'];
+  var carousel = new Carousel();
 
   //events
   $menuOpen.click(function () {
@@ -228,6 +292,7 @@ var app = function () {
     })
     startAnimationTitle();
     animateTitle();
+    carousel.init();
   }
 
   return {
