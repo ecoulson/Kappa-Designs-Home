@@ -5888,213 +5888,6 @@ button.close {
     transform: scale(3);
     border-radius: 0%;
     opacity: 0; } }
-.contact {
-  background-color: #6e6e6e;
-  padding: 20px 0; }
-  .contact .grid-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto; }
-    .contact .grid-container .row:before, .contact .grid-container .row:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .contact .grid-container .row [class*='col-'] {
-      float: left;
-      min-height: 1px;
-      width: 16.66%; }
-      .contact .grid-container .row [class*='col-'] p {
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        color: white; }
-    .contact .grid-container .row .col-1 {
-      width: 16.66%; }
-    .contact .grid-container .row .col-2 {
-      width: 33.33%; }
-    .contact .grid-container .row .col-3 {
-      width: 50%; }
-    .contact .grid-container .row .col-4 {
-      width: 66.664%; }
-    .contact .grid-container .row .col-5 {
-      width: 83.33%; }
-    .contact .grid-container .row .col-6 {
-      width: 100%; }
-    @media all and (max-width: 945px) {
-      .contact .grid-container .row .col-1 {
-        width: 33.33%; }
-      .contact .grid-container .row .col-2 {
-        width: 96%; }
-      .contact .grid-container .row .col-3 {
-        width: 83.33%; }
-      .contact .grid-container .row .col-4 {
-        width: 100%; }
-      .contact .grid-container .row .col-5 {
-        width: 100%; }
-      .contact .grid-container .row .col-6 {
-        width: 100%; }
-      .contact .grid-container .row .row .col-2:last-of-type {
-        width: 100%; }
-      .contact .grid-container .row .row .col-5 ~ .col-1 {
-        width: 100%; } }
-    @media all and (max-width: 650px) {
-      .contact .grid-container .row .col-1 {
-        width: 50%; }
-      .contact .grid-container .row .col-2 {
-        width: 100%; }
-      .contact .grid-container .row .col-3 {
-        width: 100%; }
-      .contact .grid-container .row .col-4 {
-        width: 100%; }
-      .contact .grid-container .row .col-5 {
-        width: 100%; }
-      .contact .grid-container .row .col-6 {
-        width: 100%; } }
-  @media all and (min-width: 946px) {
-    .contact .contact-info {
-      border-right: 5px solid black; }
-    .contact .media-container .media-fluid {
-      width: auto;
-      margin: 0 25px; } }
-  @media all and (max-width: 945px) {
-    .contact .email {
-      display: none; }
-    .contact .contact-info {
-      margin-left: 2%;
-      padding: 0 2%;
-      border-bottom: 5px solid black; }
-    .contact .media-container .media-fluid {
-      width: auto;
-      display: block;
-      margin: 0 auto; }
-      .contact .media-container .media-fluid .media-list {
-        display: flex; }
-        .contact .media-container .media-fluid .media-list .media {
-          margin-left: 25px; } }
-  .contact .contact-info .contact-title {
-    color: #D40E52;
-    margin-left: 50px;
-    margin-right: 150px;
-    border-bottom: 5px solid black; }
-  .contact .contact-info .copyright {
-    padding-top: 25px;
-    display: block;
-    padding-left: 60px;
-    color: white; }
-  .contact .contact-info .legal {
-    display: block;
-    padding-left: 60px;
-    color: white; }
-  .contact .contact-info .nav-title {
-    color: #0B99BC;
-    margin-left: 50px;
-    margin-right: 150px;
-    border-bottom: 5px solid black; }
-  .contact .contact-info .nav {
-    list-style: none;
-    padding-left: 60px; }
-    .contact .contact-info .nav .option {
-      margin-bottom: 15px; }
-      .contact .contact-info .nav .option a {
-        color: rgba(143, 141, 141, 0.75);
-        text-decoration: none; }
-        .contact .contact-info .nav .option a:hover {
-          transition: 0.25s color ease-in-out;
-          color: white;
-          cursor: pointer; }
-  .contact .media-container {
-    display: flex; }
-    @media all and (min-width: 820px) {
-      .contact .media-container .media-fluid {
-        padding-right: 25px; } }
-    @media all and (max-width: 819px) {
-      .contact .media-container .media-fluid {
-        margin-left: 30%; } }
-    @media all and (max-width: 760px) {
-      .contact .media-container .media-fluid {
-        margin-left: 20%; } }
-    @media all and (max-width: 480px) {
-      .contact .media-container .media-fluid {
-        margin-left: 5%; } }
-    @media all and (max-width: 260px) {
-      .contact .media-container .media-fluid {
-        margin-left: 25px; } }
-    .contact .media-container .media-fluid .media-list {
-      width: 100%;
-      list-style: none;
-      padding: 0;
-      margin-top: 65px; }
-      .contact .media-container .media-fluid .media-list .media {
-        margin-bottom: 25px; }
-        @media all and (max-width: 260px) {
-          .contact .media-container .media-fluid .media-list .media {
-            margin-left: 15px; } }
-        .contact .media-container .media-fluid .media-list .media img {
-          width: 35px;
-          height: 35px;
-          cursor: pointer; }
-          .contact .media-container .media-fluid .media-list .media img:hover {
-            border: 2px solid #35f41b; }
-          @media all and (max-width: 260px) {
-            .contact .media-container .media-fluid .media-list .media img {
-              width: 25px;
-              height: 25px; } }
-    .contact .media-container .email .email-container {
-      display: flex; }
-      .contact .media-container .email .email-container .email-header {
-        color: #ffe13a;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px; }
-        .contact .media-container .email .email-container .email-header h3 {
-          border-bottom: 5px solid black; }
-        .contact .media-container .email .email-container .email-header input {
-          border-radius: 1px;
-          margin-bottom: 50px;
-          border: none;
-          padding: 10px 7px;
-          background-color: #5e5d5d;
-          color: white; }
-          .contact .media-container .email .email-container .email-header input:hover {
-            border-bottom: 1px solid black; }
-          .contact .media-container .email .email-container .email-header input:focus {
-            transition: 0.15s border ease-in-out;
-            border-bottom: 5px solid #35f41b;
-            outline: none; }
-      .contact .media-container .email .email-container .email-body textarea {
-        border-radius: 2px;
-        resize: none;
-        padding: 10px 7px;
-        line-height: 1.5;
-        color: white;
-        background-color: #5e5d5d;
-        margin-top: 75px;
-        margin-left: 100px;
-        width: 100%;
-        height: 65%;
-        border: 1px solid white; }
-        .contact .media-container .email .email-container .email-body textarea:hover {
-          border: 1px solid #35f41b; }
-        .contact .media-container .email .email-container .email-body textarea:focus {
-          transition: 0.15s border ease-in-out;
-          border: 5px solid #35f41b;
-          outline: none; }
-    .contact .media-container .email button {
-      border: 1px solid #19CF68;
-      color: #35f41b;
-      background-color: #494949;
-      padding: 7px 25px;
-      border-radius: 50px;
-      outline: none;
-      font-size: 20px;
-      letter-spacing: 2px; }
-      .contact .media-container .email button:hover {
-        transition: 0.25s background-color ease-in-out, 0.25s color ease-in-out;
-        background-color: #35f41b;
-        color: white;
-        cursor: pointer; }
-
 .header {
   text-align: center; }
   .header .jumbotron {
@@ -6189,6 +5982,114 @@ button.close {
         text-align: center; }
       .project #row-2 .project-container .hidden-hover .project-info {
         margin-top: 50px; }
+
+#contacts {
+  background-color: #464646; }
+  #contacts .col-md-4 {
+    margin-top: 10px;
+    margin-left: 15px; }
+    #contacts .col-md-4 .contact-title {
+      color: #D40E52;
+      padding-left: 10px;
+      border-bottom: 3px solid black; }
+    #contacts .col-md-4 .copyright, #contacts .col-md-4 .legal {
+      color: black;
+      display: block;
+      padding: 10px 10px; }
+    #contacts .col-md-4 .nav-title {
+      color: #0B99BC;
+      padding-left: 10px;
+      border-bottom: 3px solid black; }
+    #contacts .col-md-4 .nav .option a {
+      color: white; }
+    #contacts .col-md-4 .nav #option-1 a:hover {
+      color: #D40E52; }
+    #contacts .col-md-4 .nav #option-2 a:hover {
+      color: #0B99BC; }
+    #contacts .col-md-4 .nav #option-3 a:hover {
+      color: #ffe13a; }
+    #contacts .col-md-4 .nav #option-4 a:hover {
+      color: #35f41b; }
+  #contacts .col-md-1 {
+    margin-top: 50px; }
+    @media screen and (min-width: 992px) {
+      #contacts .col-md-1 .media-list {
+        display: block; } }
+    @media screen and (max-width: 992px) {
+      #contacts .col-md-1 {
+        margin-top: 0; }
+        #contacts .col-md-1 .media-list {
+          align-items: center;
+          justify-content: center;
+          display: flex; }
+          #contacts .col-md-1 .media-list .media {
+            margin-right: 25px; } }
+    #contacts .col-md-1 .center {
+      width: 100%;
+      margin: 0 auto; }
+      #contacts .col-md-1 .center .media-list .media {
+        display: flex;
+        width: 50px;
+        height: 50px; }
+        #contacts .col-md-1 .center .media-list .media a img {
+          width: 50px;
+          height: 50px; }
+          #contacts .col-md-1 .center .media-list .media a img:hover {
+            border: 1px solid #35f41b; }
+      #contacts .col-md-1 .center .media-list #media-4 a img:hover {
+        border-radius: 15px; }
+  #contacts .col-md-6 .email-form {
+    display: block; }
+    #contacts .col-md-6 .email-form .email-header h3 {
+      color: #ffe13a;
+      border-bottom: 3px solid black;
+      padding-left: 15px; }
+    #contacts .col-md-6 .email-form .email-header .subject, #contacts .col-md-6 .email-form .email-header .cc {
+      margin-left: 15px;
+      color: white;
+      width: 160px;
+      font-size: 16px;
+      padding: 7px 12px;
+      background-color: #717171;
+      border: 1px solid black; }
+      #contacts .col-md-6 .email-form .email-header .subject:hover, #contacts .col-md-6 .email-form .email-header .cc:hover {
+        border: 1px solid #5C2D50; }
+      #contacts .col-md-6 .email-form .email-header .subject:focus, #contacts .col-md-6 .email-form .email-header .cc:focus {
+        border: 1px solid #D40E52;
+        outline: none; }
+    #contacts .col-md-6 .email-form .email-header .cc {
+      margin-right: 2%; }
+    #contacts .col-md-6 .email-form .email-body {
+      width: 100%; }
+      #contacts .col-md-6 .email-form .email-body .body {
+        font-size: 16px;
+        color: white;
+        padding: 5px 5px;
+        background-color: #717171;
+        margin-top: 25px;
+        width: 100%;
+        border: 1px solid black;
+        resize: none;
+        height: 200px; }
+        #contacts .col-md-6 .email-form .email-body .body:hover {
+          border: 1px solid #5C2D50; }
+        #contacts .col-md-6 .email-form .email-body .body:focus {
+          border: 1px solid #D40E52;
+          outline: none; }
+    #contacts .col-md-6 .email-form .button-container {
+      text-align: center; }
+      #contacts .col-md-6 .email-form .button-container .send {
+        background-color: #717171;
+        width: 200px;
+        display: inline;
+        text-align: center;
+        color: white;
+        margin: 15px 0;
+        height: 40px;
+        border: 1px solid black; }
+        #contacts .col-md-6 .email-form .button-container .send:hover {
+          border: 1px solid #D40E52;
+          background-color: #5C2D50; }
 
 .header .jumbotron {
   border-radius: none;
@@ -6310,14 +6211,11 @@ button.close {
   top: 0;
   right: 0;
   width: 0px;
-  background-color: rgba(0, 0, 0, 0.73); }
+  background-color: none; }
   .menu-plate .menu-main-container {
     text-align: center;
-    -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.75);
     height: 100%;
-    margin-left: 15px; }
+    background-color: rgba(0, 0, 0, 0.73); }
     .menu-plate .menu-main-container .menu-title {
       color: #ffe13a;
       margin: 0;

@@ -174,60 +174,57 @@
           </div>
         </div>
       </div>
-
     </div>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="grid-container">
+    <section class="contact" id="contacts">
+      <div class="container">
         <div class="row">
-          <div class="col-2">
-            <div class="contact-info">
-              <h3 class="contact-title">Legal</h1>
-              <span class="copyright">Copyright (c) 2016 Kappa Designs All Rights Reserved.</span>
-              <br>
-              <span class="legal">Copyright (c) 2016 Kappa Designs All Rights Reserved.</span>
-              <h4 class="nav-title">Nav</h4>
-              <ul class="nav">
-                <li class="option" id="option-1"><a href="#header">Home</a></li>
-                <li class="option" id="option-2"><a href="#about">About</a></li>
-                <li class="option" id="option-3"><a href="#projects">Projects</a></li>
-                <li class="option" id="option-4"><a href="#contact">Contact</a></li>
-              </ul>
+          <div class="col-md-4">
+            <h3 class="contact-title">Legal</h3>
+            <span class="copyright">Copyright (c) 2016 Copyright Holder All Rights Reserved.</span>
+            <span class="legal">Copyright (c) 2016 Copyright Holder All Rights Reserved.</span>
+            <h3 class="nav-title">Navigation</h3>
+            <ul class="nav">
+              <li class="option" id="option-1"><a href="#header" class="nav-link">Top</a></li>
+              <li class="option" id="option-2"><a href="#about" class="nav-link">About</a></li>
+              <li class="option" id="option-3"><a href="#project" class="nav-link">Projects</a></li>
+              <li class="option" id="option-4"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-1">
+            <div class="center">
+              <div class="media-list">
+                <span class="" id="media-1"></span>
+                <span class="media" id="media-1"><a href="https://www.facebook.com/KappaDesignsCo/" class="media-link"><img class="media-icon" src="Assets/Images/facebook.svg" alt=""></a></span>
+                <span class="media" id="media-2"><a href="https://twitter.com/Kappa_Designs" class="media-link"><img class="media-icon" src="Assets/Images/twitter.svg" alt=""></a></span>
+                <span class="media" id="media-3"><a href="http://www.snapchat.com" class="media-link"><img class="media-icon" src="Assets/Images/snapchat.svg" alt=""></a></span>
+                <span class="media" id="media-4"><a href="https://www.instagram.com/kappadesignsco/" class="media-link"><img class="media-icon" src="Assets/Images/instagram.svg" alt=""></a></span>
+                <span class="media" id="media-5"><a href="https://plus.google.com/u/0/117218728722778543119" class="media-link"><img class="media-icon" src="Assets/Images/google-plus.svg" alt=""></a></span>
+              </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="media-container">
-              <div class="media-fluid">
-                <ul class="media-list">
-                  <li class="media"><a href="https://www.facebook.com/"><img src="Assets/Images/facebook.svg" alt="" class="media-icon"></a></li>
-                  <li class="media"><a href="http://www.twitter.com"><img src="Assets/Images/twitter.svg" alt="" class="media-icon"></a></li>
-                  <li class="media"><a href="http://www.snapchat.com"><img src="Assets/Images/snapchat.svg" alt="" class="media-icon"></a></li>
-                  <li class="media"><a href="http://www.instagram.com"><img src="Assets/Images/instagram.svg" alt="" class="media-icon"></a></li>
-                  <li class="media"><a href="http://www.plus.google.com"><img src="Assets/Images/google-plus.svg" alt="" class="media-icon"></a></li>
-                </ul>
+          <div class="col-md-6">
+            <form action="javascript:sendMail()" method="post" enctype="text/plain" class="email-form">
+              <div class="email-header">
+                <h3>Send Us An Email</h3>
+                <input type="text" class="subject" name="subject" placeholder="Subject...">
+                <input type="text" name="mailcc" placeholder="CC..." class="cc">
               </div>
-              <form action="javascript:sendMail()" method="post" enctype="text/plain" class="email">
-                <div class="email-container">
-                  <div class="email-header">
-                    <h3>Send Us An Email!</h3>
-
-                    <input type="text" name="subject" placeholder="Subject..." class="subject">
-                    <input type="text" name="mailcc" placeholder="CC..." class="cc">
-                  </div>
-                  <div class="email-body">
-                    <textarea placeholder="Body of email..." name="mailbody" id="emailbod" class="body"></textarea>
-                  </div>
-                </div>
-                <button type="submit" name="button">Submit</button>
-              </form>
-            </div>
+              <div class="email-body">
+                <textarea placeholder="Body of email..." name="mailbody" id="emailbod" class="body"></textarea>
+              </div>
+              <div class="button-container">
+                <button class="send">Send Email</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="menu-plate">
+    <!-- Contact -->
+
+    <div class="menu-plate" id="contact">
       <div class="menu-main-container">
         <h1 class="menu-title">Navigation <span class="menu-close"> X </span></h1>
         <h3 class="internal">In-Page</h3>
@@ -235,7 +232,7 @@
           <li class="menu-item" id="item-1"><a href="#header">Header</a></li>
           <li class="menu-item" id="item-2"><a href="#about">About</a></li>
           <li class="menu-item" id="item-3"><a href="#project">Projects</a></li>
-          <li class="menu-item" id="item-4"><a href="#contact">Contacts</a></li>
+          <li class="menu-item" id="item-4"><a href="#contacts">Contacts</a></li>
         </ul>
         <h3 class="external">Out-Of-Page</h3>
         <ul class="menu-list">
