@@ -18,7 +18,7 @@ var Carousel = function () {
       currentSlide = 1;
     }
     $slide = $container.find('#slide-' + currentSlide);
-    $slides.fadeOut();
+    $slides.hide();
     $slide.fadeIn();
   }
 
@@ -27,7 +27,7 @@ var Carousel = function () {
       currentSlide = slideCount;
     }
     $slide = $container.find('#slide-' + currentSlide);
-    $slides.fadeOut();
+    $slides.hide();
     $slide.fadeIn();
   }
 
@@ -42,8 +42,9 @@ var Carousel = function () {
   $dots.click(function () {
     $this = $(this);
     var id = $this.prop('id').substring(4,5);
+    currentSlide = id;
     var $slide = $container.find('#slide-' + id);
-    $slides.fadeOut();
+    $slides.hide();
     $slide.fadeIn();
   })
 
