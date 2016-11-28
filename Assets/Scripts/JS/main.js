@@ -232,7 +232,7 @@ var app = function () {
       })
     }, 750)
   }
-
+//Dank Meme Here
   var getSlide = function ($elem) {
     var id = $elem.prop('id');
     if (id.includes('1')) {
