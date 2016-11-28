@@ -1,7 +1,7 @@
 .header {
   .jumbotron {
     border-radius: none;
-    background-image: url('http://eskipaper.com/images/scenic-wallpaper-15.jpg');
+    background-image: url('../../Images/jumbotron.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,25 +32,6 @@
     }
     .desc-title {
       color:white;
-    }
-  }
-}
-
-.kappa-titl tre {
-  &:hover {
-    .letter-up {
-      -webkit-animation: title-animate-down 1s;
-      -moz-animation:    title-animate-down 1s;
-      -o-animation:      title-animate-down 1s;
-      animation:         title-animate-down 1s;
-      animation-fill-mode: forwards;
-    }
-    .letter-down {
-      -webkit-animation: title-animate-up 1s;
-      -moz-animation:    title-animate-up 1s;
-      -o-animation:      title-animate-up 1s;
-      animation:         title-animate-up 1s;
-      animation-fill-mode: forwards;
     }
   }
 }

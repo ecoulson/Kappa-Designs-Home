@@ -124,6 +124,24 @@ var app = function () {
     })
   })
 
+  $(window).scroll(function () {
+    $kappa.find('.letter-up').css({
+      '-webkit-animation': 'title-animate-down 1s',
+      '-moz-animation':    'title-animate-down 1s',
+      '-o-animation':      'title-animate-down 1s',
+      'animation':         'title-animate-down 1s',
+      'animation-fill-mode': 'forwards'
+    })
+
+    $kappa.find('.letter-down').css({
+      '-webkit-animation': 'title-animate-up 1s',
+      '-moz-animation':    'title-animate-up 1s',
+      '-o-animation':      'title-animate-up 1s',
+      'animation':         'title-animate-up 1s',
+      'animation-fill-mode': 'forwards'
+    })
+  })
+
   $projectContainer.mouseenter(function () {
     var $project = $("#" + $(this).prop('id'));
     var $visibleEle = $project.find('.project-visible');

@@ -5894,9 +5894,8 @@ button.close {
     height: 100vh; }
     .header .jumbotron .kappa-title {
       padding: 1px;
-      margin: 0 auto;
+      margin: 75px auto;
       width: 150px;
-      margin-top: 50px;
       letter-spacing: -7px;
       margin-bottom: 200px; }
       .header .jumbotron .kappa-title .kappa {
@@ -6104,7 +6103,7 @@ button.close {
 
 .header .jumbotron {
   border-radius: none;
-  background-image: url("http://eskipaper.com/images/scenic-wallpaper-15.jpg");
+  background-image: url("../../Images/jumbotron.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6125,19 +6124,6 @@ button.close {
     background-color: #35f41b; }
   .header .jumbotron .desc-title {
     color: white; }
-
-.kappa-titl tre:hover .letter-up {
-  -webkit-animation: title-animate-down 1s;
-  -moz-animation: title-animate-down 1s;
-  -o-animation: title-animate-down 1s;
-  animation: title-animate-down 1s;
-  animation-fill-mode: forwards; }
-.kappa-titl tre:hover .letter-down {
-  -webkit-animation: title-animate-up 1s;
-  -moz-animation: title-animate-up 1s;
-  -o-animation: title-animate-up 1s;
-  animation: title-animate-up 1s;
-  animation-fill-mode: forwards; }
 
 .project {
   position: relative;
@@ -6277,5 +6263,60 @@ button.close {
         color: #35f41b; }
       .menu-plate .menu-main-container .menu-list #item-4:hover {
         color: #ffe13a; }
+
+.ribbon {
+  font-size: 16px;
+  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+  width: 400px;
+  text-align: center;
+  background: #b85c93;
+  color: #fff;
+  padding: 1em 2em;
+  /* Adjust to suit */
+  margin-top: -100px;
+  /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; }
+
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #ac669b;
+  z-index: -1; }
+
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent; }
+
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent; }
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #803d61 transparent transparent transparent;
+  bottom: -1em; }
+
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em; }
+
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0; }
+
+.non-semantic-protector {
+  position: relative;
+  z-index: 1; }
 
 /*# sourceMappingURL=main.css.map */
