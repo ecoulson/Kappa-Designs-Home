@@ -74,6 +74,9 @@
       padding: 0;
       margin: 0 auto;
       list-style: none;
+      a {
+        text-decoration: none;
+      }
       .menu-item {
         text-align: center;
         padding: 5px 0;
@@ -81,45 +84,31 @@
         width: 300px;
         font-size: 18px;
         color: white;
+        color: white;
+        text-align: center;
         &:hover {
           background-color:rgb(177, 177, 177);
           cursor: pointer;
         }
-        a {
-          color: white;
-          text-align: center;
-          text-decoration: none;
-          &:hover {
-            cursor: pointer;
-          }
-        }
       }
       #item-1 {
         &:hover {
-          a {
-            color: $kappa-blue;
-          }
+          color: $kappa-blue;
         }
       }
       #item-2 {
         &:hover {
-          a {
-            color: $kappa-pink;
-          }
+          color: $kappa-pink;
         }
       }
       #item-3 {
         &:hover {
-          a {
-            color: $kappa-green;
-          }
+          color: $kappa-green;
         }
       }
       #item-4 {
         &:hover {
-          a {
-            color: $kappa-yellow;
-          }
+          color: $kappa-yellow;
         }
       }
     }

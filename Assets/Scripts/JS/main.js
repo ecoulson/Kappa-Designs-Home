@@ -66,6 +66,7 @@ var app = function () {
   var $menuOpen = $('.menu-container');
   var $menuPlate = $('.menu-plate');
   var $menuContainer = $('.menu-main-container');
+  var $menuItem = $('.menu-item');
   var $slidingTitle = $('.desc-animated');
   var $projectContainer = $('.project-container');
   var $kappa = $('.kappa-title');
@@ -92,6 +93,13 @@ var app = function () {
   })
 
   $menuClose.click(function () {
+    $menuPlate.css({
+      'transition':'1s width ease-in-out',
+      'width':'0'
+    })
+  })
+
+  $menuItem.click(function() {
     $menuPlate.css({
       'transition':'1s width ease-in-out',
       'width':'0'
@@ -135,7 +143,8 @@ var app = function () {
   $projectContainer.mouseleave(function () {
     var $project = $("#" + $(this).prop('id'));
     var $visibleEle = $project.find('.project-visible');
-    $project.find('.hidden-hover').fadeOut(1);
+    $project.find('.hidden-hover').stop(0);
+    $project.find('.hidden-hover').hide(0);
     $visibleEle.find('.logo').css({
       '-webkit-animation': 'none',
       '-moz-animation':'none',

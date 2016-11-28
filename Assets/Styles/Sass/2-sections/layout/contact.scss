@@ -62,6 +62,20 @@
 			.media-list {
 				display: block;
 			}
+			.media {
+				display: flex;
+				width: 50px;
+				height: 50px;
+				a {
+					img {
+						width: 50px;
+						height: 50px;
+						&:hover {
+							border: 1px solid $kappa-green;
+						}
+					}
+				}
+			}
 		}
 
 		@media screen and (max-width: 992px) {
@@ -71,7 +85,14 @@
 				justify-content: center;
 				display: flex;
 				.media {
+					margin-bottom: 25px;
 					margin-right: 25px;
+					a {
+						img {
+							width: 35px;
+							height: 35px;
+						}
+					}
 				}
 			}
 		}
@@ -79,20 +100,6 @@
 			width: 100%;
 			margin: 0 auto;
 			.media-list {
-				.media {
-					display: flex;
-					width: 50px;
-					height: 50px;
-					a {
-						img {
-							width: 50px;
-							height: 50px;
-							&:hover {
-								border: 1px solid $kappa-green;
-							}
-						}
-					}
-				}
 				#media-4 {
 					a {
 						img {
@@ -106,8 +113,14 @@
 		}
 	}
 	.col-md-6 {
-		.email-form {
+		margin-top: 10px;
+		@media all and (max-width: 992px) {
+			display: none;
+		}
+		@media all and (min-width: 992px) {
 			display: block;
+		}
+		.email-form {
 			.email-header {
 				h3 {
 					color: $kappa-yellow;
@@ -115,9 +128,10 @@
 					padding-left: 15px;
 				}
 				.subject, .cc {
+					margin-top: 25px;
 					margin-left: 15px;
 					color: white;
-					width: 160px;
+					width: 45%;
 					font-size: 16px;
 					padding: 7px 12px;
 					background-color: rgb(113, 113, 113);
@@ -131,7 +145,7 @@
 					}
 				}
 				.cc {
-					margin-right: 2%;
+					margin-right: 1%;
 				}
 			}
 			.email-body {
