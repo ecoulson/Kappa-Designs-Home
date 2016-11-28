@@ -33,5 +33,19 @@
     .desc-title {
       color:white;
     }
+    .scroll-to-bottom {
+      height: 150px;
+      position: absolute;
+      bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      &:hover {
+        transition: transform 0.25s ease-in-out;
+        transform: translateY(30px) scale(1.05);
+        cursor: pointer;
+      }
+    }
   }
 }

@@ -72,6 +72,7 @@ var app = function () {
   var $kappa = $('.kappa-title');
   var $back = $('.back-link');
   var $projectSlide = $('.project-slide');
+  var $toAbout = $('.scroll-to-bottom');
 
   var $projectSlide1 = $('#project-slide-1');
   var $projectSlide2 = $('#project-slide-2');
@@ -85,6 +86,16 @@ var app = function () {
   var carousel = new Carousel();
 
   //events
+  $toAbout.click(function (e) {
+    e.preventDefault();
+    var viewportHeight = $(window).height();
+    console.log(viewportHeight);
+
+    $('html, body').animate({
+        scrollTop: viewportHeight
+    }, 1000);
+  })
+
   $menuOpen.click(function () {
     $menuPlate.css({
       'transition':'1s width ease-in-out',
@@ -337,13 +348,6 @@ function smoothScool (duration) {
   $('a[href^="#"]').on('click', function(event) {
     if ($($(this)).prop('id') != '#next' && $($(this)).prop('id') != '#prev') {
       var target = $( $(this).attr('href') );
-      $('.menu-container').addClass("animation-target-scale-down");
-      $('.menu-container').removeClass("animation-target-scale-up");
-      setTimeout(function () {
-        $('.menu-overlay').slideUp(500);
-      }, 100);
-      setTimeout(function() {
-      }, 600);
       if( target.length ) {
         event.preventDefault();
         $('html, body').animate({
