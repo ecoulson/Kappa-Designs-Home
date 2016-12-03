@@ -139,9 +139,9 @@ var app = function () {
   $projectContainer.mouseenter(function () {
     var $project = $("#" + $(this).prop('id'));
     var $visibleEle = $project.find('.project-visible');
-    $project.find('.hidden-hover').fadeIn(500);
+    $visibleEle.find('.overlay-container').show();
     $visibleEle.find('.overlay').css({
-      'background-color':'rgba(255, 255, 255, 0)'
+      'background-color':'rgba(195, 120, 31, 0.4)'
     });
     $visibleEle.find('.logo').css({
       '-webkit-animation': 'logo-animate 0.5s',
@@ -155,8 +155,10 @@ var app = function () {
   $projectContainer.mouseleave(function () {
     var $project = $("#" + $(this).prop('id'));
     var $visibleEle = $project.find('.project-visible');
-    $project.find('.hidden-hover').stop(0);
-    $project.find('.hidden-hover').hide(0);
+    $visibleEle.find('.overlay-container').hide();
+    $visibleEle.find('.overlay').css({
+      'background-color':'rgba(0,0,0,0)'
+    });
     $visibleEle.find('.logo').css({
       '-webkit-animation': 'none',
       '-moz-animation':'none',
