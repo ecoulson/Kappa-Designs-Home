@@ -6,7 +6,7 @@ var Carousel = function () {
   var $dots = $('.slide-dots');
 
   var currentSlide = 1;
-  var slideCount = 3;
+  var slideCount = 2;
 
   var getSlide = function () {
     return currentSlide;
@@ -74,6 +74,8 @@ var app = function () {
   var $back = $('.back-link');
   var $projectSlide = $('.project-slide');
   var $toAbout = $('.scroll-to-bottom');
+  var $carousel = $('.people-container');
+  var $peopleSlide =$('.people-slide');
 
   var $projectSlide1 = $('#project-slide-1');
   var $projectSlide2 = $('#project-slide-2');
@@ -84,7 +86,7 @@ var app = function () {
   var titleWidth = 300;
   var animateIndex = -1;
   var animateText = ['Create','Design','Inspire','Love'];
-  var carousel = new Carousel();
+  var carousel;
 
   //events
   $toAbout.click(function (e) {
@@ -213,6 +215,18 @@ var app = function () {
     }, 100);
   })
 
+  $(window).resize(function () {
+    if ($(window).width() < 745) {
+      $carousel.removeClass('people-container').addClass('carousel-container');
+      $peopleSlide.removeClass('people-slide').addClass('slide');
+      carousel = new Carousel();
+      carousel.init();
+    } else {
+      $carousel.addClass('people-container').removeClass('carousel-container');
+      $peopleSlide.removeClass('slide').addClass('people-slide');
+    }
+  })
+
   $(document).keydown(function (e) {
     if (e.keyCode == 27) {
       closeMenu();
@@ -315,6 +329,14 @@ var app = function () {
     })
     startAnimationTitle();
     animateTitle();
+    if ($(window).width() < 745) {
+      $carousel.removeClass('people-container').addClass('carousel-container');
+      $peopleSlide.removeClass('people-slide').addClass('slide');
+    } else {
+      $carousel.addClass('people-container').removeClass('carousel-container');
+      $peopleSlide.removeClass('slide').addClass('people-slide');
+    }
+    carousel = new Carousel();
     carousel.init();
   }
 

@@ -5894,48 +5894,43 @@ button.close {
 
 .about {
   background-image: url("../../Images/shards_pattern.jpg"); }
-  .about .row .about-us {
-    border-right: 1px solid black;
-    height: 400px; }
-    .about .row .about-us .visible .about-title {
-      font-size: 48px;
-      margin-top: 50px;
-      margin-left: 50px; }
-    .about .row .about-us .hidden-hover {
-      width: 100%; }
-      .about .row .about-us .hidden-hover .about-desc {
-        font-size: 28px;
-        margin-top: 75px;
-        margin-left: 100px; }
-      .about .row .about-us .hidden-hover .learn-more {
-        font-size: 18px;
-        font-weight: 800;
-        position: absolute;
-        bottom: 15px;
-        left: 50%;
-        color: black; }
-        .about .row .about-us .hidden-hover .learn-more:hover {
-          transition: color 0.25s ease-in-out;
-          color: #ffe13a; }
-  .about .row .donations {
-    height: 400px; }
-    .about .row .donations .visible .total-donated {
-      font-size: 48px;
-      margin-top: 200px;
-      margin-left: 100px; }
-    .about .row .donations .hidden-hover .donation-desc {
-      margin-left: 100px;
-      font-size: 28px; }
-    .about .row .donations .hidden-hover .donate-here {
-      font-size: 18px;
-      font-weight: 800;
-      position: absolute;
-      bottom: 15px;
-      left: 50%;
-      color: black; }
-      .about .row .donations .hidden-hover .donate-here:hover {
-        transition: color 0.25s ease-in-out;
-        color: #ffe13a; }
+  .about .row .about-title {
+    text-align: center; }
+  .about .row .about-kicker {
+    margin-top: 45px;
+    text-align: center; }
+  .about .row .people-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .about .row .people-container .people-slide {
+      align-self: center;
+      height: 300px;
+      width: 50%; }
+      .about .row .people-container .people-slide .person {
+        margin: 50px auto;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        background-image: url("http://images.wisegeek.com/man-with-dark-hair-and-gray-shirt.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+        .about .row .people-container .people-slide .person:hover {
+          cursor: pointer; }
+          .about .row .people-container .people-slide .person:hover .toggle {
+            display: block; }
+        .about .row .people-container .people-slide .person .toggle {
+          position: absolute;
+          height: 200px;
+          width: 200px;
+          border-radius: 100px;
+          background-color: rgba(0, 0, 0, 0.67);
+          display: none; }
+          .about .row .people-container .people-slide .person .toggle .name {
+            padding-top: 60px;
+            color: white;
+            text-align: center; }
 
 .project {
   background-color: #9a9a9a; }
@@ -5950,7 +5945,8 @@ button.close {
     .project #row-2 #project-3 .logo {
       background-image: url("http://m-static.flikie.com/ImageData/WallPapers/38b29e6d995e44569f76c153f864f220.jpg"); }
     .project #row-2 .project-container {
-      height: 350px; }
+      height: 350px;
+      margin-bottom: 50px; }
       .project #row-2 .project-container .project-visible {
         height: inherit; }
         .project #row-2 .project-container .project-visible .logo {
@@ -5965,21 +5961,12 @@ button.close {
               height: inherit; }
               .project #row-2 .project-container .project-visible .logo .overlay .overlay-container h1 {
                 padding: 0;
-                padding-top: 15px;
                 color: #5C2D50;
                 text-align: center; }
               .project #row-2 .project-container .project-visible .logo .overlay .overlay-container p {
                 color: black;
-                margin: 15px 15px;
+                margin: 15px 25px;
                 line-height: 2; }
-      .project #row-2 .project-container .hidden-hover {
-        display: none; }
-        .project #row-2 .project-container .hidden-hover .project-title {
-          color: #0B99BC;
-          margin-top: 5px;
-          text-align: center; }
-        .project #row-2 .project-container .hidden-hover .project-info {
-          margin-top: 50px; }
 
 #contacts {
   background-color: #464646; }
@@ -6185,6 +6172,38 @@ button.close {
       float: right; }
     .project .project-slide .left {
       float: left; }
+
+.carousel-container {
+  width: 100%;
+  height: 300px; }
+  .carousel-container .slide {
+    display: none; }
+    .carousel-container .slide .person {
+      margin: 50px auto;
+      border-radius: 100px;
+      width: 200px;
+      height: 200px;
+      background-image: url("http://images.wisegeek.com/man-with-dark-hair-and-gray-shirt.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      .carousel-container .slide .person:hover {
+        cursor: pointer; }
+        .carousel-container .slide .person:hover .toggle {
+          display: block; }
+      .carousel-container .slide .person .toggle {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.67);
+        display: none; }
+        .carousel-container .slide .person .toggle .name {
+          padding-top: 60px;
+          color: white;
+          text-align: center; }
+  .carousel-container #slide-1 {
+    display: block; }
 
 .menu-container {
   z-index: 100;

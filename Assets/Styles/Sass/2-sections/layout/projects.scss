@@ -19,6 +19,7 @@
     margin-bottom: 100px;
     .project-container {
       height: 350px;
+      margin-bottom: 50px;
       .project-visible {
         height: inherit;
         .logo {
@@ -33,28 +34,16 @@
               height: inherit;
               h1 {
                 padding: 0;
-                padding-top: 15px;
                 color:$kappa-violet;
                 text-align: center;
               }
               p {
                 color:black;
-                margin: 15px 15px;
+                margin: 15px 25px;
                 line-height: 2;
               }
             }
           }
-        }
-      }
-      .hidden-hover {
-        display: none;
-        .project-title {
-          color:$kappa-blue;
-          margin-top: 5px;
-          text-align: center;
-        }
-        .project-info {
-          margin-top: 50px;
         }
       }
     }
