@@ -1,62 +1,48 @@
 .about {
-  background-color: white;
+  background-image: url('../../Images/shards_pattern.jpg');
   .row {
-    border: 1px solid black;
-    .about-us {
-      border-right: 1px solid black;
-      height: 400px;
-      .visible {
-        .about-title {
-          font-size: 48px;
-          margin-top: 50px;
-          margin-left: 50px;
-        }
-      }
-      .hidden-hover {
-        width: 100%;
-        .about-desc {
-          font-size: 28px;
-          margin-top: 75px;
-          margin-left: 100px;
-        }
-        .learn-more {
-          font-size: 18px;
-          font-weight: 800;
-          position: absolute;
-          bottom: 15px;
-          left: 50%;
-          color: black;
-          &:hover {
-            transition: color 0.25s ease-in-out;
-            color: $kappa-yellow;
-          }
-        }
-      }
+    .about-title {
+      text-align: center;
     }
-    .donations {
-      height: 400px;
-      .visible {
-        .total-donated {
-          font-size: 48px;
-          margin-top: 200px;
-          margin-left: 100px;
-        }
-      }
-      .hidden-hover {
-        .donation-desc {
-          margin-left: 100px;
-          font-size: 28px;
-        }
-        .donate-here {
-          font-size: 18px;
-          font-weight: 800;
-          position: absolute;
-          bottom: 15px;
-          left: 50%;
-          color: black;
+    .about-kicker {
+      margin-top: 45px;
+      text-align: center;
+    }
+    .people-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .people-slide {
+        align-self: center;
+        height: 300px;
+        width: 50%;
+        .person {
+          margin: 50px auto;
+          border-radius: 100px;
+          width: 200px;
+          height: 200px;
+          background-image: url('http://images.wisegeek.com/man-with-dark-hair-and-gray-shirt.jpg');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
           &:hover {
-            transition: color 0.25s ease-in-out;
-            color: $kappa-yellow;
+            cursor: pointer;
+            .toggle {
+              display: block;
+            }
+          }
+          .toggle {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            background-color: rgba(0, 0, 0, 0.67);
+            display: none;
+            .name {
+              padding-top: 60px;
+              color: white;
+              text-align: center;
+            }
           }
         }
       }

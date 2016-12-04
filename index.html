@@ -41,22 +41,16 @@
     <!-- About -->
     <div class="container-fluid about" id="about">
       <div class="row">
-        <div class="col-md-8 about-us">
-          <div class="visible">
-            <h1 class="about-title">About Us </h1>
-          </div>
-          <div class="hidden">
-            <p class="about-desc">We Want To Make Your Non-Profit Better.</p>
-            <a href="#" class="learn-more">Learn More ></a>
-          </div>
-        </div>
-        <div class="col-md-4 donations">
-          <div class="visible">
-            <h1 class="total-donated">100$</h1>
-          </div>
-          <div class="hidden">
-            <p class="donation-desc">We Help You Earn</p>
-            <a href="#" class="donate-here">Donate Here ></a>
+        <div class="col-md-12">
+          <h1 class="about-title">About Us</h1>
+          <h3 class="about-kicker">We Help You Reach A Larger Audience</h3>
+          <div class="people-container">
+            <div class="people-slide" id="slide-1">
+              <div class="person"><div class="toggle"><a href="http://www.github.com/Unholydeath785"><h1 class="name">Evan</h1></a></span></div></div>
+            </div>
+            <div class="people-slide" id="slide-2">
+              <div class="person"><div class="toggle"><a href="http://www.github.com/JackShew"><h1 class="name">Jack</h1></a></div></div>
+            </div>
           </div>
         </div>
       </div>
@@ -70,10 +64,10 @@
         </div>
 
         <div class="project-slide" id="project-slide-1">
-          <a href="#project" class="back-link">
+          <span href="#project" class="back-link">
             <img src="Assets/Images/back.svg" alt="" class="back-arrow">
             <span class="back">Back</span>
-          </a>
+          </span>
           <div class="container">
             <h1 class="red">Little Bit</h1>
             <hr>
@@ -97,10 +91,10 @@
         </div>
 
         <div class="project-slide" id="project-slide-2">
-          <a href="#project" class="back-link">
+          <span href="#project" class="back-link">
             <img src="Assets/Images/back.svg" alt="" class="back-arrow">
             <span class="back">Back</span>
-          </a>
+          </span>
           <div class="container">
             <h1 class="yellow">Overlake Robotics</h1>
             <hr>
@@ -123,12 +117,12 @@
         </div>
 
         <div class="project-slide" id="project-slide-3">
-          <a href="#project" class="back-link">
+          <span href="#project" class="back-link">
             <img src="Assets/Images/back.svg" alt="" class="back-arrow">
             <span class="back">Back</span>
-          </a>
+          </span>
           <div class="container">
-            <h1 class="green">Coming Soon...</h1>
+            <h1 class="green">Github</h1>
             <hr>
             <p>
               <img class="right" src="http://netdna.webdesignerdepot.com/uploads/2008/12/stock-microstock.jpg" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -151,15 +145,41 @@
         <div class="row project-row-2" id="row-2">
           <div id="project-1" class="col-md-4 project-container">
             <div class="project-visible visible">
-              <div class="overlay"><img src="Assets/Images/little_bit_logo.png" alt="" class="logo"></div>
-            </div>
-            <div class="hidden-hover">
-              <h1 class="project-title">Little Bit</h1>
-              <h4>Info:</h4>
-              <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <div class="logo">
+                <div class="overlay">
+                  <div class="overlay-container">
+                    <h1 class="project-title">Little Bit</h1>
+                    <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="read-more">Click To Read More</span></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div id="project-2" class="col-md-4 project-container">
+            <div class="project-visible visible">
+              <div class="logo">
+                <div class="overlay">
+                  <div class="overlay-container">
+                    <h1 class="project-title">Overlake Robotics</h1>
+                    <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="read-more">Click To Read More</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="project-3" class="col-md-4 project-container">
+            <div class="project-visible visible">
+              <div class="logo">
+                <div class="overlay">
+                  <div class="overlay-container">
+                    <h1 class="project-title">Github</h1>
+                    <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="read-more">Click To Read More</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div id="project-2" class="col-md-4 project-container">
             <div class="project-visible visible">
               <div class="overlay"><img src="Assets/Images/overlake_logo.png" alt="" class="logo"></div>
             </div>
@@ -174,11 +194,11 @@
               <div class="overlay"><img src="Assets/Images/temp_logo.png" alt="" class="logo"></div>
             </div>
             <div class="hidden-hover">
-              <h1 class="project-title">Coming Soon</h1>
+              <h1 class="project-title">Github</h1>
               <h4>Info:</h4>
               <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -249,8 +269,10 @@
       </div>
     </div>
 
+    <!-- Dev Scripts -->
     <script src="Assets/Scripts/JS/jquery.js" charset="utf-8"></script>
     <script src="Assets/Scripts/JS/main.js" charset="utf-8"></script>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <!-- Production Script -->
+    <!-- <script src="Assets/Scripts/JS/bundle.js" charset="utf-8"></script> -->
   </body>
 </html>

@@ -1,36 +1,49 @@
 .project {
+  background-color: rgb(154, 154, 154);
   #row-1 {
     margin-top: 100px;
     margin-bottom: 50px;
     text-align: center;
   }
   #row-2 {
+    #project-2 {
+      .logo {
+        background-image: url('http://s1.1zoom.net/big0/798/379129-svetik.jpg');
+      }
+    }
+    #project-3 {
+      .logo {
+        background-image: url('http://m-static.flikie.com/ImageData/WallPapers/38b29e6d995e44569f76c153f864f220.jpg');
+      }
+    }
     margin-bottom: 100px;
     .project-container {
       height: 350px;
+      margin-bottom: 50px;
       .project-visible {
-        .overlay {
-          margin: -1px -15px;
-          width: 100%;
-          position: absolute;
-          .logo {
-            display: block;
-            margin: 125px auto;
-            width: 135px;
-            height: 135px;
-            border-radius: 100%;
+        height: inherit;
+        .logo {
+          height: inherit;
+          background-position: center;
+          background-size: cover;
+          background-image: url('http://cdn.experiencewa.com/sites/default/master/files/styles/tag-slider-colorbox/public/waterfall.jpg?itok=WwkSx_0d');
+          .overlay {
+            height: inherit;
+            .overlay-container {
+              display: none;
+              height: inherit;
+              h1 {
+                padding: 0;
+                color:$kappa-violet;
+                text-align: center;
+              }
+              p {
+                color:black;
+                margin: 15px 25px;
+                line-height: 2;
+              }
+            }
           }
-        }
-      }
-      .hidden-hover {
-        display: none;
-        .project-title {
-          color:$kappa-blue;
-          margin-top: 5px;
-          text-align: center;
-        }
-        .project-info {
-          margin-top: 50px;
         }
       }
     }

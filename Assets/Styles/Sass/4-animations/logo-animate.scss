@@ -1,48 +1,32 @@
 @-webkit-keyframes logo-animate {
   0% {
     transform: scale(1.0);
-    border-radius: 100%;
-    opacity: 1;
   }
   100% {
-    transform: scale(3);
-    border-radius: 0%;
-    opacity: 0;
+    transform: scale(1.1);
   }
 }
 @-moz-keyframes logo-animate {
   0% {
     transform: scale(1.0);
-    border-radius: 100%;
-    opacity: 1;
   }
   100% {
-    transform: scale(3);
-    border-radius: 0%;
-    opacity: 0;
+    transform: scale(1.1);
   }
 }
 @-o-keyframes logo-animate {
   0% {
     transform: scale(1.0);
-    border-radius: 100%;
-    opacity: 1;
   }
   100% {
-    transform: scale(3);
-    border-radius: 0%;
-    opacity: 0;
+    transform: scale(1.1);
   }
 }
 @keyframes logo-animate {
   0% {
     transform: scale(1.0);
-    border-radius: 100%;
-    opacity: 1;
   }
   100% {
-    transform: scale(3);
-    border-radius: 0%;
-    opacity: 0;
+    transform: scale(1.1);
   }
 }
