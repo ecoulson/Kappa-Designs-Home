@@ -16,15 +16,24 @@
   .project-slide {
     .back-link {
       text-decoration: none;
-      color:black;
+      &:hover {
+        cursor: pointer;
+      }
       .back {
         color:black;
+        &:hover {
+          cursor: pointer;
+        }
       }
       .back-arrow {
         width: 35px;
         height: 35px;
+        &:hover {
+          cursor: pointer;
+        }
       }
       &:hover {
+        cursor: pointer;
         color:rgb(191, 133, 25);
         .back {
           color:rgb(191, 133, 25);

@@ -6141,14 +6141,20 @@ button.close {
     position: absolute;
     left: 400%; }
     .project .project-slide .back-link {
-      text-decoration: none;
-      color: black; }
+      text-decoration: none; }
+      .project .project-slide .back-link:hover {
+        cursor: pointer; }
       .project .project-slide .back-link .back {
         color: black; }
+        .project .project-slide .back-link .back:hover {
+          cursor: pointer; }
       .project .project-slide .back-link .back-arrow {
         width: 35px;
         height: 35px; }
+        .project .project-slide .back-link .back-arrow:hover {
+          cursor: pointer; }
       .project .project-slide .back-link:hover {
+        cursor: pointer;
         color: #bf8519; }
         .project .project-slide .back-link:hover .back {
           color: #bf8519; }
