@@ -1,5 +1,5 @@
 .project {
-  background-color: rgb(154, 154, 154);
+  background-color: rgb(255, 255, 255);
   #row-1 {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -34,11 +34,11 @@
               height: inherit;
               h1 {
                 padding: 0;
-                color:$kappa-violet;
+                color:$kappa-yellow;
                 text-align: center;
               }
               p {
-                color:black;
+                color:white;
                 margin: 15px 25px;
                 line-height: 2;
               }

@@ -2,7 +2,9 @@
   position: relative;
   overflow: hidden;
   #row-1 {
-
+    .project-head {
+      color: $kappa-pink;
+    }
   }
   #row-2 {
     .project-container {
