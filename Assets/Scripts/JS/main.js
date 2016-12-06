@@ -1,3 +1,12 @@
+(function (meme) {
+  var meme = setInterval(function () {
+    $('.type').typeIt({strings: '...', speed: 250, autoStart: false});
+  }, 3000);
+  setTimeout(function () {
+    $('.loader-container').fadeOut(500);
+    clearInterval(meme);
+  }, 4500);
+})("meme")
 var Carousel = function () {
   this.interval;
   var $container = $('.people-container');
