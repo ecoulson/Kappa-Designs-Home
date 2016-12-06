@@ -5892,48 +5892,53 @@ button.close {
       padding: 3px 8px;
       border: 2px #0B99BC solid; }
 
-.about {
-  background-image: url("../../Images/shards_pattern.jpg"); }
-  .about .row .about-title {
-    text-align: center; }
-  .about .row .about-kicker {
-    margin-top: 45px;
-    text-align: center; }
-  .about .row .people-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .about .row .people-container .people-slide {
-      align-self: center;
-      height: 300px;
-      width: 50%; }
-      .about .row .people-container .people-slide .person {
-        margin: 50px auto;
-        border-radius: 100px;
-        width: 200px;
+.about .row .col-md-12 {
+  padding: 0; }
+.about .row .about-title {
+  color: #5C2D50;
+  margin-top: 100px;
+  text-align: center; }
+.about .row .about-kicker {
+  margin-top: 45px;
+  text-align: center;
+  margin-bottom: 100px; }
+.about .row .people-container {
+  padding: 50px 0;
+  background-image: url("../../Images/shards_pattern.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .about .row .people-container .people-slide {
+    align-self: center;
+    height: 300px;
+    width: 50%; }
+    .about .row .people-container .people-slide .person {
+      margin: 50px auto;
+      border-radius: 100px;
+      width: 200px;
+      height: 200px;
+      background-image: url("http://images.wisegeek.com/man-with-dark-hair-and-gray-shirt.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      .about .row .people-container .people-slide .person:hover {
+        cursor: pointer; }
+        .about .row .people-container .people-slide .person:hover .toggle {
+          display: block; }
+      .about .row .people-container .people-slide .person .toggle {
+        position: absolute;
         height: 200px;
-        background-image: url("http://images.wisegeek.com/man-with-dark-hair-and-gray-shirt.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat; }
-        .about .row .people-container .people-slide .person:hover {
-          cursor: pointer; }
-          .about .row .people-container .people-slide .person:hover .toggle {
-            display: block; }
-        .about .row .people-container .people-slide .person .toggle {
-          position: absolute;
-          height: 200px;
-          width: 200px;
-          border-radius: 100px;
-          background-color: rgba(0, 0, 0, 0.67);
-          display: none; }
-          .about .row .people-container .people-slide .person .toggle .name {
-            padding-top: 60px;
-            color: white;
-            text-align: center; }
+        width: 200px;
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.67);
+        display: none; }
+        .about .row .people-container .people-slide .person .toggle .name {
+          padding-top: 60px;
+          color: white;
+          text-align: center; }
 
 .project {
-  background-color: #9a9a9a; }
+  background-color: white; }
   .project #row-1 {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -5961,10 +5966,10 @@ button.close {
               height: inherit; }
               .project #row-2 .project-container .project-visible .logo .overlay .overlay-container h1 {
                 padding: 0;
-                color: #5C2D50;
+                color: #ffe13a;
                 text-align: center; }
               .project #row-2 .project-container .project-visible .logo .overlay .overlay-container p {
-                color: black;
+                color: white;
                 margin: 15px 25px;
                 line-height: 2; }
 
@@ -6111,7 +6116,8 @@ button.close {
   .header .jumbotron .desc-title {
     color: white; }
   .header .jumbotron .scroll-to-bottom {
-    height: 150px;
+    height: 100px;
+    width: 150px;
     position: absolute;
     bottom: 30px;
     margin-left: auto;
@@ -6126,6 +6132,8 @@ button.close {
 .project {
   position: relative;
   overflow: hidden; }
+  .project #row-1 .project-head {
+    color: #D40E52; }
   .project #row-2 .project-container:hover {
     cursor: pointer; }
   .project .project-slide {

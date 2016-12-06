@@ -1,9 +1,15 @@
 var Carousel = function () {
-  var $container = $('.carousel-container');
-  var $slides = $('.slide');
+  this.interval;
+  var $container = $('.people-container');
+  var $slides = $('.people-slide');
   var $next = $('.slide-next');
   var $prev = $('.slide-prev');
   var $dots = $('.slide-dots');
+  this.i = setInterval(function () {
+    if ($(window).width() < 745) {
+      next();
+    }
+  }, 5000);
 
   var currentSlide = 1;
   var slideCount = 2;
@@ -19,7 +25,7 @@ var Carousel = function () {
     }
     $slide = $container.find('#slide-' + currentSlide);
     $slides.hide();
-    $slide.fadeIn();
+    $slide.fadeIn(250);
   }
 
   var prev = function () {
@@ -28,7 +34,7 @@ var Carousel = function () {
     }
     $slide = $container.find('#slide-' + currentSlide);
     $slides.hide();
-    $slide.fadeIn();
+    $slide.fadeIn(250);
   }
 
   $next.click(function () {
@@ -45,20 +51,40 @@ var Carousel = function () {
     currentSlide = id;
     var $slide = $container.find('#slide-' + id);
     $slides.hide();
-    $slide.fadeIn();
+    $slide.fadeIn(250);
   })
 
-  var init = function () {
-    setInterval(function () {
+  var set = function (meme) {
+    clearInterval(this.interval);
+    this.interval = setInterval(function () {
       next();
     }, 5000);
+    if (meme !== undefined) {
+      meme();
+
+    }
+  }
+
+  var clear = function () {
+    clearInterval(this.interval);
+  }
+
+  var hide = function () {
+    $slides.hide();
+  }
+
+  var show = function () {
+    $slides.show();
   }
 
   return {
     getSlide: getSlide,
     next: next,
     prev: prev,
-    init: init
+    set: set,
+    clear: clear,
+    hide: hide,
+    show: show
   }
 }
 
@@ -74,8 +100,8 @@ var app = function () {
   var $back = $('.back-link');
   var $projectSlide = $('.project-slide');
   var $toAbout = $('.scroll-to-bottom');
-  var $carousel = $('.people-container');
-  var $peopleSlide =$('.people-slide');
+  var $carousel = $('.people-container'); //should be setCarousel()
+  var $peopleSlide =$('.people-slide'); //should be setPeople()
 
   var $projectSlide1 = $('#project-slide-1');
   var $projectSlide2 = $('#project-slide-2');
@@ -86,7 +112,7 @@ var app = function () {
   var titleWidth = 300;
   var animateIndex = -1;
   var animateText = ['Create','Design','Inspire','Love'];
-  var carousel;
+  var carousel = new Carousel();
 
   //events
   $toAbout.click(function (e) {
@@ -98,6 +124,15 @@ var app = function () {
         scrollTop: viewportHeight
     }, 1000);
   })
+
+  $(window).resize(function () {
+    if ($(window).width() < 745) {
+      carousel.hide();
+    } else {
+      carousel.show();
+    }
+  });
+
 
   $menuOpen.click(function () {
     $menuPlate.css({
@@ -143,7 +178,7 @@ var app = function () {
     var $visibleEle = $project.find('.project-visible');
     $visibleEle.find('.overlay-container').show();
     $visibleEle.find('.overlay').css({
-      'background-color':'rgba(195, 120, 31, 0.4)'
+      'background-color':'rgba(11, 153, 187, 0.4)'
     });
     $visibleEle.find('.logo').css({
       '-webkit-animation': 'logo-animate 0.5s',
@@ -190,6 +225,12 @@ var app = function () {
     }, 750);
   })
 
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > $(window).height()) {
+      $('.about-kicker').typeIt({strings: 'We Help You Reach A Larger Audience', speed: 50, autoStart: false});
+    }
+  })
+
   $back.mouseenter(function () {
     $arrw = $(this).find('img');
     $arrw.prop('src','Assets/Images/back-hover.svg');
@@ -215,23 +256,12 @@ var app = function () {
     }, 100);
   })
 
-  $(window).resize(function () {
-    if ($(window).width() < 745) {
-      $carousel.removeClass('people-container').addClass('carousel-container');
-      $peopleSlide.removeClass('people-slide').addClass('slide');
-      carousel = new Carousel();
-      carousel.init();
-    } else {
-      $carousel.addClass('people-container').removeClass('carousel-container');
-      $peopleSlide.removeClass('slide').addClass('people-slide');
-    }
-  })
-
   $(document).keydown(function (e) {
     if (e.keyCode == 27) {
       closeMenu();
       slideBack();
     }
+
   })
 
   //functions
@@ -330,14 +360,8 @@ var app = function () {
     startAnimationTitle();
     animateTitle();
     if ($(window).width() < 745) {
-      $carousel.removeClass('people-container').addClass('carousel-container');
-      $peopleSlide.removeClass('people-slide').addClass('slide');
-    } else {
-      $carousel.addClass('people-container').removeClass('carousel-container');
-      $peopleSlide.removeClass('slide').addClass('people-slide');
+      carousel.hide();
     }
-    carousel = new Carousel();
-    carousel.init();
   }
 
   return {
