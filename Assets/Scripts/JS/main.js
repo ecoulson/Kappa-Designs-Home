@@ -122,6 +122,7 @@ var app = function () {
   var animateIndex = -1;
   var animateText = ['Create','Design','Inspire','Love'];
   var carousel = new Carousel();
+  this.typed = false;
 
   //events
   $toAbout.click(function (e) {
@@ -238,8 +239,9 @@ var app = function () {
   })
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() > $(window).height()) {
+    if ($(window).scrollTop() > $(window).height() && !this.typed) {
       $('.about-kicker').typeIt({strings: 'We Help You Reach A Larger Audience', speed: 50, autoStart: false});
+      this.typed = true;
     }
   })
 
