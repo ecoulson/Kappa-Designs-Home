@@ -1,12 +1,17 @@
 (function (meme) {
   var meme = setInterval(function () {
-    $('.type').typeIt({strings: '...', speed: 250, autoStart: false});
-  }, 3000);
+    $('.type').typeIt({strings: '...', speed: 50, autoStart: true});
+  }, 1000);
+  setTimeout(function () {
+    $(window).scrollTop(0);
+    $(document).scrollTop(0);
+  }, 4000);
   setTimeout(function () {
     $('.loader-container').fadeOut(500);
     clearInterval(meme);
   }, 4500);
 })("meme")
+
 var Carousel = function () {
   this.interval;
   var $container = $('.people-container');
@@ -117,6 +122,8 @@ var app = function () {
   var $projectSlide3 = $('#project-slide-3');
   var $rowToHide = $('.project-row-2');
 
+  var $kicker = $('.about-kicker');
+
   var menuWidth = '100vw';
   var titleWidth = 300;
   var animateIndex = -1;
@@ -125,13 +132,21 @@ var app = function () {
   this.typed = false;
 
   //events
+  var typeOut = function () {
+    if ($(window).scrollTop() > $(window).height() && !this.typed) {
+      $kicker.typeIt({strings: 'We Help You Reach A Larger Audience', speed: 50, autoStart: false});
+      this.typed = true;
+    }
+  }
+
   $toAbout.click(function (e) {
     e.preventDefault();
     var viewportHeight = $(window).height();
-    console.log(viewportHeight);
-
     $('html, body').animate({
         scrollTop: viewportHeight
+    }, 1000);
+    setTimeout(function () {
+      $kicker.typeIt({strings: 'We Help You Reach A Larger Audience', speed: 50, autoStart: false});
     }, 1000);
   })
 
@@ -239,10 +254,7 @@ var app = function () {
   })
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() > $(window).height() && !this.typed) {
-      $('.about-kicker').typeIt({strings: 'We Help You Reach A Larger Audience', speed: 50, autoStart: false});
-      this.typed = true;
-    }
+    typeOut();
   })
 
   $back.mouseenter(function () {

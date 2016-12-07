@@ -5902,15 +5902,14 @@ button.close {
   margin-top: 45px;
   text-align: center;
   margin-bottom: 100px; }
+.about .row .container-background {
+  background-image: url("../../Images/shards_pattern.jpg");
+  width: 100%; }
 .about .row .people-container {
   padding: 50px 0;
-  background-image: url("../../Images/shards_pattern.jpg"); }
-  .about .row .people-container .limiter {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 940px; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .about .row .people-container .people-slide {
     align-self: center;
     height: 300px;
