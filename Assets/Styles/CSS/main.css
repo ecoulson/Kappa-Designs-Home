@@ -5921,9 +5921,9 @@ button.close {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
-      .about .row .people-container .people-slide .person:hover {
+      .about .row .people-container .people-slide .person:hover, .about .row .people-container .people-slide .person:focus {
         cursor: pointer; }
-        .about .row .people-container .people-slide .person:hover .toggle {
+        .about .row .people-container .people-slide .person:hover .toggle, .about .row .people-container .people-slide .person:focus .toggle {
           display: block; }
       .about .row .people-container .people-slide .person .toggle {
         position: absolute;
