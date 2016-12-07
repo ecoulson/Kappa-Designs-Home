@@ -135,10 +135,13 @@ var app = function () {
   })
 
   $(window).resize(function () {
-    if ($(window).width() < 745) {
-      carousel.hide();
-    } else {
-      carousel.show();
+    var width = $(window).width(), height = $(window).height();
+    if($(window).width() != width && $(window).height() != height){
+      if ($(window).width() < 745) {
+        carousel.hide();
+      } else {
+        carousel.show();
+      }
     }
   });
 
