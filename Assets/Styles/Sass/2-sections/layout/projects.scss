@@ -42,6 +42,16 @@
                 margin: 15px 25px;
                 line-height: 2;
               }
+              .read-more {
+                color: white;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                &:hover {
+                  color: $kappa-pink;
+                  text-decoration: underline;
+                }
+              }
             }
           }
         }

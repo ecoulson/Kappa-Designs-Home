@@ -5974,6 +5974,14 @@ button.close {
                 color: white;
                 margin: 15px 25px;
                 line-height: 2; }
+              .project #row-2 .project-container .project-visible .logo .overlay .overlay-container .read-more {
+                color: white;
+                display: block;
+                margin: 0 auto;
+                text-align: center; }
+                .project #row-2 .project-container .project-visible .logo .overlay .overlay-container .read-more:hover {
+                  color: #D40E52;
+                  text-decoration: underline; }
 
 #contacts {
   background-color: #464646; }
