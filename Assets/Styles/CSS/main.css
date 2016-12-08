@@ -6038,6 +6038,10 @@ button.close {
       color: #0B99BC;
       padding-left: 10px;
       border-bottom: 3px solid black; }
+    #contacts .col-md-4 .nav .menu-icon {
+      margin-right: 25px;
+      width: 25px;
+      height: 25px; }
     #contacts .col-md-4 .nav .option a {
       color: white; }
     #contacts .col-md-4 .nav #option-1 a:hover {

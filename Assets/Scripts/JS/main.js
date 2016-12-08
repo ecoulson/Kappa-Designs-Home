@@ -162,7 +162,7 @@ var app = function () {
   $person.mouseleave(function () {
     var $toggle = $(this).find('.toggle');
     $(this).css({
-      'cursor':'normal'
+      'cursor':'normalh'
     })
     $toggle.css({
       'display':'none'
