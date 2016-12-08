@@ -132,6 +132,7 @@ var app = function () {
   var $readMore = $('.read-more');
   var displayingReadMore = false;
   $readMoreSVG.rotate(180);
+  var $person = $('.person');
 
   var menuWidth = '100vw';
   var titleWidth = 300;
@@ -147,6 +148,26 @@ var app = function () {
       this.typed = true;
     }
   }
+
+  $person.mouseenter(function () {
+    var $toggle = $(this).find('.toggle');
+    $(this).css({
+      'cursor':'pointer'
+    })
+    $toggle.css({
+      'display':'block'
+    })
+  })
+
+  $person.mouseleave(function () {
+    var $toggle = $(this).find('.toggle');
+    $(this).css({
+      'cursor':'normal'
+    })
+    $toggle.css({
+      'display':'none'
+    })
+  })
 
   $readMoreArrw.click(function () {
     if (!this.typed) {
