@@ -10,6 +10,10 @@
     $('.loader-container').fadeOut(500);
     clearInterval(meme);
   }, 4500);
+  jQuery.fn.rotate = function(degrees) {
+    $(this).css({'transform' : 'rotate('+ degrees +'deg)'});
+    return $(this);
+  };
 })("meme")
 
 var Carousel = function () {
@@ -123,6 +127,11 @@ var app = function () {
   var $rowToHide = $('.project-row-2');
 
   var $kicker = $('.about-kicker');
+  var $readMoreArrw = $('.show-more');
+  var $readMoreSVG = $('.show-more-img');
+  var $readMore = $('.read-more');
+  var displayingReadMore = false;
+  $readMoreSVG.rotate(180);
 
   var menuWidth = '100vw';
   var titleWidth = 300;
@@ -138,6 +147,30 @@ var app = function () {
       this.typed = true;
     }
   }
+
+  $readMoreArrw.click(function () {
+    if (!this.typed) {
+      $kicker.typeIt({strings: 'We Help You Reach A Larger Audience', speed: 50, autoStart: false});
+      this.typed = true;
+    }
+    if (!displayingReadMore) {
+      $readMoreSVG.rotate(360);
+      $readMore.css({
+        transition: 'max-height 0.2s ease-in-out',
+        'max-height':'400px',
+        overflow:'auto'
+      })
+      displayingReadMore = true;
+    } else {
+      $readMoreSVG.rotate(180);
+      $readMore.css({
+        transition: 'max-height 0.2s ease-in-out',
+        'max-height':'0',
+        overflow:'hidden'
+      })
+      displayingReadMore = false;
+    }
+  })
 
   $toAbout.click(function (e) {
     e.preventDefault();

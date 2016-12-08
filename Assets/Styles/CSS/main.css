@@ -5902,6 +5902,44 @@ button.close {
   margin-top: 45px;
   text-align: center;
   margin-bottom: 100px; }
+.about .row .show-more {
+  width: 200px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: black; }
+  .about .row .show-more .show-more-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 50px;
+    height: 20px; }
+  .about .row .show-more:hover {
+    cursor: pointer;
+    color: #0B99BC; }
+    .about .row .show-more:hover .show-more-img {
+      transition: transform 0.1s ease-in-out;
+      transform: scale(1.5); }
+.about .row .read-more {
+  -webkit-box-shadow: inset 0px 7px 8px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 7px 8px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 7px 8px -1px rgba(0, 0, 0, 0.75);
+  background-color: #bebebe;
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+  .about .row .read-more p {
+    margin: 50px auto;
+    max-width: 942px;
+    text-align: center; }
+  .about .row .read-more h1 {
+    margin: 0;
+    -webkit-box-shadow: inset 0px -11px 8px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px -11px 8px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px -11px 8px -6px rgba(0, 0, 0, 0.75);
+    padding-bottom: 25px; }
 .about .row .container-background {
   background-image: url("../../Images/shards_pattern.jpg");
   width: 100%; }
