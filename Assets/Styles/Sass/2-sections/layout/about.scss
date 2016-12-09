@@ -67,6 +67,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      #slide-2 {
+        .person {
+          background-image: url('http://previews.123rf.com/images/vgstudio/vgstudio1211/vgstudio121100082/16191883-Cheerful-young-man-isolated-over-white-background-Stock-Photo-headshot-man-male.jpg');
+        }
+      }
       .people-slide {
         align-self: center;
         height: 300px;
