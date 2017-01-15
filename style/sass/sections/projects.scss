@@ -1,6 +1,62 @@
-#section-3 {
-  background-color: rgb(35, 47, 152);
+.section{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;  
+  height: 100vh;
+
 }
-.section {
-    height: 100vh;
+#about-container{
+  
+}
+#main-project{
+  color:white;
+  text-align: center;
+  height:400px;
+  background-image: url("http://3.bp.blogspot.com/-NzHPw_4l8cU/VdCEq8ZNCmI/AAAAAAAATSg/xqgJeljRyCo/s1600/hipster-backgrounds-galaxy-hq-images.jpg");
+}
+
+.project-header{
+  font-size: 50px;
+  padding-top: 45px;
+  padding-bottom: 0px;
+}
+#sub-project1{
+  height:350px;
+  background-image: url("http://pxwallpaper.com/wp-content/uploads/2013/12/backgrounds-tumblr-hipster-214.jpg");
+}
+#sub-project2{
+  
+  height:350px;
+  background-image: url("http://backgroundidea.info/wp-content/uploads/2015/06/background-for-tumblr-hipster-tumblr-hipster-wallpaper-cool-wallrartcom-image.jpg");
+}
+#sub-projects{
+  padding-top:20px;
+}
+.main-project-title{
+  
+  padding-bottom: 25px;
+}
+#main-para{
+  line-height: 200%;
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+#second-para{
+  
+  line-height: 200%;
+  font-size: 20px;
+  padding-bottom: 50px;
+  
+}
+#third-para{
+
+  line-height: 200%;
+  font-size: 20px;
+  padding-bottom: 135px;
+}
+.row{
+  color: white;
+
+}
+button{
+  
 }
