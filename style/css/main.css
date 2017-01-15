@@ -5,8 +5,8 @@ html, body {
 .hamburger {
   position: fixed;
   float: right;
-  right: 50px;
-  top: 50px; }
+  right: 0px;
+  top: 0px; }
 
 .sliding-title-container {
   width: 400px;
@@ -50,19 +50,5 @@ html, body {
     margin-top: 10px; }
   to {
     margin-top: 50px; } }
-.section {
-  height: 100vh; }
-
-#section-1 {
-  background-color: #60daf1; }
-
-#section-2 {
-  background-color: #6e509f; }
-
-#section-3 {
-  background-color: #cda201; }
-
-#section-4 {
-  background-color: #5abb65; }
 
 /*# sourceMappingURL=main.css.map */
