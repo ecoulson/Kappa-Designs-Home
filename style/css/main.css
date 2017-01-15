@@ -108,6 +108,7 @@ html, body {
   background-image: url("http://backgroundidea.info/wp-content/uploads/2015/06/background-for-tumblr-hipster-tumblr-hipster-wallpaper-cool-wallrartcom-image.jpg"); }
 
 #sub-projects {
+  padding-right: -30px;
   padding-top: 20px; }
 
 .main-project-title {
@@ -130,6 +131,10 @@ html, body {
 
 .row {
   color: white; }
+
+#foo {
+  margin: 0;
+  padding: 0; }
 
 .section {
   height: 100vh; }
