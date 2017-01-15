@@ -23,7 +23,9 @@ function Title(words) {
     }.bind(this), 300);
 
     setTimeout(function () {
+      console.log(this.words[this.index], this.index);
       this.$titleInner.text(this.words[this.index]);
+      this.index++;
     }.bind(this), 1700);
 
     setTimeout(function () {
@@ -33,7 +35,6 @@ function Title(words) {
         'padding-bottom':'10px',
         'padding-left':this.$titleContainer.width()
       })
-      this.index++;
     }.bind(this), 1000);
   };
 }
