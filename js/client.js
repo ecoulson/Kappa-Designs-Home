@@ -50,7 +50,7 @@ $(function() {
 
   var $hamburger = $('.hamburger');
 
-  var title = new Title(['test1','teeeeeeeeeest2','test3']);
+  var title = new Title(['Kappa','meme','design']);
   setInterval(function () {
     title.slide();
   }, 5000);
