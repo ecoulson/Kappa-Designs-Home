@@ -11,8 +11,8 @@
   </head>
 
   <body>
-    <span class="logo" data-text="K">K</span>
-    <div class="section" id="section-1">
+    <div class="section fluid-container" id="section-1">
+      <span class="logo" data-text="K">K</span>
       <div class="hamburger hamburger--collapse" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
@@ -20,10 +20,7 @@
       </div>
 
       <div class="clear-fix" color="white">
-        <div class="sliding-title-container">
-          <div class="sliding-title-border"></div>
-          <div class="sliding-title-inner"></div>
-        </div>
+        <h1 class="desc-title">We <span class="desc-animated"></span></h1>
       </div>
 
       <div class="scrolling-mouse">
@@ -36,74 +33,44 @@
 
     <div class="section" id="section-3">
       <div class="container" id="about-container">
-
         <h1 class="project-header" text-align="center">
           Our Projects:
         </h1>
         <hr width="50%">
-
-        <div class = "row">
-          <div class="col-lg-1">
-
-          </div>
-          <div class ="container">
-          <div class="col-lg-10" id="main-project">
-              <h1 class="main-project-title">
-                FTC Robotics
-              </h1>
-              <h4 id="main-para">
-                Programing the Overlake robot under the FIRST Robotics organization.
-                We built a fully autonomous program that utilizeses sensors and encoders that impact the running of the code.
-              </h4>
-              <button type="button" class="btn btn-success" id="main-button">Viw Project <span class="glyphicon glyphicon-menu-right"></button>
-
+        <div class="row">
+          <div class="container">
+            <div class="col-md-12" id="main-project">
+              <h1 class="main-project-title">FTC Robotics</h1>
+              <h4 id="main-para">Programing the Overlake robot under the FIRST Robotics organization.We built a fully autonomous program that utilizeses sensors and encoders that impact the running of the code.</h4>
+              <button type="button" class="btn btn-success" id="main-btn">View Project <span class="glyphicon glyphicon-menu-right"></button>
             </div>
           </div>
-          <div class="col-lg-1"></div>
         </div>
-        <div class = "row" id="sub-projects">
-
-          <div class="col-lg-1"id="foo"></div>
-          <div class=container>
-          <div class="col-lg-5"id="sub-project1">
-            <h1 class="main-project-title">
-                Local Library
-              </h1>
-              <h4 id="second-para">
-                Remaking the library website, optimized for efficency while keeping a slick, pretty design.
-
-              </h4>
-              <button type="button" class="btn btn-success" id="main-button">Viw Project <span class="glyphicon glyphicon-menu-right"></button>
+        <div class="row" id="sub-projects">
+          <div class="container">
+            <div class="col-md-6"id="sub-project1">
+              <h1 class="main-project-title">Local Library</h1>
+              <h4 id="second-para">Remaking the library website, optimized for efficency while keeping a slick, pretty design.</h4>
+              <button type="button" class="btn btn-success" id="main-btn">View Project <span class="glyphicon glyphicon-menu-right"></button>
+            </div>
+            <div class="col-md-6" id="sub-project2">
+              <h1 class="main-project-title">More Coming Soon...</h1>
+              <h4 id="third-para">We want to build your website next</h4>
+              <button type="button" class="btn btn-success" id="main-btn">View Project <span class="glyphicon glyphicon-menu-right"></button>
+            </div>
           </div>
-          <div class="col-lg-5" id="sub-project2">
-              <h1 class="main-project-title">
-                More Coming Soon...
-              </h1>
-              <h4 id="third-para">
-                We want to build your website next
-              </h4>
-              <button type="button" class="btn btn-success" id="main-button">Viw Project <span class="glyphicon glyphicon-menu-right"></button>
-          </div>
-          </div>
-
-          <div class="col-lg-1"></div>
-      </div>
+        </div>
       </div>
     </div>
-    </div>
-
 
     <div class="section" id="section-4">
       <div class="container"id="contact-header">
         <div class="jumbotron">
           <h1 class="big-header">Talk to Us</h1>
           <h2 class="description">Ask us about our day, tell us about your day, craft an exellent joke. We are here to listen. </h2>
-          <button type="button" class="btn btn-success" id="email-button">Compose Email <span class="glyphicon glyphicon-menu-right"></button>
-
+          <button type="button" class="btn btn-success" id="email-button">Compose Email<span class="glyphicon glyphicon-menu-right"></span></button>
         </div>
-
       </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

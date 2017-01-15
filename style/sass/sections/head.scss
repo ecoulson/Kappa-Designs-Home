@@ -1,5 +1,6 @@
 .section{
   height:100vh;
+  font-family: 'Montserrat', sans-serif;
 }
 #section-1 {
   background-image: url('http://s1.1zoom.me/big0/365/Waterfalls_Scenery_490125.jpg');
@@ -33,24 +34,12 @@
 
 .clear-fix {
   padding-top: 200px;
-  .sliding-title-container {
-    width: 400px;
-    height: 75px;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    .sliding-title-inner {
-      padding-top: 14px;
-      color: white;
-      font-size: 35px;
-      text-transform: uppercase;
-      text-align:center;
-      padding-bottom:10px;
-    }
-    .sliding-title-border {
-      position:absolute;
-      display:block;
-      padding-left: 400px;
+  .desc-title {
+    color: white;
+    .desc-animated {
+      padding: 5px 15px;
+      text-transform: capitalize;
+      margin-left: 15px;
       border: 4px solid white;
     }
   }

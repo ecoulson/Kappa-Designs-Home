@@ -1,50 +1,27 @@
 function Title(words) {
   this.words = words;
   this.index = 0;
-  this.$titleContainer = $('.sliding-title-container');
-  this.$titleInner = $('.sliding-title-inner');
-  this.$titleBorder = $('.sliding-title-border');
-  this.$titleBorder.height($('.sliding-title-container').height());
+  this.$titleContainer = $('.desc-title');
+  this.$titleInner = $('.desc-animated')
   this.$titleInner.text(this.words[this.index]);
 
   this.slide = function () {
-    if (this.index == this.words.length) {
+    if (this.index === this.words.length) {
       this.index = 0;
     }
-    this.$titleBorder.css({
-      'transition':'1s padding-left ease-in-out',
-      'padding-top':'10px',
-      'padding-bottom':'10px',
-      'padding-left':0
-    })
-
+    this.$titleInner.animate({
+      width: '0',
+      padding: '5px 0'
+    }, 1000)
     setTimeout(function () {
-      this.$titleInner.text('');
-    }.bind(this), 300);
-
-    setTimeout(function () {
-      console.log(this.words[this.index], this.index);
       this.$titleInner.text(this.words[this.index]);
+      this.$titleInner.animate({
+        width: '150',
+        padding: '5px 15px'
+      }, 1000)
       this.index++;
-    }.bind(this), 1700);
-
-    setTimeout(function () {
-      if ($(window).width() < 401) {
-        this.$titleBorder.css({
-          'transition':'1s padding-left ease-in-out',
-          'padding-top':'10px',
-          'padding-bottom':'10px',
-          'padding-left':'90vw'
-        })
-      } else {
-        this.$titleBorder.css({
-          'transition':'1s padding-left ease-in-out',
-          'padding-top':'10px',
-          'padding-bottom':'10px',
-          'padding-left':this.$titleInner.width()
-        })
-      }
     }.bind(this), 1000);
+
   };
 }
 
