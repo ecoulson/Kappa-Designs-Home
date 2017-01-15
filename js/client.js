@@ -29,14 +29,17 @@ function Title(words) {
 
 $(function() {
   //config
+  smoothScool(500);
   $.scrollify({
     section : ".section",
-    scrollSpeed: 500,
+    scrollSpeed: 600,
   });
 
   var $hamburger = $('.hamburger');
+  var $overlay = $('.overlay');
 
   var title = new Title(['Kappa','meme','design']);
+
   setInterval(function () {
     title.slide();
   }, 5000);
@@ -45,8 +48,24 @@ $(function() {
     e.preventDefault();
     if ($hamburger.hasClass('is-active')) {
       $hamburger.removeClass('is-active')
+      $overlay.slideUp();
     } else {
-      $hamburger.addClass('is-active')
+      $hamburger.addClass('is-active');
+      $overlay.slideDown();
     }
   })
 });
+
+function smoothScool (duration) {
+  $('a[href^="#"]').on('click', function(event) {
+    if ($($(this)).prop('id') != '#next' && $($(this)).prop('id') != '#prev') {
+      var target = $( $(this).attr('href') );
+      if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, duration);
+      }
+    }
+  });
+}

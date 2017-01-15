@@ -3,15 +3,21 @@
 }
 
 #section-4 {
-  background-color: rgb(223, 139, 249);
+
 }
 
 #contact-header{
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 #email-button{
-  font-size: 8vw;
+  font-size: 5vw;
+}
+
+.jumbotron {
+  -webkit-box-shadow: 0px 0px 8px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 8px 9px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 8px 9px rgba(0,0,0,0.75);
 }
 
 .description {
