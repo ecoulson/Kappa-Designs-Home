@@ -29,12 +29,21 @@ function Title(words) {
     }.bind(this), 1700);
 
     setTimeout(function () {
-      this.$titleBorder.css({
-        'transition':'1s padding-left ease-in-out',
-        'padding-top':'10px',
-        'padding-bottom':'10px',
-        'padding-left':this.$titleContainer.width()
-      })
+      if ($(window).width() < 401) {
+        this.$titleBorder.css({
+          'transition':'1s padding-left ease-in-out',
+          'padding-top':'10px',
+          'padding-bottom':'10px',
+          'padding-left':'90vw'
+        })
+      } else {
+        this.$titleBorder.css({
+          'transition':'1s padding-left ease-in-out',
+          'padding-top':'10px',
+          'padding-bottom':'10px',
+          'padding-left':this.$titleInner.width()
+        })
+      }
     }.bind(this), 1000);
   };
 }
