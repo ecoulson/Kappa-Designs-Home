@@ -12,7 +12,9 @@ html, body {
   height: 100vh; }
 
 #section-1 {
-  background-image: url("http://s1.1zoom.me/big0/365/Waterfalls_Scenery_490125.jpg"); }
+  background-image: url("http://s1.1zoom.me/big0/365/Waterfalls_Scenery_490125.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
 
 .logo {
   position: absolute;
