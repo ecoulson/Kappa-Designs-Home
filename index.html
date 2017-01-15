@@ -29,6 +29,17 @@
     </div>
 
     <div class="section" id="section-2">
+      <div class="container">
+        <div class="row">
+          <h1 class="about-title">We Make Change</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="about-subtitle">Developers and designers that strive to make your Non-Profit Better</h3>
+            <span class="see-mission">See Our Mission<span class="glyphicon glyphicon-menu-right"></span></span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="section" id="section-3">
@@ -66,11 +77,27 @@
     </div>
 
     <div class="section" id="section-4">
-      <div class="container" id="contact-header">
-        <div class="jumbotron">
-          <h1 class="big-header">Talk to Us</h1>
-          <h2 class="description">Ask us about our day, tell us about your day, craft an excellent joke. We are here to listen. </h2>
-          <button type="button" class="btn btn-success" id="email-button">Compose Email</button>
+      <div class="card-container" id="contact-header">
+        <div class="card" id="card">
+          <figure class="front">
+            <h1 class="big-header">Talk to Us</h1>
+            <h2 class="description">Ask us about our day, tell us about your day, craft an excellent joke. We are here to listen. </h2>
+            <button type="button" class="btn btn-success" id="email-button">Compose Email</button>
+          </figure>
+          <figure class="back">
+            <h1 class="email">Email</h1>
+            <br>
+            <h3 class="subject">Subject</h3>
+            <input class="subject-input" placeholder="Subject...">
+            <br>
+            <h3 class="cc">CC</h3>
+            <input class="cc-input" placeholder="CC...">
+            <br>
+            <h3 class="content">Content</h3>
+            <textarea id="email-content" class="content" placeholder="Content"></textarea>
+            <br>
+            <button type="button" class="btn btn-success" id="card-button">Send</button>
+          </figure>
         </div>
       </div>
     </div>
@@ -82,7 +109,6 @@
         <a class="col-3" href="#section-4">Contact</a>
         <a class="blog-link" href="http://blog.kappadesigns.org"><span class="txt">Blog</span></a>
       </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

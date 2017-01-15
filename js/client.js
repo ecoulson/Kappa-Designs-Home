@@ -37,12 +37,24 @@ $(function() {
 
   var $hamburger = $('.hamburger');
   var $overlay = $('.overlay');
+  var $card = $('#card');
+  var $cardFlip = $('#email-button');
+  var $emailFlip = $('#card-button');
 
   var title = new Title(['Kappa','meme','design']);
 
   setInterval(function () {
     title.slide();
   }, 5000);
+
+  $cardFlip.click(function (e) {
+    $card.addClass('flipped');
+  })
+
+  $emailFlip.click(function (e) {
+    sendMail();
+    $card.removeClass('flipped');
+  })
 
   $hamburger.click(function (e) {
     e.preventDefault();
@@ -68,4 +80,12 @@ function smoothScool (duration) {
       }
     }
   });
+}
+
+function sendMail() {
+  var emailString = 'mailto:kappadesignsco@gmail.com?subject='+$('.subject-input').val()+'&body='+$('#email-content').val()+'&cc='+$('.cc-input').val()+'';
+  email = window.open(emailString);
+  setTimeout(function () {
+    email.close();
+  }, 1000);
 }
