@@ -5,38 +5,36 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255, 255, 255, 0.78);
+	background-color: rgba(125, 125, 125, 0.9);
 	.flex-menu {
 		height: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		text-align: center;
 		[class*="col"] {
-			display: block;
+			color: white;
 			width: 33.3333%;
 			height: 70%;
 			padding-top: 100px;
-			color:black;
 			font-size: 36px;
 			text-decoration: none;
 			&:hover {
-				color: white;
 				cursor: pointer;
 			}
 		}
 		.col-1 {
 			&:hover {
-				background-color: #6F1A07;
+				background-color: rgba(#6f1a07, 0.6);
 			}
 		}
 		.col-2 {
 			&:hover {
-				background-color: #AF9164
+				background-color: rgba(#af9164, 0.6)
 			}
 		}
 		.col-3 {
 			&:hover {
-				background-color: #B3B6B7;
+				background-color: rgba(#B3B6B7, 0.6);
 			}
 		}
 		.blog-link {
@@ -45,14 +43,14 @@
 				display: block;
 				margin-top: 50px;
 			}
-			color: black;
+			color:white;
 			display: block;
 			font-size: 36px;
 			width: 100%;
 			height: 30%;
 			text-decoration: none;
 			&:hover {
-				background-color: #F7F3E3;
+				background-color: rgba(#F7F3E3, 0.6);
 				cursor: pointer;
 			}
 		}

@@ -2,7 +2,7 @@ function Title(words) {
   this.words = words;
   this.index = 0;
   this.$titleContainer = $('.desc-title');
-  this.$titleInner = $('.desc-animated')
+  this.$titleInner = $('.desc-animated');
   this.$titleInner.text(this.words[this.index]);
 
   this.slide = function () {
@@ -65,6 +65,11 @@ $(function() {
       $hamburger.addClass('is-active');
       $overlay.slideDown();
     }
+  })
+
+  $overlay.click(function (e) {
+    $overlay.slideUp();
+    $hamburger.removeClass('is-active')
   })
 });
 

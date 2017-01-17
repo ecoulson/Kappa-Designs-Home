@@ -224,32 +224,30 @@ html, body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.78); }
+  background-color: rgba(125, 125, 125, 0.9); }
   .overlay .flex-menu {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     text-align: center; }
     .overlay .flex-menu [class*="col"] {
-      display: block;
+      color: white;
       width: 33.3333%;
       height: 70%;
       padding-top: 100px;
-      color: black;
       font-size: 36px;
       text-decoration: none; }
       .overlay .flex-menu [class*="col"]:hover {
-        color: white;
         cursor: pointer; }
     .overlay .flex-menu .col-1:hover {
-      background-color: #6F1A07; }
+      background-color: rgba(111, 26, 7, 0.6); }
     .overlay .flex-menu .col-2:hover {
-      background-color: #AF9164; }
+      background-color: rgba(175, 145, 100, 0.6); }
     .overlay .flex-menu .col-3:hover {
-      background-color: #B3B6B7; }
+      background-color: rgba(179, 182, 183, 0.6); }
     .overlay .flex-menu .blog-link {
       text-align: center;
-      color: black;
+      color: white;
       display: block;
       font-size: 36px;
       width: 100%;
@@ -259,7 +257,7 @@ html, body {
         display: block;
         margin-top: 50px; }
       .overlay .flex-menu .blog-link:hover {
-        background-color: #F7F3E3;
+        background-color: rgba(247, 243, 227, 0.6);
         cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
