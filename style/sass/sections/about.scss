@@ -1,6 +1,90 @@
-.section{
-  height: 100vh;
-}
 #section-2 {
-  // background-color: #6f1a07;
+  background-color: #9D69A3;
+}
+.clear-fix-about {
+  @media all and (max-width: 1200px) {
+    padding-bottom: 200px;
+  }
+  @media all and (max-width: 1000px) {
+    padding-bottom: 500px;
+  }
+}
+.about-title {
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  color: black;
+  padding: 45px 0;
+  background-color: rgb(255, 255, 255);
+  transition: box-shadow 0.25s ease-in-out;
+  &:hover {
+    cursor:default;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  }
+}
+
+.mission-row {
+  width: 100%;
+  .slider-container {
+    width: 200%;
+    display: flex;
+    .slider {
+      width: 40%;
+      position: relative;
+      padding: 25px 5px;
+      margin: 50px 5%;
+      border-radius: 5px;
+      background-color: white;
+      -webkit-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75);
+      .about-subtitle {
+        color:black;
+      }
+      .see-mission,.back-btn {
+        margin: 25px auto;
+        display: block;
+        width: 150px;
+        text-decoration: none;
+        color:black;
+        border: 3px solid black;
+        transition:all 0.5s ease;
+        &:hover {
+          background-color: rgb(160, 168, 173);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.work-row {
+  .container-work {
+    background-color: white;
+    h4 {
+      font-size: 26px;
+      color:black;
+      padding: 10px 0;
+      margin: 0;
+    }
+    .icon {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      padding-top: 5px;
+    }
+    .desc {
+      padding: 25px 5px;
+      color: black;
+      line-height: 1.5;
+    }
+    transition: box-shadow 0.5s ease-in-out;
+    &:hover {
+      -webkit-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75);
+    }
+  }
 }

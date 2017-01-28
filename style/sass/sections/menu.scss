@@ -5,53 +5,97 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(125, 125, 125, 0.9);
+	background-color: rgb(255, 255, 255);
 	.flex-menu {
+		width: inherit;
 		height: 100%;
-		display: flex;
-		flex-wrap: wrap;
 		text-align: center;
-		[class*="col"] {
-			color: white;
-			width: 33.3333%;
-			height: 70%;
-			padding-top: 100px;
-			font-size: 36px;
-			text-decoration: none;
-			&:hover {
-				cursor: pointer;
+		.flex-col {
+			@media all and (max-width: 500px) {
+				height: 75px;
+				.link {
+					padding-bottom: 6px;
+				}
 			}
-		}
-		.col-1 {
-			&:hover {
-				background-color: rgba(#6f1a07, 0.6);
+			@media all and (min-width: 500px) {
+				height: 100px;
+				.link {
+					padding-bottom: 25px
+				}
 			}
-		}
-		.col-2 {
-			&:hover {
-				background-color: rgba(#af9164, 0.6)
-			}
-		}
-		.col-3 {
-			&:hover {
-				background-color: rgba(#B3B6B7, 0.6);
-			}
-		}
-		.blog-link {
-			text-align: center;
-			.txt {
-				display: block;
-				margin-top: 50px;
-			}
-			color:white;
 			display: block;
+			padding: 25px 50px;
+			color:black;
 			font-size: 36px;
-			width: 100%;
-			height: 30%;
 			text-decoration: none;
 			&:hover {
-				background-color: rgba(#F7F3E3, 0.6);
 				cursor: pointer;
+				transition:color 0.5s ease;
+			}
+			.link {
+				display: block;
+				text-decoration: none;
+			}
+		}
+		.flex-col-1 {
+			background: linear-gradient(to right, #641A07 50%, rgba(255, 255, 255, 0) 50%);
+		  background-size: 200% 100%;
+		  background-position:right bottom;
+		  transition:all 0.5s ease;
+			.link {
+				color: #641A07;
+			}
+			&:hover {
+				background-position: left bottom;
+				.link {
+					color: white;
+				}
+			}
+		}
+		.flex-col-2 {
+			background: linear-gradient(to right, #AF9164 50%, rgba(255, 255, 255, 0) 50%);
+			background-size: 200% 100%;
+		  background-position:right bottom;
+		  transition:all 0.5s ease;
+			.link {
+				color: #AF9164;
+			}
+			&:hover {
+				background-position: left bottom;
+				.link {
+					color: white;
+				}
+			}
+		}
+		.flex-col-3 {
+			background: linear-gradient(to right, #B3B6B7 50%, rgba(255, 255, 255, 0) 50%);
+			background-size: 200% 100%;
+		  background-position:right bottom;
+		  transition:all 0.5s ease;
+			.link {
+				color: #B3B6B7;
+			}
+			&:hover {
+				background-position: left bottom;
+				.link {
+					color: white;
+				}
+			}
+		}
+		.flex-col-4 {
+			border-top: 1px solid black;
+			background: linear-gradient(to right, rgb(67, 55, 70) 50%, rgba(255, 255, 255, 0) 50%);
+			background-size: 200% 100%;
+		  background-position:right bottom;
+		  transition:all 0.5s ease;
+			.link {
+				color: rgb(67, 55, 70);
+			}
+			&:hover {
+				background-position: left bottom;
+				.link {
+					color: white;
+				}
 			}
 		}
 	}

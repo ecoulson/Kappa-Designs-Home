@@ -1,7 +1,14 @@
 .section {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  height: 100vh;
+}
+
+#section-3 {
+  background-color: #93A3B1;
+  // padding-top: 25px;
+  @media all and (max-width: 900px) {
+    // padding-top: 300px;
+  }
 }
 
 #section-3 {
@@ -25,7 +32,7 @@
 
 .clear-fix-proj {
   padding-top: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 150px;
 }
 
 .project-header{
@@ -59,22 +66,28 @@
   font-size: 20px;
 }
 
-.main-btn {
-  border: 3px solid white;
-  position: absolute;
-  bottom:25px;
-  left: 50%;
-  width: 150px;
-  margin-left: -75px;
-  background: linear-gradient(to right, #AF9164  50%, rgba(255, 255, 255, 0) 50%);
-  background-size: 200% 100%;
-  background-position:right bottom;
-  transition:all 0.5s ease;
+.btn-link {
+  color: white;
   &:hover {
-    background-position:left bottom;
+    color:white;
   }
-  &:focus {
-    outline: none;
+  .main-btn {
+    border: 3px solid white;
+    position: absolute;
+    bottom:25px;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    background: linear-gradient(to right, #64af67 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition:all 0.5s ease;
+    &:hover {
+      background-position:left bottom;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 }
 

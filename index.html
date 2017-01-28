@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <div class="section fluid-container" id="section-1">
+    <div class="section scroll fluid-container" id="section-1">
       <span class="logo" data-text="K">K</span>
       <div class="hamburger hamburger--collapse" type="button">
         <span class="hamburger-box">
@@ -28,21 +28,52 @@
       </div>
     </div>
 
-    <div class="section" id="section-2">
-      <div class="container">
-        <div class="row">
-          <h1 class="about-title">We Make Change</h1>
+    <div class="section scroll" id="section-2">
+      <div class="clear-fix-about">
+        <h1 class="about-title">We Make Change</h1>
+        <div class="mission-row">
+          <div class="slider-container">
+            <div class="slider" id="slider-1">
+              <h2 class="about-subtitle">Developers and designers that strive to make your Non-Profit Better</h2>
+              <a class="see-mission">See Our Mission<span class="glyphicon glyphicon-menu-right"></span></a>
+            </div>
+            <div class="slider" id="slider-2">
+              <h2 class="about-subtitle">Mission Statement</h2>
+              <a class="back-btn"><span class="glyphicon glyphicon-menu-left"></span>Back</a>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="about-subtitle">Developers and designers that strive to make your Non-Profit Better</h3>
-            <span class="see-mission">See Our Mission<span class="glyphicon glyphicon-menu-right"></span></span>
+        <div class="container">
+          <div class="row work-row">
+            <div class="col-md-4">
+              <div class="container-work">
+                <h4 class="sub-title">Passion</h4>
+                <img src="imgs/heart.svg" alt="icon" class="icon img-responsive">
+                <p class="desc">Passion drives our work. The passion to create change and bring more attention to the great work nonprofits in our area do.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="container-work">
+                <div class="container-work">
+                  <h4 class="sub-title">Creativity</h4>
+                  <img src="imgs/tools.svg" alt="icon" class="icon img-responsive">
+                  <p class="desc">While still providing practical design, we enjoy experimenting and getting creative. After all, creativity brings change.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="container-work">
+                <h4 class="sub-title">Community</h4>
+                <img src="imgs/teamwork.svg" alt="icon" class="icon img-responsive">
+                <p class="desc">Our goal is to connect the Puget Sound area nonprofits with each other, as well as other nonprofits.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section" id="section-3">
+    <div class="section scroll" id="section-3">
       <div class="clear-fix-proj">
         <div class="container" id="project-container">
           <h1 class="project-header" text-align="center">
@@ -53,22 +84,22 @@
             <div class="container">
               <div class="col-md-12" id="main-project">
                 <h1 class="main-project-title">FTC Robotics</h1>
-                <h4 id="main-para">Programing the Overlake robot under the FIRST Robotics organization.We built a fully autonomous program that utilizeses sensors and encoders that impact the running of the code.</h4>
-                <button type="button" class="main-btn">View Project <span class="glyphicon glyphicon-menu-right"></button>
+                <h4 id="main-para">Programing the Overlake robot under the FIRST Robotics organization. We built a fully autonomous program that utilizes sensors and encoders that impact the running of the code.</h4>
+                <a href="https://github.com/Overlake-FTC-7330-2016/ftc_app" class="btn-link"><button type="button" class="main-btn">View Project <span class="glyphicon glyphicon-menu-right"></button></a>
               </div>
             </div>
           </div>
           <div class="row" id="sub-projects">
             <div class="container">
               <div class="col-md-6"id="sub-project1">
-                <h1 class="main-project-title">Local Library</h1>
-                <h4 id="second-para">Remaking the library website, optimized for efficency while keeping a slick, pretty design.</h4>
-                <button type="button" class="main-btn">View Project <span class="glyphicon glyphicon-menu-right"></button>
+                <h1 class="main-project-title">Our Blog</h1>
+                <h4 id="second-para">While developing our main site we developed a slick, modern blog on the side.</h4>
+                <a href="https://github.com/KappaDesigns/Kappa-Designs-Blog" class="btn-link"><button type="button" class="main-btn">View Project <span class="glyphicon glyphicon-menu-right"></button></a>
               </div>
               <div class="col-md-6" id="sub-project2">
                 <h1 class="main-project-title">More Coming Soon...</h1>
                 <h4 id="third-para">We want to build your website next</h4>
-                <button type="button" class="main-btn">View Project <span class="glyphicon glyphicon-menu-right"></button>
+                <a href="https://github.com/KappaDesigns" class="btn-link"><button type="button" class="main-btn">Our Github <span class="glyphicon glyphicon-menu-right"></button></a>
               </div>
             </div>
           </div>
@@ -76,7 +107,7 @@
       </div>
     </div>
 
-    <div class="section" id="section-4">
+    <div class="section scroll" id="section-4">
       <div class="card-container" id="contact-header">
         <div class="card" id="card">
           <figure class="front">
@@ -86,13 +117,12 @@
           </figure>
           <figure class="back">
             <h1 class="email">Email</h1>
-            <br>
             <h3 class="subject">Subject</h3>
             <input class="subject-input" placeholder="Subject...">
             <br>
             <h3 class="cc">CC</h3>
-            <input class="cc-input" placeholder="CC...">
             <br>
+            <input class="cc-input" placeholder="CC...">
             <h3 class="content">Content</h3>
             <textarea id="email-content" class="content" placeholder="Content"></textarea>
             <br>
@@ -103,10 +133,20 @@
     </div>
     <div class="overlay">
       <div class="flex-menu">
-        <a class="col-1" href="#section-2">About</a>
-        <a class="col-2" href="#section-3">Projects</a>
-        <a class="col-3" href="#section-4">Contact</a>
-        <a class="blog-link" href="http://blog.kappadesigns.org"><span class="txt">Blog</span></a>
+        <h1>Menu</h1>
+        <hr>
+        <div class="flex-col flex-col-1">
+          <a class="link" href="#section-2">About</a>
+        </div>
+        <div class="flex-col flex-col-2">
+          <a class="link" href="#section-3">Projects</a>
+        </div>
+        <div class="flex-col flex-col-3">
+          <a class="link" href="#section-4">Contact</a>
+        </div>
+        <div class="flex-col flex-col-4">
+          <a class="link" href="http://blog.kappadesigns.org">Blog</a>
+        </div>
       </div>
     </div>
 
