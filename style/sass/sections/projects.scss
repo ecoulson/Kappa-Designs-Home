@@ -1,0 +1,106 @@
+.section {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#section-3 {
+  background-color: #93A3B1;
+  // padding-top: 25px;
+  @media all and (max-width: 900px) {
+    // padding-top: 300px;
+  }
+}
+
+#section-3 {
+  // background-color: #af9164;
+}
+
+#main-project{
+  color:white;
+  text-align: center;
+  height:450px;
+  background-image: url("http://3.bp.blogspot.com/-NzHPw_4l8cU/VdCEq8ZNCmI/AAAAAAAATSg/xqgJeljRyCo/s1600/hipster-backgrounds-galaxy-hq-images.jpg");
+}
+
+#project-container {
+  margin-top: 25px;
+  -webkit-box-shadow: 0px 0px 8px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 8px 9px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 8px 9px rgba(0,0,0,0.75);
+  background-color: white;
+}
+
+.clear-fix-proj {
+  padding-top: 75px;
+  padding-bottom: 150px;
+}
+
+.project-header{
+  font-size: 50px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+#sub-project1{
+  height:350px;
+  background-image: url("http://pxwallpaper.com/wp-content/uploads/2013/12/backgrounds-tumblr-hipster-214.jpg");
+}
+
+#sub-project2{
+  margin-bottom: 25px;
+  height:350px;
+  background-image: url("http://backgroundidea.info/wp-content/uploads/2015/06/background-for-tumblr-hipster-tumblr-hipster-wallpaper-cool-wallrartcom-image.jpg");
+}
+
+#sub-projects{
+  position: relative;
+}
+
+.main-project-title{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#main-para{
+  line-height: 200%;
+  font-size: 20px;
+}
+
+.btn-link {
+  color: white;
+  &:hover {
+    color:white;
+  }
+  .main-btn {
+    border: 3px solid white;
+    position: absolute;
+    bottom:25px;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    background: linear-gradient(to right, #64af67 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition:all 0.5s ease;
+    &:hover {
+      background-position:left bottom;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+#second-para{
+  line-height: 200%;
+  font-size: 20px;
+}
+
+#third-para{
+  line-height: 200%;
+  font-size: 20px;
+}
+
+.row{
+  color: white;
+}
