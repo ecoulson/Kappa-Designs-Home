@@ -33,7 +33,8 @@ $(function() {
   $.scrollify({
     section : ".section",
     scrollSpeed: 600,
-    standardScrollElements: ".sroll"
+    standardScrollElements: ".sroll",
+    interstitialSection:".mini"
   });
 
   var $hamburger = $('.hamburger');
@@ -44,6 +45,9 @@ $(function() {
   var $menu = $('.flex-menu');
   var $missionBtn = $('.see-mission');
   var $backBtn = $('.back-btn');
+  var $modalClose = $('.modal-close');
+  var $uniqueBtn = $('#snapchat');
+  let $modalOverlay = $('.modal-overlay');
 
   var title = new Title(['Kappa','meme','design']);
   var keys = {
@@ -61,6 +65,14 @@ $(function() {
     $(".clear-fix-about").css({
       'padding-bottom':100
     })
+  })
+
+  $uniqueBtn.click(function (e) {
+    $modalOverlay.slideDown();
+  })
+
+  $modalClose.click(function (e) {
+    $modalOverlay.slideUp();
   })
 
   $missionBtn.click(function (e) {
