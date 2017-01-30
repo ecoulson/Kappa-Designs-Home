@@ -30,12 +30,12 @@ function Title(words) {
 $(function() {
   //config
   smoothScool(500);
-  $.scrollify({
-    section : ".section",
-    scrollSpeed: 600,
-    standardScrollElements: ".sroll",
-    interstitialSection:".mini"
-  });
+  // $.scrollify({
+  //   section : ".section",
+  //   scrollSpeed: 600,
+  //   standardScrollElements: ".sroll",
+  //   interstitialSection:".mini"
+  // });
 
   var $hamburger = $('.hamburger');
   var $overlay = $('.overlay');
