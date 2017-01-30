@@ -2,12 +2,6 @@
   background-color: #9D69A3;
 }
 .clear-fix-about {
-  @media all and (max-width: 1200px) {
-    padding-bottom: 200px;
-  }
-  @media all and (max-width: 1000px) {
-    padding-bottom: 500px;
-  }
 }
 .about-title {
   -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
@@ -62,7 +56,13 @@
 }
 
 .work-row {
+  &:hover {
+    cursor: default;
+  }
+  margin-bottom: 75px;
   .container-work {
+    margin-top: 15px;
+    height: 350px;
     background-color: white;
     h4 {
       font-size: 26px;

@@ -25,17 +25,9 @@ function Title(words) {
   };
 }
 
-
-
 $(function() {
   //config
   smoothScool(500);
-  $.scrollify({
-    section : ".section",
-    scrollSpeed: 600,
-    standardScrollElements: ".sroll",
-    interstitialSection:".mini"
-  });
 
   var $hamburger = $('.hamburger');
   var $overlay = $('.overlay');
@@ -47,9 +39,11 @@ $(function() {
   var $backBtn = $('.back-btn');
   var $modalClose = $('.modal-close');
   var $uniqueBtn = $('#snapchat');
-  let $modalOverlay = $('.modal-overlay');
+  var $modalOverlay = $('.modal-overlay');
 
-  var title = new Title(['Kappa','meme','design']);
+  var prevScroll;
+  var scrolling = false;
+  var title = new Title(['a','a','c']);
   var keys = {
     37: 1,
     38: 1,
@@ -65,6 +59,27 @@ $(function() {
     $(".clear-fix-about").css({
       'padding-bottom':100
     })
+  })
+
+  $(window).scroll(function () {
+    if (window.innerHeight >= $(window).scrollTop() && !scrolling) {
+      scrolling = true;
+      setTimeout(function () {
+        scrolling = false;
+      }, 702);
+      if (prevScroll >= $(window).scrollTop()) {
+        // scrolling up
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
+      } else {
+        // scrolling down
+        $('html, body').animate({
+            scrollTop: $('#section-1').height()
+        }, 700);
+      }
+    }
+    prevScroll = $(window).scrollTop();
   })
 
   $uniqueBtn.click(function (e) {

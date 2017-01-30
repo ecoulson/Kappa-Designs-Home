@@ -5,13 +5,6 @@ html, body {
 #section-2 {
   background-color: #9D69A3; }
 
-@media all and (max-width: 1200px) {
-  .clear-fix-about {
-    padding-bottom: 200px; } }
-@media all and (max-width: 1000px) {
-  .clear-fix-about {
-    padding-bottom: 500px; } }
-
 .about-title {
   -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -56,27 +49,33 @@ html, body {
           background-color: #a0a8ad;
           cursor: pointer; }
 
-.work-row .container-work {
-  background-color: white;
-  transition: box-shadow 0.5s ease-in-out; }
-  .work-row .container-work h4 {
-    font-size: 26px;
-    color: black;
-    padding: 10px 0;
-    margin: 0; }
-  .work-row .container-work .icon {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    padding-top: 5px; }
-  .work-row .container-work .desc {
-    padding: 25px 5px;
-    color: black;
-    line-height: 1.5; }
-  .work-row .container-work:hover {
-    -webkit-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75); }
+.work-row {
+  margin-bottom: 75px; }
+  .work-row:hover {
+    cursor: default; }
+  .work-row .container-work {
+    margin-top: 15px;
+    height: 350px;
+    background-color: white;
+    transition: box-shadow 0.5s ease-in-out; }
+    .work-row .container-work h4 {
+      font-size: 26px;
+      color: black;
+      padding: 10px 0;
+      margin: 0; }
+    .work-row .container-work .icon {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      padding-top: 5px; }
+    .work-row .container-work .desc {
+      padding: 25px 5px;
+      color: black;
+      line-height: 1.5; }
+    .work-row .container-work:hover {
+      -webkit-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75); }
 
 .section {
   font-family: 'Montserrat', sans-serif; }
@@ -362,15 +361,22 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 15px; }
-    @media all and (max-width: 560px) {
+    margin: 15px;
+    transition: transform 0.5s ease-in-out; }
+    @media all and (max-width: 1400px) {
       .media-container .media-flex-container .media-flex {
         height: 100px;
         width: 100px; } }
-    @media all and (min-width: 560px) {
+    @media all and (max-width: 400px) {
+      .media-container .media-flex-container .media-flex {
+        height: 75px;
+        width: 75px; } }
+    @media all and (min-width: 1400px) {
       .media-container .media-flex-container .media-flex {
         height: 150px;
         width: 150px; } }
+    .media-container .media-flex-container .media-flex:hover {
+      transform: scale(1.1); }
   .media-container .media-flex-container #snapchat {
     background-image: url("../../imgs/snapchat.svg"); }
   .media-container .media-flex-container #twitter {

@@ -80,13 +80,21 @@
       background-repeat: no-repeat;
       background-size: cover;
       margin: 15px;
-      @media all and (max-width: 560px) {
+      @media all and (max-width: 1400px) {
         height: 100px;
         width: 100px;
       }
-      @media all and (min-width: 560px) {
+      @media all and (max-width: 400px) {
+        height: 75px;
+        width: 75px;
+      }
+      @media all and (min-width: 1400px) {
         height: 150px;
         width: 150px;
+      }
+      transition: transform 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
       }
     }
     #snapchat {
