@@ -178,7 +178,8 @@ html, body {
 #sub-project2 {
   margin-bottom: 25px;
   height: 350px;
-  background-image: url("http://backgroundidea.info/wp-content/uploads/2015/06/background-for-tumblr-hipster-tumblr-hipster-wallpaper-cool-wallrartcom-image.jpg"); }
+  background-image: url("https://enterprise.github.com/assets/aws/jetpack-octocat-airlock-b4e1d022c0113c997328f6598d16e58ad049140e50da4859d6b4d174890bb1c8.jpg");
+  background-size: cover; }
 
 #sub-projects {
   position: relative; }
@@ -247,23 +248,28 @@ html, body {
     height: 85%;
     position: absolute;
     transform-style: preserve-3d;
-    transition: transform 1s; }
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: transform 1s; }
     #contact-header #card figure {
       margin: 0;
       display: block;
       position: absolute;
       width: 100%;
       height: 100%;
-      backface-visibility: hidden; }
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden; }
     #contact-header #card .front {
       border-radius: 5px;
       background-color: white; }
     #contact-header #card .back {
       border-radius: 5px;
       background-color: white;
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg); }
   #contact-header .flipped {
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); }
 
 #email-button, #card-button {
   margin-top: 15px;
@@ -276,6 +282,16 @@ html, body {
   width: 200px;
   font-size: 32px; }
 
+@media all and (min-width: 680px) {
+  .email-adress {
+    display: none; } }
+@media all and (max-width: 680px) {
+  #email-button {
+    display: none; }
+
+  .email-adress {
+    display: block;
+    font-size: 24px; } }
 [class*="-input"] {
   padding: 5px 8px;
   width: 300px; }

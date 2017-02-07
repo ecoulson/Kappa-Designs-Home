@@ -16,7 +16,7 @@ function Title(words) {
     setTimeout(function () {
       this.$titleInner.text(this.words[this.index]);
       this.$titleInner.animate({
-        width: '150',
+        width: '250',
         padding: '5px 15px'
       }, 1000)
       this.index++;
@@ -35,6 +35,7 @@ $(function() {
   var $cardFlip = $('#email-button');
   var $emailFlip = $('#card-button');
   var $menu = $('.flex-menu');
+  var $link = $('.flex-col');
   var $missionBtn = $('.see-mission');
   var $backBtn = $('.back-btn');
   var $modalClose = $('.modal-close');
@@ -42,8 +43,10 @@ $(function() {
   var $modalOverlay = $('.modal-overlay');
 
   var prevScroll;
+  var fromMenu = false;
   var scrolling = false;
-  var title = new Title(['a','a','c']);
+  var title = new Title(['Passion','Creativity','Community']);
+  title.slide();
   var keys = {
     37: 1,
     38: 1,
@@ -62,7 +65,7 @@ $(function() {
   })
 
   $(window).scroll(function () {
-    if (window.innerHeight >= $(window).scrollTop() && !scrolling) {
+    if (window.innerHeight >= $(window).scrollTop() && !scrolling && !fromMenu) {
       scrolling = true;
       setTimeout(function () {
         scrolling = false;
@@ -103,7 +106,7 @@ $(function() {
     })
   })
 
-  $menu.click(function (e) {
+  $link.click(function (e) {
     $overlay.slideUp();
     $hamburger.removeClass('is-active')
   })
@@ -119,9 +122,12 @@ $(function() {
 
   $hamburger.click(function (e) {
     if ($hamburger.hasClass('is-active')) {
+      fromMenu = false;
       $hamburger.removeClass('is-active')
       $overlay.slideUp();
     } else {
+      fromMenu = true;
+      console.log(fromMenu);
       $hamburger.addClass('is-active');
       $overlay.slideDown();
     }
@@ -133,6 +139,9 @@ $(function() {
         var target = $( $(this).attr('href') );
         if( target.length ) {
           event.preventDefault();
+          setTimeout(function () {
+            fromMenu = false;
+          }, duration);
           $('html, body').animate({
               scrollTop: target.offset().top
           }, duration);
