@@ -3,26 +3,23 @@
   page.replace(".html", "");
   console.log(page);
   var str = "";
-  var adminPanelPageUrl = "http://localhost:3000/api/html" + page;
-  $.ajax({
-    url: adminPanelPageUrl,
-    type: "GET",
-    headers: {
-      'Access-Control-Allow-Headers': 'Origin, Content-Type',
-      'Access-Control-Allow-Origin': "*",
-    },
-    success: function (data) {
+  var adminPanelPageUrl = "http://localhost:3000/api/html/kappadesigns.org";
+
+  var req = new XMLHttpRequest();
+  req.open('GET',adminPanelPageUrl, true);
+  req.onreadystatechange = function () {
+    if (req.readyState === 4) {
+      data = req.responseText;
       data = JSON.parse(data);
       htmlNode = findHtmlNode(data.DOM);
       traverseDOM(htmlNode);
       var newDoc = document.open("text/html", "replace");
       newDoc.write(str);
       newDoc.close();
-    },
-    error: function () {
-
     }
-  })
+  };
+  req.setRequestHeader('Accept', 'application/json');
+  req.send();
 
   function findHtmlNode(dom) {
     for (var i = 0; i < dom.length; i++) {
