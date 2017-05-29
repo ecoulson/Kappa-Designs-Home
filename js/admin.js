@@ -1,6 +1,8 @@
 (function () {
-  var page = window.location.pathname
+  var page = window.location.pathname;
+  page = page.substring(1, page.length);
   page.replace(".html", "");
+  console.log(page);
   var str = "";
   var adminPanelPageUrl = "http://localhost:3000/api/html/" + page;
   $.ajax({
