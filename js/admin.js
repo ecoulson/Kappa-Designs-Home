@@ -1,1 +1,70 @@
-!function(){function t(t){for(var e=0;e<t.length;e++)if("html"==t[e].name)return t[e];return null}function e(t){if("tag"==t.type||"script"==t.type){var e="<",r=' style="';if(e+=t.name,t.hasOwnProperty("attribs"))for(var n=Object.keys(t.attribs),a=0;a<n.length;a++)console.log(n[a]),"backgroundImage"==n[a]?r+="background-image: "+t.attribs[[n[a]]]+";":(e+=" "+n[a]+"=",e+='"'+t.attribs[n[a]]+'"');return r+='"',e+=r,e+=">"}return t.data}function r(t){if(null!=t){if(t.hasOwnProperty("children"))for(var n=0;n<t.children.length;n++)a+=e(t.children[n]),r(t.children[n]);"text"!=t.type&&(a+="</"+t.name+">")}}var n=window.location.pathname;n.replace(".html","");var a="",l="http://localhost:3000/api/html/"+n;$.ajax({url:l,type:"GET",success:function(e){e=JSON.parse(e),htmlNode=t(e.DOM),r(htmlNode);var n=document.open("text/html","replace");n.write(a),n.close()},error:function(){}})}();
+(function () {
+  var page = window.location.pathname
+  page.replace(".html", "");
+  var str = "";
+  var adminPanelPageUrl = "http://localhost:3000/api/html/" + page;
+  $.ajax({
+    url: adminPanelPageUrl,
+    type: "GET",
+    success: function (data) {
+      data = JSON.parse(data);
+      htmlNode = findHtmlNode(data.DOM);
+      traverseDOM(htmlNode);
+      var newDoc = document.open("text/html", "replace");
+      newDoc.write(str);
+      newDoc.close();
+    },
+    error: function () {
+
+    }
+  })
+
+  function findHtmlNode(dom) {
+    for (var i = 0; i < dom.length; i++) {
+      if (dom[i].name == "html") {
+        return dom[i];
+      }
+    }
+    return null;
+  }
+
+  function createElement(mockNode) {
+    if (mockNode.type == "tag" || mockNode.type == "script") {
+      var string = "<";
+      var style = " style=\"";
+      string += mockNode.name;
+      if (mockNode.hasOwnProperty("attribs")) {
+        var keys = Object.keys(mockNode.attribs);
+        for (var i = 0; i < keys.length; i++) {
+          console.log(keys[i]);
+          if (keys[i] == "backgroundImage") {
+            style += "background-image: " + mockNode.attribs[[keys[i]]] + ";";
+          } else {
+            string += " " + keys[i] + "=";
+            string += "\"" + mockNode.attribs[keys[i]] + "\"";
+          }
+        }
+      }
+      style += "\"";
+      string += style;
+      string += ">";
+      return string;
+    } else {
+      return mockNode.data;
+    }
+  }
+
+  function traverseDOM(node) {
+    if (node != null) {
+      if (node.hasOwnProperty("children")) {
+        for (var i = 0; i < node.children.length; i++) {
+          str += createElement(node.children[i]);
+          traverseDOM(node.children[i]);
+        }
+      }
+      if (node.type != "text") {
+        str += "</" + node.name + ">";
+      }
+    }
+  }
+})();
