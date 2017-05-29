@@ -1,9 +1,8 @@
 (function () {
   var origin = window.location.host
   var path = window.location.pathname === "/" ? "" : window.location.pathname;
-  console.log(path);
   var str = "";
-  var adminPanelPageUrl = "http://localhost:3000/api/html/kappadesigns.org";
+  var adminPanelPageUrl = "http://localhost:3000/api/html/" + origin + path;
 
   var req = new XMLHttpRequest();
   req.open('GET',adminPanelPageUrl, true);
