@@ -7,6 +7,9 @@
   $.ajax({
     url: adminPanelPageUrl,
     type: "GET",
+    headers: {
+      "Access-Control-Allow-Credentials": true
+    },
     success: function (data) {
       data = JSON.parse(data);
       htmlNode = findHtmlNode(data.DOM);
