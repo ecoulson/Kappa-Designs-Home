@@ -1,7 +1,7 @@
 (function () {
-  var page = window.location.pathname;
-  page.replace(".html", "");
-  console.log(page);
+  var origin = window.location.host
+  var path = window.location.pathname === "/" ? "" : window.location.pathname;
+  console.log(path);
   var str = "";
   var adminPanelPageUrl = "http://localhost:3000/api/html/kappadesigns.org";
 
@@ -38,7 +38,6 @@
       if (mockNode.hasOwnProperty("attribs")) {
         var keys = Object.keys(mockNode.attribs);
         for (var i = 0; i < keys.length; i++) {
-          console.log(keys[i]);
           if (keys[i] == "backgroundImage") {
             style += "background-image: " + mockNode.attribs[[keys[i]]] + ";";
           } else {
