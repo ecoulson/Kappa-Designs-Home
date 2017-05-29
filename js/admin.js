@@ -8,7 +8,8 @@
     url: adminPanelPageUrl,
     type: "GET",
     headers: {
-      "Access-Control-Allow-Credentials": true
+      'Access-Control-Allow-Headers': 'Origin, Content-Type',
+      'Access-Control-Allow-Origin': "*",
     },
     success: function (data) {
       data = JSON.parse(data);
