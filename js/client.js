@@ -78,7 +78,7 @@ $(function() {
       } else {
         // scrolling down
         $('html, body').animate({
-            scrollTop: $('#section-1').height()
+            scrollTop: $('#section-1').height() + 50
         }, 700);
       }
     }

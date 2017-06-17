@@ -26,7 +26,7 @@
       }
     }
     #nav-link-1 {
-      background: linear-gradient(to right, #641A07 50%, rgba(255, 255, 255, 0) 50%);
+      background: linear-gradient(to right, #93A3B1 50%, rgba(255, 255, 255, 0) 50%);
 		  background-size: 200% 100%;
 		  background-position:right bottom;
 		  transition:all 0.5s ease;
@@ -35,7 +35,7 @@
       }
     }
     #nav-link-2 {
-      background: linear-gradient(to right, #AF9164 50%, rgba(255, 255, 255, 0) 50%);
+      background: linear-gradient(to right, #00062a 50%, rgba(255, 255, 255, 0) 50%);
       background-size: 200% 100%;
 		  background-position:right bottom;
 		  transition:all 0.5s ease;
@@ -44,10 +44,11 @@
       }
     }
     #nav-link-3 {
-      background: linear-gradient(to right, #B3B6B7 50%, rgba(255, 255, 255, 0) 50%);
+      background: linear-gradient(to right, #93A3B1 50%, rgba(255, 255, 255, 0) 50%);
       background-size: 200% 100%;
 		  background-position:right bottom;
 		  transition:all 0.5s ease;
+			margin-bottom: 25px;
       &:hover {
         background-position: left bottom;
       }

@@ -3,7 +3,7 @@ html, body {
   padding: 0; }
 
 #section-2 {
-  background-color: #9D69A3; }
+  background-color: #00062A; }
 
 .about-title {
   -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -38,7 +38,8 @@ html, body {
       -moz-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75);
       box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75); }
       .mission-row .slider-container .slider .about-subtitle {
-        color: black; }
+        color: black;
+        text-transform: capitalize; }
       .mission-row .slider-container .slider .see-mission, .mission-row .slider-container .slider .back-btn {
         line-height: 2;
         margin: 25px auto;
@@ -49,7 +50,7 @@ html, body {
         border: 3px solid black;
         transition: all 0.5s ease; }
         .mission-row .slider-container .slider .see-mission:hover, .mission-row .slider-container .slider .back-btn:hover {
-          background-color: #a0a8ad;
+          background-color: #93A3B1;
           cursor: pointer; }
 
 .work-row {
@@ -60,7 +61,7 @@ html, body {
     margin-top: 15px;
     height: 350px;
     background-color: white;
-    transition: box-shadow 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out; }
     .work-row .container-work h4 {
       font-size: 26px;
       color: black;
@@ -78,7 +79,8 @@ html, body {
     .work-row .container-work:hover {
       -webkit-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75);
-      box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75); }
+      box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.75);
+      transform: scale(1.05); }
 
 .section {
   font-family: 'Montserrat', sans-serif; }
@@ -93,8 +95,8 @@ html, body {
       background-attachment: local; } }
 
 .logo {
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   left: 30px;
   top: 30px;
@@ -106,7 +108,6 @@ html, body {
   box-shadow: -14px 10px 15px 0px rgba(0, 0, 0, 0.75); }
   .logo:hover {
     transition: all 0.5s ease-in-out;
-    transform: scale(1.6) translateX(15px) translateY(15px);
     cursor: pointer;
     color: black; }
 
@@ -167,6 +168,7 @@ html, body {
   background-image: url("http://3.bp.blogspot.com/-NzHPw_4l8cU/VdCEq8ZNCmI/AAAAAAAATSg/xqgJeljRyCo/s1600/hipster-backgrounds-galaxy-hq-images.jpg"); }
 
 #project-container {
+  border-radius: 5px;
   margin-top: 25px;
   -webkit-box-shadow: 0px 0px 8px 9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 9px rgba(0, 0, 0, 0.75);
@@ -237,12 +239,12 @@ html, body {
 
 #section-4 {
   height: 100vh;
-  background-color: #E85D75; }
+  background-color: #00062a; }
 
 #contact-header {
   margin: 0 auto;
   padding-top: 50px;
-  height: 700px;
+  height: 100%;
   position: relative;
   perspective: 800px; }
   @media all and (min-width: 670px) {
@@ -252,6 +254,7 @@ html, body {
     #contact-header {
       width: 100%; } }
   #contact-header #card {
+    position: absolute;
     border-radius: 5px;
     -webkit-box-shadow: 0px 0px 8px 9px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 8px 9px rgba(0, 0, 0, 0.75);
@@ -264,6 +267,7 @@ html, body {
     -webkit-transform-style: preserve-3d;
     -webkit-transition: transform 1s; }
     #contact-header #card figure {
+      height: 100%;
       margin: 0;
       display: block;
       position: absolute;
@@ -323,8 +327,8 @@ html, body {
   padding: 50px 50px; }
 
 .big-header {
-  padding-top: 25px;
-  font-size: 42px; }
+  font-size: 50px;
+  padding-top: 25px; }
 
 #section-5 {
   width: 100%;
@@ -348,24 +352,25 @@ html, body {
       .nav-container .mini-nav a .nav-link:hover {
         cursor: pointer; }
   .nav-container .mini-nav #nav-link-1 {
-    background: linear-gradient(to right, #641A07 50%, rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(to right, #93A3B1 50%, rgba(255, 255, 255, 0) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease; }
     .nav-container .mini-nav #nav-link-1:hover {
       background-position: left bottom; }
   .nav-container .mini-nav #nav-link-2 {
-    background: linear-gradient(to right, #AF9164 50%, rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(to right, #00062a 50%, rgba(255, 255, 255, 0) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease; }
     .nav-container .mini-nav #nav-link-2:hover {
       background-position: left bottom; }
   .nav-container .mini-nav #nav-link-3 {
-    background: linear-gradient(to right, #B3B6B7 50%, rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(to right, #93A3B1 50%, rgba(255, 255, 255, 0) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    margin-bottom: 25px; }
     .nav-container .mini-nav #nav-link-3:hover {
       background-position: left bottom; }
   .nav-container .mini-nav #nav-link-4 {
@@ -490,34 +495,34 @@ html, body {
         display: block;
         text-decoration: none; }
     .overlay .flex-menu .flex-col-1 {
-      background: linear-gradient(to right, #641A07 50%, rgba(255, 255, 255, 0) 50%);
+      background: linear-gradient(to right, #93A3B1 50%, rgba(255, 255, 255, 0) 50%);
       background-size: 200% 100%;
       background-position: right bottom;
       transition: all 0.5s ease; }
       .overlay .flex-menu .flex-col-1 .link {
-        color: #641A07; }
+        color: #00062a; }
       .overlay .flex-menu .flex-col-1:hover {
         background-position: left bottom; }
         .overlay .flex-menu .flex-col-1:hover .link {
           color: white; }
     .overlay .flex-menu .flex-col-2 {
-      background: linear-gradient(to right, #AF9164 50%, rgba(255, 255, 255, 0) 50%);
+      background: linear-gradient(to right, #00062a 50%, rgba(255, 255, 255, 0) 50%);
       background-size: 200% 100%;
       background-position: right bottom;
       transition: all 0.5s ease; }
       .overlay .flex-menu .flex-col-2 .link {
-        color: #AF9164; }
+        color: #93A3B1; }
       .overlay .flex-menu .flex-col-2:hover {
         background-position: left bottom; }
         .overlay .flex-menu .flex-col-2:hover .link {
           color: white; }
     .overlay .flex-menu .flex-col-3 {
-      background: linear-gradient(to right, #B3B6B7 50%, rgba(255, 255, 255, 0) 50%);
+      background: linear-gradient(to right, #93A3B1 50%, rgba(255, 255, 255, 0) 50%);
       background-size: 200% 100%;
       background-position: right bottom;
       transition: all 0.5s ease; }
       .overlay .flex-menu .flex-col-3 .link {
-        color: #B3B6B7; }
+        color: #00062a; }
       .overlay .flex-menu .flex-col-3:hover {
         background-position: left bottom; }
         .overlay .flex-menu .flex-col-3:hover .link {
